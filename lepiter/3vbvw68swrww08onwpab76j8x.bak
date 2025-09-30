@@ -140,14 +140,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-09-22T12:02:09.952978+02:00"
+						"dateAndTimeString" : "2025-09-24T12:04:58.89999+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "JkFSOcL7DQCiE75RAK31vA=="
 				},
-				"code" : "btHello := 'bp.registerBThread(\"bt-hello\", function(){\n  bp.sync({request:bp.Event(\"hello\")});\n});'.\r\rbtWorld := 'bp.registerBThread(\"bt-world\",function(){\n  bp.sync({request:bp.Event(\"world\")});\n});'.\r\rbtWordOrder := 'bp.registerBThread(\"hello world Patch\", function(){\n  bp.sync({waitFor:bp.Event(\"hello\"), block:bp.Event(\"world\")});\n});\t\t'."
+				"code" : "btHello := 'bp.registerBThread(\"bt-hello\", function(){\n  bp.sync({request:bp.Event(\"hello\")});\n});'.\r\rbtWorld := 'bp.registerBThread(\"bt-world\",function(){\n  bp.sync({request:bp.Event(\"world\")});\n});'.\r\rbtWordOrder := 'bp.registerBThread(\"hello world Patch\", function(){\n  bp.sync({waitFor:bp.Event(\"hello\"), block:bp.Event(\"world\")});\n});'."
 			},
 			{
 				"__type" : "textSnippet",
@@ -211,14 +211,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-09-22T11:54:30.215649+02:00"
+						"dateAndTimeString" : "2025-09-23T09:07:13.013478+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "1KexRsL7DQCo9aU2AK31vA=="
 				},
-				"code" : "bThreadsExampleDir := (FileLocator temp / 'bt-examples') asFileReference.\r\r(bThreadsExampleDir / 'btHello.js') ensureCreateFile; writeStreamDo: [ :s | s << btHello ].\r(bThreadsExampleDir / 'btWorld.js') ensureCreateFile; writeStreamDo: [ :s | s << btWorld ].\r(bThreadsExampleDir / 'btWordOrder.js') ensureCreateFile; writeStreamDo: [ :s | s << btWordOrder ]."
+				"code" : "bThreadsExampleDir := (FileLocator temp / 'bt-examples' / 'helloWorld') asFileReference.\r\r(bThreadsExampleDir / 'btHello.js') ensureCreateFile; writeStreamDo: [ :s | s << btHello ].\r(bThreadsExampleDir / 'btWorld.js') ensureCreateFile; writeStreamDo: [ :s | s << btWorld ].\r(bThreadsExampleDir / 'btWordOrder.js') ensureCreateFile; writeStreamDo: [ :s | s << btWordOrder ].\r\rbThreadsExampleDir\t"
 			},
 			{
 				"__type" : "textSnippet",
@@ -498,14 +498,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-09-22T16:11:48.163356+02:00"
+						"dateAndTimeString" : "2025-09-29T12:58:42.516459+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "OtKiIsb7DQC/VMDXDNInGg=="
 				},
-				"code" : "transcript := GtTranscript new.\r\rreader := process asynchronousStdout\r\tpollStringEvery: 0.5 second\r\tdo: [ :aString | transcript show: aString ].\r\rtranscript"
+				"code" : "transcript := GtTranscript new.\r\treader := process asynchronousStdout\r\tpollStringEvery: 0.5 second\r\tdo: [ :aString | transcript show: aString ].\r\rtranscript"
 			},
 			{
 				"__type" : "textSnippet",
@@ -569,7 +569,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-09-22T16:13:35.466617+02:00"
+						"dateAndTimeString" : "2025-09-22T16:13:47.646006+02:00"
 					}
 				},
 				"uid" : {

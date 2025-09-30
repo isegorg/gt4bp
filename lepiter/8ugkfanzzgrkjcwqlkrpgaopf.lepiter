@@ -177,14 +177,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-09-22T16:30:00.789562+02:00"
+						"dateAndTimeString" : "2025-09-29T13:10:17.60639+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "/bmTYsb7DQCtbHHNB+prlQ=="
 				},
-				"code" : "btCoffee := '\rbp.registerBThread(\"coffee supply\", function() {\n  var coffeeOrderES = bp.EventSet( \"coffee orders\", function(evt){\n    return evt.name.endsWith(\"coffee\");\n  });\n  while ( true ) {\n    for ( var i=0; i<10; i++ ) {\n      bp.sync({waitFor:coffeeOrderES});\n    }\n    bp.sync({request:bp.Event(\"Grind more coffee!\"),\n           block:coffeeOrderES});\n  }\n});'\t\t\t"
+				"code" : "btCoffee := '\rbp.registerBThread(\"coffee supply\", function() {\n  var coffeeOrderES = bp.EventSet( \"coffee orders\", function(evt){\n    return evt.name.endsWith(\"coffee\");\n  });\n\t\t  while ( true ) {\n\t\t    for ( var i=0; i<10; i++ ) {\n\t\t\t\t\t\t\t\t\t      bp.sync({waitFor:coffeeOrderES});\n\t\t    }\n\t\t    bp.sync({request:bp.Event(\"Grind more coffee!\"),\n\t\t           block:coffeeOrderES});\n\t\t  }\t\t\t\n\t\t});'\t\t\t"
 			},
 			{
 				"__type" : "textSnippet",
@@ -319,14 +319,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-09-22T16:49:31.036398+02:00"
+						"dateAndTimeString" : "2025-09-29T12:37:21.617283+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "KSlhb8b7DQCP5I3iA8suMw=="
 				},
-				"code" : "process := GtExternalProcessBuilder new\r\t\tcommand: 'java';\r\t\targs: {'-jar'.\r\t\t\t\t'pharo-local/iceberg/isegorg/gt4bp/BPjsRunnerBridge-0.1.0-SNAPSHOT.jar'.\r\t\t\t\tcoffeeExampleDir pathString};\r\t\tpipeStdout;\r\t\tpipeStdin;\t\t\t\t\t\t\t\t\r\t\tspawn.\r\rtranscript := GtTranscript new.\r\rreader := process asynchronousStdout\r\tpollStringEvery: 0.5 second\t\t\t\t\t\r\tdo: [ :aString | transcript show: aString ].\r\rtranscript"
+				"code" : "process := GtExternalProcessBuilder new\r\t\tcommand: 'java';\r\t\targs: {'-jar'.\r\t\t\t\t'pharo-local/iceberg/isegorg/gt4bp/BPjsRunnerBridge-0.1.0-SNAPSHOT.jar'.\r\t\t\t\tcoffeeExampleDir pathString};\r\t\tpipeStdout;\r\t\tpipeStdin;\t\t\t\t\t\t\t\t\r\t\tspawn.\r\rtranscript := GtTranscript new.\t\t\t\r\rreader := process asynchronousStdout\r\tpollStringEvery: 0.5 second\t\t\t\t\t\r\tdo: [ :aString | transcript show: aString ].\r\rtranscript"
 			},
 			{
 				"__type" : "textSnippet",
@@ -390,14 +390,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-09-22T16:50:04.259848+02:00"
+						"dateAndTimeString" : "2025-09-29T13:11:09.015099+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "XZWsesb7DQCWGJxcA8suMw=="
 				},
-				"code" : "process stdin\r\tnextPutAll: '{\"type\": \"enqueueEvent\", \"name\": \"espresso coffee\", \"data\": {\"x\": 1} }'; crlf"
+				"code" : "process stdin\r\t\t\t\tnextPutAll: '{\"type\": \"enqueueEvent\", \"name\": \"bla bla coffee\" }'; crlf"
 			},
 			{
 				"__type" : "textSnippet",
