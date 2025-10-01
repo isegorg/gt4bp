@@ -436,14 +436,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-09-23T14:30:04.749525+02:00"
+									"dateAndTimeString" : "2025-10-01T11:15:50.582822+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "YNi2zdj7DQCUQFu+AV+bBw=="
 							},
-							"code" : "Gt4BpRunnerBridge class compile: '\rwithBtDirectory: aString\r\t^ self new \r\t    btDirectory: aString; \r\t    yourself\r' classified: #'instance creation'"
+							"code" : "Gt4BpRunnerBridge class compile: '\rfromDirectory: aString\r\t^ self new \r\t    btDirectory: aString; \r\t    yourself\r' classified: #'instance creation'"
 						}
 					]
 				},
@@ -508,14 +508,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-09-23T19:27:09.974002+02:00"
+									"dateAndTimeString" : "2025-10-01T11:37:40.467673+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "xjEX3Nj7DQCYIgeDAV+bBw=="
 							},
-							"code" : "Gt4BpRunnerBridge class compile: '\rdefaultBtDirectory\r    ^ ''bThreads''\r' classified: #'default values'.\r\r\rGt4BpRunnerBridge compile: '\rbtDirectory\r    ^ btDirectory' classified: #accessing.\r    \r    Gt4BpRunnerBridge compile: '\rbtDirectory: aFileReferenceOrDirName\r    btDirectory := aFileReferenceOrDirName asFileReference' classified: #accessing.\r\rGt4BpRunnerBridge compile: '\risRunning\r    ^ isRunning' classified: #accessing.\r    \rGt4BpRunnerBridge compile: '\rannouncer\r    ^ announcer' classified: #accessing."
+							"code" : "Gt4BpRunnerBridge class compile: '\rdefaultBtDirectory\r    ^ ''bThreads''\r' classified: #'default values'.\r\r\rGt4BpRunnerBridge compile: '\rbtDirectory\r    ^ btDirectory' classified: #accessing.\r    \rGt4BpRunnerBridge compile: '\rbtDirectory: aFileReferenceOrDirName\r    btDirectory := aFileReferenceOrDirName asFileReference' classified: #accessing.\r\rGt4BpRunnerBridge compile: '\risRunning\r    ^ isRunning' classified: #accessing.\r    \rGt4BpRunnerBridge compile: '\rannouncer\r    ^ announcer' classified: #accessing."
 						}
 					]
 				},
@@ -727,14 +727,14 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-09-26T13:21:42.329561+02:00"
+												"dateAndTimeString" : "2025-10-01T11:37:58.09182+02:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
 											"uidString" : "XEwk2un7DQCKTwKiDZMWug=="
 										},
-										"code" : "Gt4BpEvent compile: '\rprintString\r\t^ self toJson' classified: #printing.\r\rGt4BpEvent compile: '\rtoJson\r    \t| dictionary |\r\tdictionary := {\r\t    ''type'' -> type.\r\t\t''name'' -> name} asDictionary.\r\tdata ifNotNil: [ dictionary at: ''data'' put: data ].\r\t^ NeoJSONWriter toString: dictionary\r' classified: #json"
+										"code" : "Gt4BpEvent compile: '\rprintString\r\t^ self toJson' classified: #printing.\r\rGt4BpEvent compile: '\rtoJson\r    | dictionary |\r\tdictionary := {\r\t    ''type'' -> type.\r\t\t''name'' -> name} asDictionary.\r\tdata ifNotNil: [ dictionary at: ''data'' put: data ].\r\t^ NeoJSONWriter toString: dictionary\r' classified: #json"
 									},
 									{
 										"__type" : "textSnippet",
@@ -806,6 +806,77 @@
 											"uidString" : "pE5H89z7DQCTJN7pBObEbg=="
 										},
 										"code" : "Gt4BpEvent class compile: '\rfromJson: aString\r\t[ | dictionary |\r\t   dictionary := NeoJSONReader fromString: aString.\r\t   ^ self fromDictionary: dictionary ]\r\ton: Exception\r\tdo: [ :ex |\r\t\tTranscript crShow: ''Bridge output is invalid JSON: '', aString , ''.''.\r\t\tex signal.\r\t]\r' classified: #'json'.\r\rGt4BpEvent class compile: '\rfromDictionary: aDictionary\r    | event |\r    event := self new\r          name: (aDictionary at: ''name'');\r          type: (aDictionary at: ''type'');\r          yourself.\r    aDictionary at: ''data'' ifPresent: [ :dataValue | event data: dataValue ].\r    ^ event\r' classified: #'instance creation'"
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-10-01T11:18:49.739345+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-10-01T11:21:11.271511+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "yrXpF3f8DQC2Fo1LDAuiFQ=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "The BPjs Runner Bridge owns an announcer it uses to announce BP Events from the B-Program execution. We want it provides an interface to subscribe blocks to be notified when a BP event is received:"
+									},
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-10-01T11:19:37.837044+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-10-01T11:20:35.951594+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "c5/HGnf8DQC4zJFKDAuiFQ=="
+										},
+										"code" : "Gt4BpRunnerBridge compile: '\ronEvent: aBlock\r    announcer when: Gt4BpEvent do: [ :event | aBlock value: event ]\r' classified: #'events'"
 									}
 								]
 							},
@@ -972,14 +1043,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-09-30T10:27:07.485556+02:00"
+						"dateAndTimeString" : "2025-10-01T11:42:14.496595+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "bv5Q+dj7DQCTyhu0D1N2lw=="
 				},
-				"code" : "Gt4BpRunnerBridge compile: '\rstart\r\tisRunning\r\t\tifFalse: [ \r\t\t\tprocess := self newBridgeProcess.\r\t\t\tisRunning := true.\r\t\t\tself forkStdOutObserver.\r\t\t\tself forkStdErrObserver ]\r' classified: #lifecycle.\r\rGt4BpRunnerBridge compile: '\rstop\r\tisRunning ifTrue: [ \r\t    process kill.\r\t    isRunning := false \r\t]\r' classified: #lifecycle.\r\rGt4BpRunnerBridge compile: '\rnewBridgeProcess\r\t^ GtExternalProcessBuilder new\r\t\tcommand: ''java'';\r\t\targs: {''-jar''.\r\t\t\t\t''pharo-local/iceberg/isegorg/gt4bp/BPjsRunnerBridge-0.1.0-SNAPSHOT.jar''.\r\t\t\t\tbtDirectory pathString};\r\t\tpipeStdout;\r\t\tpipeStdin;\r\t\tpipeStderr;\r\t\tspawn\r' classified: #'private - lifecycle'.\r\rGt4BpRunnerBridge compile: '\rforkStdOutObserver\r\t[ | lines event |\r\t[ isRunning ]\r\t\twhileTrue: [ lines := process stdoutStream lines toArray wait.\r\t\t\tlines\r\t\t\t\tdo: [ :line | \r\t\t\t\t\t[ event := Gt4BpEvent fromJson: line.\r\t\t\t\t\tannouncer announce: event ] on: Exception do: [ ''do nothing'' ] ] ] ]\r\t\tforkNamed: ''BPjs Bridge [PID:'' , process id asString , ''] StdOut Observer''\r' classified: #'private - lifecycle'.\r\rGt4BpRunnerBridge compile: '\r\r' classified: #'private - lifecycle'."
+				"code" : "Gt4BpRunnerBridge compile: '\rstart\r\tisRunning\r\t\tifFalse: [ \r\t\t\tprocess := self newBridgeProcess.\r\t\t\tisRunning := true.\r\t\t\tself forkStdOutObserver.\r\t\t\tself forkStdErrObserver ]\r' classified: #lifecycle.\r\rGt4BpRunnerBridge compile: '\rstop\r\tisRunning ifTrue: [ \r\t    process kill.\r\t    isRunning := false \r\t]\r' classified: #lifecycle.\r\rGt4BpRunnerBridge compile: '\rnewBridgeProcess\r\t^ GtExternalProcessBuilder new\r\t\tcommand: ''java'';\r\t\targs: {''-jar''.\r\t\t\t\t''pharo-local/iceberg/isegorg/gt4bp/BPjsRunnerBridge-0.1.0-SNAPSHOT.jar''.\r\t\t\t\tbtDirectory pathString};\r\t\tpipeStdout;\r\t\tpipeStdin;\r\t\tpipeStderr;\r\t\tspawn\r' classified: #'private - lifecycle'.\r\rGt4BpRunnerBridge compile: '\rforkStdOutObserver\r\t[ | lines line event |\r\tlines := process stdoutStream lines.\r\t[ isRunning ]\r\t\twhileTrue: [ \r\t\t    line := lines next wait.\r\t\t    [ event := Gt4BpEvent fromJson: line value.\r\t\t\t  announcer announce: event ] on: Exception do: [ ''do nothing'' ] ] ]\r\t\tforkNamed: ''BPjs Bridge [PID:'' , process id asString , ''] StdOut Observer''\r' classified: #'private - lifecycle'.\r\rGt4BpRunnerBridge compile: '\rforkStdErrObserver\r\t[ | lines line |\r\tlines := process stderrStream lines.\r\t[ isRunning ]\r\t\twhileTrue: [ \r\t\t    line := lines next wait.\r\t\t\t[ Transcript crShow: ''BPjs Bridge Error: '' , line value ]\r\t\t\t\ton: Exception\r\t\t\t\tdo: [ ''do nothing'' ] ] ]\r\t\tforkNamed: ''BPjs Bridge [PID:'' , process id asString , ''] StdErr Observer''\r' classified: #'private - lifecycle'."
 			},
 			{
 				"__type" : "textSnippet",
@@ -1048,14 +1119,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-09-24T12:03:55.994323+02:00"
+									"dateAndTimeString" : "2025-10-01T11:22:05.702739+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "tTvDuer7DQCgsqeGBxhNYg=="
 							},
-							"code" : "Gt4BpRunnerBridge compile: '\rloadBProgram: bProgramCode named: bProgramFilename\r\t(btDirectory / bProgramFilename) \r\t\tens\t\tureCreateFile; \r\t\twriteStreamDo: [ :s | s << bProgramCode ].\r' classified: #loading"
+							"code" : "Gt4BpRunnerBridge compile: '\rloadBProgram: bProgramCode named: bProgramFilename\r\t(btDirectory / bProgramFilename) \r\t\tensureCreateFile; \r\t\twriteStreamDo: [ :s | s << bProgramCode ].\r' classified: #loading"
 						}
 					]
 				},
@@ -1271,14 +1342,14 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-09-24T12:01:05.217086+02:00"
+												"dateAndTimeString" : "2025-10-01T11:17:38.120323+02:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
 											"uidString" : "KXXB9tv7DQCMSvRTCCM89g=="
 										},
-										"code" : "bridge := Gt4BpRunnerBridge \r\twithBtDirectory: (FileLocator temp / 'bt-examples' / 'helloWorld') asFileReference."
+										"code" : "bridge := Gt4BpRunnerBridge \r\tfromDirectory: (FileLocator temp / 'bt-examples' / 'helloWorld') asFileReference."
 									},
 									{
 										"__type" : "textSnippet",
@@ -1413,14 +1484,14 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-09-24T14:40:26.630682+02:00"
+												"dateAndTimeString" : "2025-10-01T11:18:12.700272+02:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
 											"uidString" : "1pKr+er7DQCm7oksBEAWsw=="
 										},
-										"code" : "bridge announcer when: Gt4BpEvent do: [ :event | Transcript crShow: 'BP Event received: ' , event asString ]"
+										"code" : "bridge onEvent:[ :event | Transcript crShow: 'BP Event received: ' , event asString ]"
 									},
 									{
 										"__type" : "textSnippet",
@@ -1627,14 +1698,14 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-09-29T14:15:25.24113+02:00"
+												"dateAndTimeString" : "2025-10-01T20:42:15.167035+02:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
 											"uidString" : "RKK2Ku37DQCvsW8nCu81sw=="
 										},
-										"code" : "espressoOrder := Gt4BpEvent new name: 'espresso coffee'.\r\rbridge := Gt4BpRunnerBridge \r\twithBtDirectory: (FileLocator temp / 'bt-examples' / 'coffee') asFileReference.\r\t\t\t\rbridge loadBProgram: 'bp.registerBThread(\"coffee supply\", function() {\n\t\t\t\t  var coffeeOrderES = bp.EventSet( \"coffee orders\", function(evt){\n    return evt.name.endsWith(\"coffee\");\n  });\n  while ( true ) {\n    for ( var i=0; i<10; i++ ) {\t\t\t\n      bp.sync({waitFor:coffeeOrderES});\n    }\n    bp.sync({request:bp.Event(\"Grind more coffee!\"),\n           block:coffeeOrderES});\n  }\n});' named: 'bt-coffee.js'.\r\rbridge announcer when: Gt4BpEvent do: [ :event |\r\tTranscript crShow: 'BP Event received: ' , event asString ].\r\rbridge start.\r\rTranscript\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+										"code" : "btDirectory := (FileLocator temp / 'bt-examples' / 'coffee') asFileReference.\r\rbProgram := 'bp.registerBThread(\"coffee supply\", function() {\n  var coffeeOrderES = bp.EventSet(\"coffee orders\", function(evt){\n    return evt.name.endsWith(\"coffee\");\n  });\n  while ( true ) {\n    for ( var i=0; i<10; i++ ) {\t\t\t\n      bp.sync({waitFor:coffeeOrderES});\n    }\n    bp.sync({request:bp.Event(\"Grind more coffee!\"),\n      block:coffeeOrderES});\n  }\n})'.\r\rbridge := (Gt4BpRunnerBridge fromDirectory: btDirectory)\r\t\tloadBProgram: bProgram named: 'bt-coffee.js';\r\t\tonEvent: [ :event | Transcript crShow: 'BP Event received: ' , event asString ];\r\t\tstart.\r\rTranscript"
 									},
 									{
 										"__type" : "textSnippet",
@@ -1698,14 +1769,14 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-09-24T14:51:40.658269+02:00"
+												"dateAndTimeString" : "2025-10-01T20:44:13.332786+02:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
 											"uidString" : "lJR6Mu37DQCzLc/OCu81sw=="
 										},
-										"code" : "\rbridge enqueueEvent: espressoOrder."
+										"code" : "espressoOrder := Gt4BpEvent new name: 'espresso coffee'.\r1 to: 10 do: [\r\tbridge enqueueEvent: espressoOrder.\r]"
 									},
 									{
 										"__type" : "pharoSnippet",

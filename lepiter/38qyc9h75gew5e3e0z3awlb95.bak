@@ -99,12 +99,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2025-09-30T10:33:10.414522+02:00"
+			"dateAndTimeString" : "2025-09-30T10:42:31.330065+02:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Gt4BP: BP on GToolkit"
+		"title" : "Gt4BP: Behavioral Programming on GToolkit"
 	},
 	"uid" : {
 		"__type" : "uuid",
