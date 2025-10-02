@@ -1698,14 +1698,14 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-10-01T20:42:15.167035+02:00"
+												"dateAndTimeString" : "2025-10-02T10:27:16.372447+02:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
 											"uidString" : "RKK2Ku37DQCvsW8nCu81sw=="
 										},
-										"code" : "btDirectory := (FileLocator temp / 'bt-examples' / 'coffee') asFileReference.\r\rbProgram := 'bp.registerBThread(\"coffee supply\", function() {\n  var coffeeOrderES = bp.EventSet(\"coffee orders\", function(evt){\n    return evt.name.endsWith(\"coffee\");\n  });\n  while ( true ) {\n    for ( var i=0; i<10; i++ ) {\t\t\t\n      bp.sync({waitFor:coffeeOrderES});\n    }\n    bp.sync({request:bp.Event(\"Grind more coffee!\"),\n      block:coffeeOrderES});\n  }\n})'.\r\rbridge := (Gt4BpRunnerBridge fromDirectory: btDirectory)\r\t\tloadBProgram: bProgram named: 'bt-coffee.js';\r\t\tonEvent: [ :event | Transcript crShow: 'BP Event received: ' , event asString ];\r\t\tstart.\r\rTranscript"
+										"code" : "btDirectory := (FileLocator temp / 'bt-examples' / 'coffee') asFileReference.\r\rbProgram := 'bp.registerBThread(\"coffee supply\", function() {\n  var coffeeOrderES = bp.EventSet(\"coffee orders\", function(evt){\n    return evt.name.endsWith(\"coffee\");\n  });\n  while ( true ) {\n    for ( var i=0; i<10; i++ ) {\t\t\t\n      bp.sync({waitFor:coffeeOrderES});\n    }\n    bp.sync({request:bp.Event(\"Grind more coffee!\"),\n      block:coffeeOrderES});\n  }\n})'.\r\rbridge := (Gt4BpRunnerBridge fromDirectory: btDirectory)\r\t\tloadBProgram: bProgram named: 'bt-coffee.js';\r\t\tonEvent: [ :event | \r\t\t    Transcript crShow: 'BP Event received: ' , event asString \r\t\t];\r\t\tstart.\r\rTranscript"
 									},
 									{
 										"__type" : "textSnippet",
