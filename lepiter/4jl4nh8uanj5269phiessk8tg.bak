@@ -60,7 +60,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-10-02T10:43:15.884519+02:00"
+									"dateAndTimeString" : "2025-10-02T10:44:32.652153+02:00"
 								}
 							},
 							"editEmail" : {
@@ -71,7 +71,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-10-02T10:44:27.373293+02:00"
+									"dateAndTimeString" : "2025-10-02T10:44:57.935819+02:00"
 								}
 							},
 							"uid" : {
@@ -81,7 +81,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[[Basic game view]]"
+							"string" : "[[Minimal visual infrastructure in GToolkit]]"
 						}
 					]
 				},
@@ -104,7 +104,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-02T10:44:20.711605+02:00"
+						"dateAndTimeString" : "2025-10-03T12:32:11.829009+02:00"
 					}
 				},
 				"uid" : {
@@ -114,7 +114,82 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "\t\t\tWe start defining a minimal infrastructure for the game presentation, for the moment defering the game logic:"
+				"string" : "We start defining a minimal infrastructure for the game presentation, for the moment defering the game logic:"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-03T12:36:36.866476+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-03T12:36:57.437718+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "jSrHaaD8DQCV2KKBACGg2Q=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "[[Game rules as a B-Program]]"
+						}
+					]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-03T12:32:33.366542+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-03T12:36:33.527068+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "tXZgWqD8DQCM4mZIACGg2Q=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Now we a very basic model representing the game's state (*ViewModel*) and its graphical representation (*View*).\n\nWe're going to define the game rules as *Behaviors* (a B-Program) and to connect the already defined *ViewModel* with that B-Program running on the BPjs Runner:"
 			}
 		]
 	},
@@ -137,12 +212,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2025-10-02T10:29:19.991373+02:00"
+			"dateAndTimeString" : "2025-10-03T12:37:09.038772+02:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Implementing Tic Tac Toe game using BP"
+		"title" : "Implementing the Tic Tac Toe game using BP"
 	},
 	"uid" : {
 		"__type" : "uuid",

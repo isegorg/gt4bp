@@ -645,14 +645,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-10-02T13:49:49.434368+02:00"
+									"dateAndTimeString" : "2025-10-06T14:15:25.718179+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "w5A/5Iv8DQCuqx0MC2T9XQ=="
 							},
-							"code" : "Object\r    subclass: #Gt4BpTicTacToeCell\t\t\t\r\tinstanceVariableNames: 'cell'\r\tclassVariableNames: ''\r\tcategory: 'Gt4Bp-TicTacToe-Core'.\r\t\rGt4BpTicTacToeCell compile: '\rasElement\r\t^ BrButton new\r\t\tborder: (BlBorderBuilder new\r\t\t\t\tpaint: Color lightGray;\r\t\t\t\twidth: 2;\r\t\t\t\tbuild);\r\t\tconstraintsDo: [ :c | \r\t\t\tc horizontal matchParent.\r\t\t\tc vertical matchParent ]' classified: #view"
+							"code" : "Object\r    subclass: #Gt4BpTicTacToeCell\t\t\t\r\tinstanceVariableNames: 'cellView'\r\tclassVariableNames: ''\r\tcategory: 'Gt4Bp-TicTacToe-Core'.\r\t\rGt4BpTicTacToeCell compile: '\rcreateCellView\r\t^ BrButton new\r\t\tborder: (BlBorderBuilder new\r\t\t\t\tpaint: Color lightGray;\r\t\t\t\twidth: 2;\r\t\t\t\tbuild);\r\t\tconstraintsDo: [ :c | \r\t\t\tc horizontal matchParent.\r\t\t\tc vertical matchParent ]' classified: #view.\r\t\t\t\rGt4BpTicTacToeCell compile: '\rinitialize\r    super initialize.\r\tcellView := self createCellView' classified: #initialization.\r\t\rGt4BpTicTacToeCell compile: '\rasElement\r\t^ cellView' classified: #view."
 						},
 						{
 							"__type" : "textSnippet",

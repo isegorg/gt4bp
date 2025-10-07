@@ -1119,7 +1119,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-10-01T11:22:05.702739+02:00"
+									"dateAndTimeString" : "2025-10-06T12:07:24.430748+02:00"
 								}
 							},
 							"uid" : {
@@ -1228,14 +1228,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-09-26T13:24:44.525584+02:00"
+									"dateAndTimeString" : "2025-10-06T12:30:37.377862+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "XGnszOr7DQCnqTrXBxhNYg=="
 							},
-							"code" : "Gt4BpRunnerBridge compile: '\renqueueEvent: aBpEvent\r\taBpEvent type: ''enqueueEvent''.\r\tprocess stdin nextPutAll: aBpEvent toJson; crlf\r' classified: #events"
+							"code" : "Gt4BpRunnerBridge compile: '\renqueueEvent: aBpEvent\r\taBpEvent type: ''enqueueEvent''.\r\tprocess stdin nextPutAll: aBpEvent toJson; nextPutAll: String crlf\r' classified: #events"
 						}
 					]
 				},
@@ -1413,14 +1413,14 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-09-26T13:06:40.177603+02:00"
+												"dateAndTimeString" : "2025-10-06T12:16:30.464279+02:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
 											"uidString" : "EF2zBtz7DQCN9TJZCCM89g=="
 										},
-										"code" : "bridge loadBProgram: 'bp.registerBThread(\"bt-hello\", function(){ \r  \t\t\tbp.sync({request:bp.Event(\"hello\")});\n});' named: 'bt-hello.js'.\r\rbridge loadBProgram: 'bp.registerBThread(\"bt-world\", function(){\n  bp.sync({request:bp.Event(\"world\")});\n});' named: 'bt-world.js'.\r\rbridge loadBProgram: 'bp.registerBThread(\"hello world Patch\", function(){\n  bp.sync({waitFor:bp.Event(\"hello\"), block:bp.Event(\"world\")});\n});' named: 'bt-word-order.js'."
+										"code" : "bridge loadBProgram: 'bp.registerBThread(\"bt-hello\", function() {\n  bp.sync({request:bp.Event(\"hello\")});\n});' named: 'bt-hello.js'.\r\rbridge loadBProgram: 'bp.registerBThread(\"bt-world\", function(){\n  bp.sync({request:bp.Event(\"world\")});\n});' named: 'bt-world.js'.\r\rbridge loadBProgram: 'bp.registerBThread(\"hello world Patch\", function(){\n  bp.sync({waitFor:bp.Event(\"hello\"), block:bp.Event(\"world\")});\n});' named: 'bt-word-order.js'."
 									},
 									{
 										"__type" : "textSnippet",
@@ -1555,14 +1555,14 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-09-29T13:53:11.844824+02:00"
+												"dateAndTimeString" : "2025-10-06T12:17:01.136967+02:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
 											"uidString" : "94gb/+r7DQCqme4JBEAWsw=="
 										},
-										"code" : "bridge start.\t\t\t\t\t\t\t\t\t"
+										"code" : "bridge start"
 									},
 									{
 										"__type" : "textSnippet",
@@ -1626,14 +1626,14 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-09-24T12:21:26.172419+02:00"
+												"dateAndTimeString" : "2025-10-06T12:16:58.985239+02:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
 											"uidString" : "xa78BOv7DQCSgIAtA0XH9w=="
 										},
-										"code" : "bridge stop\t\t"
+										"code" : "bridge stop"
 									}
 								]
 							},
@@ -1698,14 +1698,14 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-10-01T20:42:15.167035+02:00"
+												"dateAndTimeString" : "2025-10-06T12:10:30.510874+02:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
 											"uidString" : "RKK2Ku37DQCvsW8nCu81sw=="
 										},
-										"code" : "btDirectory := (FileLocator temp / 'bt-examples' / 'coffee') asFileReference.\r\rbProgram := 'bp.registerBThread(\"coffee supply\", function() {\n  var coffeeOrderES = bp.EventSet(\"coffee orders\", function(evt){\n    return evt.name.endsWith(\"coffee\");\n  });\n  while ( true ) {\n    for ( var i=0; i<10; i++ ) {\t\t\t\n      bp.sync({waitFor:coffeeOrderES});\n    }\n    bp.sync({request:bp.Event(\"Grind more coffee!\"),\n      block:coffeeOrderES});\n  }\n})'.\r\rbridge := (Gt4BpRunnerBridge fromDirectory: btDirectory)\r\t\tloadBProgram: bProgram named: 'bt-coffee.js';\r\t\tonEvent: [ :event | Transcript crShow: 'BP Event received: ' , event asString ];\r\t\tstart.\r\rTranscript"
+										"code" : "btDirectory := (FileLocator temp / 'bt-examples' / 'coffee') asFileReference.\r\rbProgram := 'bp.registerBThread(\"coffee supply\", function() {\n  var coffeeOrderES = bp.EventSet(\"coffee orders\", function(evt){\n    return evt.name.endsWith(\"coffee\");\n  });\n  while ( true ) {\n    for ( var i=0; i<10; i++ ) {\t\t\t\n      bp.sync({waitFor:coffeeOrderES});\n    }\n    bp.sync({request:bp.Event(\"Grind more coffee!\"),\n      block:coffeeOrderES});\n  }\n});'.\r\t\t\rbridge := (Gt4BpRunnerBridge fromDirectory: btDirectory)\r\tloadBProgram: bProgram named: 'bt-coffee.js';\r\tonEvent: [ :event | \r    \tTranscript crShow: 'BP Event received: ' , event asString \r\t];\r\tstart.\r\rTranscript"
 									},
 									{
 										"__type" : "textSnippet",

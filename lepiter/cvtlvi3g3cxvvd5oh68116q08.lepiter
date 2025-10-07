@@ -1,0 +1,872 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-03T12:39:38.491003+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-03T12:49:26.086726+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "hnooa6D8DQCWi3DLACGg2Q=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "#A trivial B-Program"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-03T12:42:18.128665+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-03T12:45:13.130138+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "92oefqD8DQCbHFQNACGg2Q=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "We can define the following b-thread that accepts any player move, i.e. it emits a *moveAccepted* event as response to any requested move:"
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-03T12:43:34.371829+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-06T14:40:09.689988+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "8cupgqD8DQCfT6eSACGg2Q=="
+							},
+							"code" : "btAcceptAnyMove := 'bp.registerBThread(\"AcceptAnyMove\", function() {\n    var anyMoveEvents = bp.EventSet(\"anyMoveEvents\", function (evt) {\n        return (evt.data == null) ? false : evt.name == \"move\";\n    });\n    while (true) {\n        var evt = bp.sync({waitFor: anyMoveEvents});\n\tbp.sync({request: bp.Event(\"moveAccepted\", evt.data)});\n    }\n});'"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-03T12:50:10.316537+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-03T12:51:53.389669+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "aQrAmaD8DQCG0sHfCxrsUg=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "As you can gather from the previous b-thread code, we are assuming the event's data field will be used to store relevant details about the move, like the player doing the move or the position in the board."
+						}
+					]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-03T12:40:01.104633+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-03T12:42:12.037654+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "S4I4daD8DQCXB8W2ACGg2Q=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "To follow a step-by-step process, we'll start with a trivial game logic implemented as a b-program consisting of accepting any player movement."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-03T12:49:31.660273+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-03T12:52:28.2857+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "oJL1l6D8DQCGxeUoCxrsUg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "#Integration with the BP Runner"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-10-03T12:54:27.288252+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-10-03T12:56:40.876672+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "xBodqaD8DQCSj0JECxrsUg=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "Our game class {{gtClass:name=Gt4BpTicTacToeGame}} is going to setup a BPjs Runner Bridge to be able to load, run and communicate bidirectionally with the game b-threads:"
+									},
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-10-03T12:56:46.612703+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-10-03T13:36:56.183304+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "om7isaD8DQCYAUzeCxrsUg=="
+										},
+										"code" : "Object\r\tsubclass: #Gt4BpTicTacToeGame\r\tinstanceVariableNames: 'cells bpRunner'\r\tclassVariableNames: ''\r\tcategory: 'Gt4Bp-TicTacToe-Core'.\r\rGt4BpTicTacToeGame\r\tcompile: 'initialize\n    super initialize.\r    self setupBpRunner.\n    cells := Array2D new: 3.\n    1 to: 3 do: [ :row |\n        1 to: 3 do: [ :col |\n            cells at: row at: col put: (self newCellAt: row col: col) ] ]'\r\tclassified: #initialization.\r\t\rGt4BpTicTacToeGame\r\tcompile: 'setupBpRunner\r\tbpRunner := Gt4BpRunnerBridge \r\t    fromDirectory: (FileLocator temp / ''bt-examples'' / ''tictactoe'') asFileReference.\r\tbpRunner onEvent: [ :event | self handleBPEvent: event ]'\r\tclassified: #'initialization - bp'.\r\t\rGt4BpTicTacToeGame\r\tcompile: 'loadBThread: aBThreadSourceCode named: aFilename\r\tbpRunner loadBProgram: aBThreadSourceCode named: aFilename' \r\tclassified: #'initialization - bp'."
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-03T13:15:25.937509+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-03T13:15:34.311115+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "PvmZ9KD8DQCa+jyGBgWH/Q=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "## Setup the BP Runner"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-10-03T13:08:00.644829+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-10-03T13:09:26.599989+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "PFgP2qD8DQCdjjRNCxrsUg=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "Now we define the communication way from b-program to *ViewModel*, i.e. how to process events emitted by the b-threads. For the moment, only the *moveAccepted* event:"
+									},
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-10-03T13:09:04.689974+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-10-06T14:12:36.375373+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "pJjg3aD8DQCgNoIrCxrsUg=="
+										},
+										"code" : "Gt4BpTicTacToeGame\r\tcompile: 'handleBPEvent: event\r\tevent name = ''moveAccepted''\r\t\tifTrue: [ | eventData |\r\t\t\teventData := event data.\r\t\t\tself\r\t\t\t\tupdateCellAt: (eventData at: ''row'')\r\t\t\t\tcol: (eventData at: ''col'')\r\t\t\t\tplayer: (eventData at: ''player'') ]'\r\tclassified: #'event - handling'.\r\rGt4BpTicTacToeCell\r\tcompile: 'playedBy: aPlayerString\n    playedBy := aPlayerString.\r    cellView label: aPlayerString. \r    ' classified: #'accessing'.\r    \rObject\r\tsubclass: #Gt4BpTicTacToeCell\r\tinstanceVariableNames: 'cellView bpRunner playedBy'\r\tclassVariableNames: ''\r\tcategory: 'Gt4Bp-TicTacToe-Core'.\r\rGt4BpTicTacToeGame\r\tcompile: 'updateCellAt: row col: col player: player\n    | cell |\n    cell := cells at: row at: col.\n    cell playedBy: player' classified: #'view - updating'."
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-03T13:15:49.551391+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-03T13:16:03.573556+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "Fo629aD8DQCbgMbwBgWH/Q=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "## B-program to View way"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-10-03T13:17:00.304055+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-10-03T13:17:50.022588+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "beQ5+qD8DQCc+kz4BgWH/Q=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "Now we should handle the events generated by the users on the view to be injected to the b-program managing the game logic:"
+									},
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-10-03T13:17:54.343003+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-10-06T14:18:20.104956+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "BHNy/aD8DQCf0ljsBgWH/Q=="
+										},
+										"code" : "Gt4BpTicTacToeGame compile: 'newCellAt: aRowIndex col: aColIndex\r\t| cell |\n    cell := Gt4BpTicTacToeCell new.\r    cell onClick: [ :clickEvent | self handleClickAtRow: aRowIndex col: aColIndex ].\n    ^ cell' classified: #'initialization - cells'.\r    \rGt4BpTicTacToeGame compile: 'handleClickAtRow: row col: col\n    | event eventData |\n    eventData := Dictionary new\n        at: ''player'' put: ''X'';  \"by moment, always use X\"\n        at: ''row'' put: row;\n        at: ''col'' put: col;\n        yourself.\r    event := Gt4BpEvent new\r    \tname: ''move'';\r    \tdata: eventData;\r    \tyourself.\n    bpRunner enqueueEvent: event' classified: #'event - dispatching'.\r\rObject\r    subclass: #Gt4BpTicTacToeCell\t\t\t\r\tinstanceVariableNames: 'cellView clickBlock playedBy'\r\tclassVariableNames: ''\r\tcategory: 'Gt4Bp-TicTacToe-Core'.\r\rGt4BpTicTacToeCell compile: 'onClick: aBlock\r\tcellView action: aBlock' classified: #'event - handling'."
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-03T13:16:40.299499+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-03T13:16:47.423614+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "JKII+aD8DQCcf6OrBgWH/Q=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "##View to b-program way"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-10-03T13:31:34.412943+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-10-03T13:39:54.924803+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "lLxTLqH8DQCufPyVCf41ug=="
+										},
+										"code" : "Gt4BpTicTacToeGame compile: 'start\r\tbpRunner start' classified: #'lifecycle'.\r\t\rGt4BpTicTacToeGame compile: 'stop\r\tbpRunner stop' classified: #'lifecycle'."
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-03T13:16:09.698283+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-03T13:31:29.714902+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "ybU196D8DQCca788BgWH/Q=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "##Start game"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-03T13:39:17.656581+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-03T13:39:23.743745+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "uZM6SaH8DQCyroxiCf41ug=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "##We try it..."
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-03T13:32:16.531671+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-03T13:45:44.271353+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "wWjWMKH8DQCvWK/zCf41ug=="
+							},
+							"code" : "game := (Gt4BpTicTacToeExamples new emptyGame)\r\tloadBThread: btAcceptAnyMove named: 'acceptAnyMove.js';\r\tstart."
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-03T13:44:39.101246+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-03T13:44:43.776075+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "OyEZXaH8DQC0K6bgCf41ug=="
+							},
+							"code" : "game stop"
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-06T12:37:58.254201+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-06T13:13:03.725924+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "yB0nyNz8DQCSG+PSC8zi8Q=="
+							},
+							"code" : "bridge := (Gt4BpRunnerBridge\r\t\tfromDirectory: (FileLocator temp / 'bt-examples' / 'tictactoe') asFileReference)\r\t\tloadBProgram: btAcceptAnyMove named: 'acceptAny.js';\r\t\tonEvent: [ :event | Transcript crShow: event ];\r\t\tstart.\r\rbridge\r\tenqueueEvent: (Gt4BpEvent new \r\t\tname: 'move';\r\t\tdata: (Dictionary new\r\t\t\tat: 'player' put: 'X';\r\t\t\tat: 'row' put: 2;\r\t\t\tat: 'col' put: 2;\r\t\t\tyourself);\t\t\t\t\r\t\tyourself).\r\t\t\rbridge stop."
+						}
+					]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-03T12:52:36.484338+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-03T12:54:15.434277+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "wcb5oqD8DQCNcfWoCxrsUg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Following the proposed architecture *BVVM*, after *Behavior-View-ViewModel*, our ViewModel will act as a mediator between the game logic running as a set of independent b-threads (a b-program) and the game view."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-03T13:30:58.087226+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-03T13:30:58.087226+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "fm8pLKH8DQCuL2m1Cf41ug=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : ""
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2025-10-03T12:36:59.992771+02:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2025-10-03T12:36:59.992771+02:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "Game rules as a B-Program"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "280e286b-a0fc-0d00-968a-6d3f0021a0d9"
+	}
+}

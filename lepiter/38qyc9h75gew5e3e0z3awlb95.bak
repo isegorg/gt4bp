@@ -82,7 +82,45 @@
 				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
-					"items" : [ ]
+					"items" : [
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-02T12:24:16.740518+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-02T12:24:16.746422+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "E6CbH4z8DQC/wsmwDWe+Kg=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "[[Minimal visual infrastructure in GToolkit]]"
+						}
+					]
 				},
 				"createEmail" : {
 					"__type" : "email",
@@ -103,7 +141,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-02T10:29:16.332739+02:00"
+						"dateAndTimeString" : "2025-10-03T12:37:09.045745+02:00"
 					}
 				},
 				"uid" : {
@@ -113,44 +151,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[[Implementing Tic Tac Toe game using BP]]"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-02T12:24:16.740518+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-02T12:24:16.746422+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "E6CbH4z8DQC/wsmwDWe+Kg=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "[[Minimal visual infrastructure in GToolkit]]"
+				"string" : "[[Implementing the Tic Tac Toe game using BP]]"
 			},
 			{
 				"__type" : "textSnippet",
