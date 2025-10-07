@@ -60,6 +60,43 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-07T09:49:44.709245+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-07T09:49:46.018909+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "H0VfjO78DQC8Qn/4AQeGsQ=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "We start defining a minimal infrastructure for the game presentation, for the moment defering the game logic:"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
 									"dateAndTimeString" : "2025-10-02T10:44:32.652153+02:00"
 								}
 							},
@@ -104,7 +141,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-03T12:32:11.829009+02:00"
+						"dateAndTimeString" : "2025-10-07T09:49:41.787622+02:00"
 					}
 				},
 				"uid" : {
@@ -114,13 +151,50 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "We start defining a minimal infrastructure for the game presentation, for the moment defering the game logic:"
+				"string" : "# Minimal GUI without logic"
 			},
 			{
 				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
 					"items" : [
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-07T09:50:30.074614+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-07T09:50:31.10913+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "mn4Tj+78DQC9oHK7AQeGsQ=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Now we a very basic model representing the game's state (*ViewModel*) and its graphical representation (*View*).\n\nWe're going to define the game rules as *Behaviors* (our b-program) and to connect the already defined *ViewModel* with that b-Program running on the BPjs Runner:"
+						},
 						{
 							"__type" : "textSnippet",
 							"children" : {
@@ -146,7 +220,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-10-03T12:36:57.437718+02:00"
+									"dateAndTimeString" : "2025-10-07T09:57:52.300875+02:00"
 								}
 							},
 							"uid" : {
@@ -156,7 +230,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[[Game rules as a B-Program]]"
+							"string" : "[[Trivial logic as a B-Program]]"
 						}
 					]
 				},
@@ -179,7 +253,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-03T12:41:11.127405+02:00"
+						"dateAndTimeString" : "2025-10-07T09:57:57.754718+02:00"
 					}
 				},
 				"uid" : {
@@ -189,7 +263,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Now we a very basic model representing the game's state (*ViewModel*) and its graphical representation (*View*).\n\nWe're going to define the game rules as *Behaviors* (our b-program) and to connect the already defined *ViewModel* with that b-Program running on the BPjs Runner:"
+				"string" : "#Trivial logic as a b-program"
 			}
 		]
 	},

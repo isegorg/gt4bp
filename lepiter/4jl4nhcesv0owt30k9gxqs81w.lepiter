@@ -8,7 +8,546 @@
 				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
-					"items" : [ ]
+					"items" : [
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-02T10:45:08.063917+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-02T10:45:36.007099+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "9UDjvIr8DQCTsgvQDEfBTA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "The TicTacToe board consists of a 3x3 grid of squares or cells."
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-02T10:45:55.3901+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-07T10:00:13.074381+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "Kv6Xv4r8DQCVcrdXDEfBTA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "We begin defining a class {{gtClass:name=Gt4BpTicTacToeGame}} for the object representing the game's state, i.e. the **ViewModel** in our architectural terminology:"
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-02T11:17:00.299173+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-02T13:47:59.959498+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "jyk7L4v8DQCbxoqADEfBTA=="
+							},
+							"code" : "Object\r\tsubclass: #Gt4BpTicTacToeGame\r\tinstanceVariableNames: 'cells'\r\tclassVariableNames: ''\r\tcategory: 'Gt4Bp-TicTacToe-Core'"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-02T11:21:11.651745+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-02T11:22:26.468872+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "Tn82Pov8DQCe51riDEfBTA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "We are going to initialize this class instances with a grid of 3x3 cells:"
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-02T10:46:58.213466+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-02T11:50:24.864007+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "DoTRw4r8DQCZaQD+DEfBTA=="
+							},
+							"code" : "Gt4BpTicTacToeGame\r\tcompile: ' \rinitialize\n    super initialize.\n    cells := Array2D new: 3.\n    1 to: 3 do: [ :row |\n        1 to: 3 do: [ :col |\n            cells at: row at: col put: (self newCellAt: row col: col) ] ]'\r\tclassified: #initialization.\r\t\rGt4BpTicTacToeGame\r\tcompile: ' \rcells\r\t^ cells'\r\tclassified: #accessing."
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-02T11:22:32.707161+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-02T11:23:05.507251+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "rE0LQ4v8DQChvHnHDEfBTA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Each of these cells will be an instance of the class {{gtClass:name=Gt4BpTicTacToeCell}} defined as the following:"
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-02T13:48:37.759851+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-02T13:48:38.676339+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "ZGV7TY38DQCfuAnpCzbteA=="
+							},
+							"code" : "Object\r    subclass: #Gt4BpTicTacToeCell\t\t\t\r\tinstanceVariableNames: ''\r\tclassVariableNames: ''\r\tcategory: 'Gt4Bp-TicTacToe-Core'."
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-02T11:23:09.696809+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-02T13:48:52.017879+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "HLk/RYv8DQCjxJJNDEfBTA=="
+							},
+							"code" : "Gt4BpTicTacToeGame compile: '\rnewCellAt: aRowIndex col: aColIndex\r\t| cell |\n    cell := Gt4BpTicTacToeCell new.\n    ^ cell' classified: #'initialization - cells'.\r\t\rGt4BpTicTacToeCell compile: '\risOccupied\r\t^ false' classified: #'accessing'."
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-10-02T11:39:32.829679+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-10-02T11:39:53.159771+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "4iDZf4v8DQC0+kCHDEfBTA=="
+										},
+										"code" : "Gt4BpTicTacToeGame new"
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-02T11:33:55.315943+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-02T11:36:09.204015+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "AtnJZIv8DQCrokZSDEfBTA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Now we can instantiate a TicTacToe game instance an inspect its internal cells, as it shows the following simple code snipptet:"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-02T11:40:05.905863+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-02T11:51:48.816553+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "cdfRgYv8DQC1LIF6DEfBTA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "In order to check assertions we're going to convert the previous snippet in a very basic example for an initial empty game. We write the following example with some assertions about he game's initial state:"
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-02T13:49:06.767107+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-02T13:49:07.811777+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "4QI2T438DQCf+Bo9CzbteA=="
+							},
+							"code" : "Object\r\tsubclass: #Gt4BpTicTacToeExamples\r\tinstanceVariableNames: ''\r\tclassVariableNames: ''\r\tcategory: 'Gt4Bp-TicTacToe-Examples'."
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-02T11:41:09.694396+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-02T13:49:10.78159+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "oC2fhYv8DQC4dFDwDEfBTA=="
+							},
+							"code" : "Gt4BpTicTacToeExamples compile: '\remptyGame\r\t<gtExample>\r\t| game |\r\tgame := Gt4BpTicTacToeGame new.\r\tself assert: game cells size equals: 9.\r\tself\r\t\tassert: (game cells allSatisfy: [ :cell | cell isOccupied not ])\r\t\tdescription: ''cells should be not occupied initially''.\r\t^ game' classified: #example"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-02T11:51:59.622807+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-02T11:53:22.428509+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "JFckrIv8DQCATanbDEfBTA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "We can now check if the previous example satisfies all its assertions:"
+						},
+						{
+							"__type" : "exampleSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-02T11:52:25.101968+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-02T11:52:25.101968+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "dxThrYv8DQCB9ipCDEfBTA=="
+							},
+							"exampleSelector" : "emptyGame",
+							"previewHeight" : 150,
+							"previewShowSelector" : "gtRawFor:",
+							"exampleBehaviorName" : "Gt4BpTicTacToeExamples",
+							"codeExpanded" : true,
+							"previewExpanded" : false,
+							"noCode" : false
+						}
+					]
 				},
 				"createEmail" : {
 					"__type" : "email",
@@ -18,7 +557,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-02T10:45:08.063917+02:00"
+						"dateAndTimeString" : "2025-10-07T09:59:14.404084+02:00"
 					}
 				},
 				"editEmail" : {
@@ -29,517 +568,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-02T10:45:36.007099+02:00"
+						"dateAndTimeString" : "2025-10-07T09:59:33.19652+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "9UDjvIr8DQCTsgvQDEfBTA=="
+					"uidString" : "NCNUru78DQC/CserAQeGsQ=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "The TicTacToe board consists of a 3x3 grid of squares or cells."
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-02T10:45:55.3901+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-02T10:48:06.60752+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "Kv6Xv4r8DQCVcrdXDEfBTA=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "We begin defining a class {{gtClass:name=Gt4BpTicTacToeGame}} for the object representing the game's state, i.e. the ViewModel in our architectural terminology:"
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-02T11:17:00.299173+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-02T13:47:59.959498+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "jyk7L4v8DQCbxoqADEfBTA=="
-				},
-				"code" : "Object\r\tsubclass: #Gt4BpTicTacToeGame\r\tinstanceVariableNames: 'cells'\r\tclassVariableNames: ''\r\tcategory: 'Gt4Bp-TicTacToe-Core'"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-02T11:21:11.651745+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-02T11:22:26.468872+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "Tn82Pov8DQCe51riDEfBTA=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "We are going to initialize this class instances with a grid of 3x3 cells:"
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-02T10:46:58.213466+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-02T11:50:24.864007+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "DoTRw4r8DQCZaQD+DEfBTA=="
-				},
-				"code" : "Gt4BpTicTacToeGame\r\tcompile: ' \rinitialize\n    super initialize.\n    cells := Array2D new: 3.\n    1 to: 3 do: [ :row |\n        1 to: 3 do: [ :col |\n            cells at: row at: col put: (self newCellAt: row col: col) ] ]'\r\tclassified: #initialization.\r\t\rGt4BpTicTacToeGame\r\tcompile: ' \rcells\r\t^ cells'\r\tclassified: #accessing."
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-02T11:22:32.707161+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-02T11:23:05.507251+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "rE0LQ4v8DQChvHnHDEfBTA=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "Each of these cells will be an instance of the class {{gtClass:name=Gt4BpTicTacToeCell}} defined as the following:"
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-02T13:48:37.759851+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-02T13:48:38.676339+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "ZGV7TY38DQCfuAnpCzbteA=="
-				},
-				"code" : "Object\r    subclass: #Gt4BpTicTacToeCell\t\t\t\r\tinstanceVariableNames: ''\r\tclassVariableNames: ''\r\tcategory: 'Gt4Bp-TicTacToe-Core'."
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-02T11:23:09.696809+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-02T13:48:52.017879+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "HLk/RYv8DQCjxJJNDEfBTA=="
-				},
-				"code" : "Gt4BpTicTacToeGame compile: '\rnewCellAt: aRowIndex col: aColIndex\r\t| cell |\n    cell := Gt4BpTicTacToeCell new.\n    ^ cell' classified: #'initialization - cells'.\r\t\rGt4BpTicTacToeCell compile: '\risOccupied\r\t^ false' classified: #'accessing'."
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-02T11:33:55.315943+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-02T11:36:09.204015+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "AtnJZIv8DQCrokZSDEfBTA=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "Now we can instantiate a TicTacToe game instance an inspect its internal cells, as it shows the following simple code snipptet:"
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-02T11:39:32.829679+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-02T11:39:53.159771+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "4iDZf4v8DQC0+kCHDEfBTA=="
-				},
-				"code" : "Gt4BpTicTacToeGame new"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-02T11:40:05.905863+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-02T11:51:48.816553+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "cdfRgYv8DQC1LIF6DEfBTA=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "In order to check assertions we're going to convert the previous snippet in a very basic example for an initial empty game. We write the following example with some assertions about he game's initial state:"
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-02T13:49:06.767107+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-02T13:49:07.811777+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "4QI2T438DQCf+Bo9CzbteA=="
-				},
-				"code" : "Object\r\tsubclass: #Gt4BpTicTacToeExamples\r\tinstanceVariableNames: ''\r\tclassVariableNames: ''\r\tcategory: 'Gt4Bp-TicTacToe-Examples'."
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-02T11:41:09.694396+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-02T13:49:10.78159+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "oC2fhYv8DQC4dFDwDEfBTA=="
-				},
-				"code" : "Gt4BpTicTacToeExamples compile: '\remptyGame\r\t<gtExample>\r\t| game |\r\tgame := Gt4BpTicTacToeGame new.\r\tself assert: game cells size equals: 9.\r\tself\r\t\tassert: (game cells allSatisfy: [ :cell | cell isOccupied not ])\r\t\tdescription: ''cells should be not occupied initially''.\r\t^ game' classified: #example"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-02T11:51:59.622807+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-02T11:53:22.428509+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "JFckrIv8DQCATanbDEfBTA=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "We can now check if the previous example satisfies all its assertions:"
-			},
-			{
-				"__type" : "exampleSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-02T11:52:25.101968+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-02T11:52:25.101968+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "dxThrYv8DQCB9ipCDEfBTA=="
-				},
-				"exampleSelector" : "emptyGame",
-				"previewHeight" : 150,
-				"previewShowSelector" : "gtRawFor:",
-				"exampleBehaviorName" : "Gt4BpTicTacToeExamples",
-				"codeExpanded" : true,
-				"previewExpanded" : false,
-				"noCode" : false
+				"string" : "#A minimal GUI with Bloc"
 			},
 			{
 				"__type" : "textSnippet",
@@ -645,14 +684,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-10-06T14:15:35.475046+02:00"
+									"dateAndTimeString" : "2025-10-07T10:29:12.407163+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "w5A/5Iv8DQCuqx0MC2T9XQ=="
 							},
-							"code" : "Object\r    subclass: #Gt4BpTicTacToeCell\t\t\t\r\tinstanceVariableNames: 'cellView'\r\tclassVariableNames: ''\r\tcategory: 'Gt4Bp-TicTacToe-Core'.\r\t\rGt4BpTicTacToeCell compile: '\rcreateCellView\r\t^ BrButton new\r\t\tborder: (BlBorderBuilder new\r\t\t\t\tpaint: Color lightGray;\r\t\t\t\twidth: 2;\r\t\t\t\tbuild);\r\t\tconstraintsDo: [ :c | \r\t\t\tc horizontal matchParent.\r\t\t\tc vertical matchParent ]' classified: #view.\r\t\t\t\rGt4BpTicTacToeCell compile: '\rinitialize\r    super initialize.\r\tcellView := self createCellView' classified: #initialization.\r\t\rGt4BpTicTacToeCell compile: '\rasElement\r\t^ cellView' classified: #converting."
+							"code" : "Object\r    subclass: #Gt4BpTicTacToeCell\t\t\t\r\tinstanceVariableNames: 'cellView'\r\tclassVariableNames: ''\r\tcategory: 'Gt4Bp-TicTacToe-Core'.\r\t\rGt4BpTicTacToeCell compile: '\rcreateCellView\r\t| button |\r\tbutton := BrButton new\r\t\t\tborder: (BlBorderBuilder new\r\t\t\t\t\tpaint: Color darkGray;\r\t\t\t\t\twidth: 2;\r\t\t\t\t\tbuild);\r\t\t\tconstraintsDo: [ :c | \r\t\t\t\tc horizontal matchParent.\r\t\t\t\tc vertical matchParent. ];\r\t\t\tyourself.\r\t^ button' classified: #view.\r\t\t\t\rGt4BpTicTacToeCell compile: '\rinitialize\r    super initialize.\r\tcellView := self createCellView' classified: #initialization.\r\t\rGt4BpTicTacToeCell compile: '\rasElement\r\t^ cellView' classified: #converting."
 						},
 						{
 							"__type" : "textSnippet",
@@ -716,14 +755,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-10-02T12:28:29.93867+02:00"
+									"dateAndTimeString" : "2025-10-07T10:30:01.942665+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "770/BYz8DQC1cyTwC2T9XQ=="
 							},
-							"code" : "Gt4BpTicTacToeGame compile: '\rasElement\r\t^ BlElement new\r\t\t\tlayout: (BlGridLayout new columnCount: 3);\r\t\t\tsize: 300 @ 300;\r\t\t\tbackground: Color lightBlue;\r\t\t\taddChildren: (cells collect: #asElement) flattened;\r\t\t\tyourself.\r' classified: #view"
+							"code" : "Gt4BpTicTacToeGame compile: '\rasElement\r\t^ BlElement new\r\t\t\tlayout: (BlGridLayout new columnCount: 3);\r\t\t\tsize: 300 @ 300;\r\t\t\tbackground: Color veryVeryLightGray;\r\t\t\taddChildren: (cells collect: #asElement) flattened;\r\t\t\tyourself.\r' classified: #converting"
 						},
 						{
 							"__type" : "textSnippet",
@@ -1077,7 +1116,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-02T13:50:29.158093+02:00"
+						"dateAndTimeString" : "2025-10-07T09:53:05.644283+02:00"
 					}
 				},
 				"uid" : {
@@ -1087,7 +1126,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "#Game Views"
+				"string" : "#Game Custom Views"
 			}
 		]
 	},

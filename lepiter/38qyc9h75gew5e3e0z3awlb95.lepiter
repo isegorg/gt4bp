@@ -145,7 +145,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-10-03T12:46:13.70508+02:00"
+									"dateAndTimeString" : "2025-10-07T09:57:52.304822+02:00"
 								}
 							},
 							"uid" : {
@@ -155,7 +155,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[[Game rules as a B-Program]]"
+							"string" : "[[Trivial logic as a B-Program]]"
 						}
 					]
 				},
