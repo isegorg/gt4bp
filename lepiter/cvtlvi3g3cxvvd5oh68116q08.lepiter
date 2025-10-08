@@ -108,14 +108,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-10-07T10:02:25.31261+02:00"
+									"dateAndTimeString" : "2025-10-07T16:49:42.120234+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "8cupgqD8DQCfT6eSACGg2Q=="
 							},
-							"code" : "btAcceptAnyMove := 'bp.registerBThread(\"AcceptAnyMove\", function() {\n    var anyMoveEvents = bp.EventSet(\"anyMoveEvents\", function (evt) {\n        return (evt.data == null) ? false : evt.name == \"move\";\n    });\n    while (true) {\n        var evt = bp.sync({waitFor: anyMoveEvents});\n\t    bp.sync({request: bp.Event(\"moveAccepted\", evt.data)});\n    }\n});'"
+							"code" : "btAcceptAnyMove := 'bp.registerBThread(\"AcceptAnyMove\", function() {\n    var anyMoveEvents = bp.EventSet(\"anyMoveEvents\", function (evt) {\r        return (evt.data == null) ? false : evt.name == \"move\";\n    });\n    while (true) {\n        var evt = bp.sync({waitFor: anyMoveEvents});\n\t    bp.sync({request: bp.Event(\"moveAccepted\", evt.data)});\n    }\n});'"
 						},
 						{
 							"__type" : "textSnippet",

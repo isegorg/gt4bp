@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-09-30T11:21:24.166669+02:00"
+						"dateAndTimeString" : "2025-10-07T16:00:13.152716+02:00"
 					}
 				},
 				"uid" : {
@@ -156,6 +156,43 @@
 								"__type" : "textStyle"
 							},
 							"string" : "[[Trivial logic as a B-Program]]"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-08T12:01:16.651105+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-08T12:01:16.656921+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "53JPgAT9DQCYxB1cBsaFdA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "[[Implementing the game rules as b-threads]]"
 						}
 					]
 				},

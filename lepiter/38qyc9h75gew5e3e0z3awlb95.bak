@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-09-30T11:21:24.166669+02:00"
+						"dateAndTimeString" : "2025-10-07T16:00:13.152716+02:00"
 					}
 				},
 				"uid" : {
@@ -145,7 +145,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-10-03T12:46:13.70508+02:00"
+									"dateAndTimeString" : "2025-10-07T09:57:52.304822+02:00"
 								}
 							},
 							"uid" : {
@@ -155,7 +155,44 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[[Game rules as a B-Program]]"
+							"string" : "[[Trivial logic as a B-Program]]"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-08T12:01:11.626876+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-08T12:01:13.419194+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "53JPgAT9DQCYxB1cBsaFdA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "[["
 						}
 					]
 				},

@@ -108,14 +108,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-10-07T10:02:25.31261+02:00"
+									"dateAndTimeString" : "2025-10-07T16:49:42.120234+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "8cupgqD8DQCfT6eSACGg2Q=="
 							},
-							"code" : "btAcceptAnyMove := 'bp.registerBThread(\"AcceptAnyMove\", function() {\n    var anyMoveEvents = bp.EventSet(\"anyMoveEvents\", function (evt) {\n        return (evt.data == null) ? false : evt.name == \"move\";\n    });\n    while (true) {\n        var evt = bp.sync({waitFor: anyMoveEvents});\n\t    bp.sync({request: bp.Event(\"moveAccepted\", evt.data)});\n    }\n});'"
+							"code" : "btAcceptAnyMove := 'bp.registerBThread(\"AcceptAnyMove\", function() {\n    var anyMoveEvents = bp.EventSet(\"anyMoveEvents\", function (evt) {\r        return (evt.data == null) ? false : evt.name == \"move\";\n    });\n    while (true) {\n        var evt = bp.sync({waitFor: anyMoveEvents});\n\t    bp.sync({request: bp.Event(\"moveAccepted\", evt.data)});\n    }\n});'"
 						},
 						{
 							"__type" : "textSnippet",
@@ -1021,14 +1021,14 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-10-07T12:31:53.277635+02:00"
+												"dateAndTimeString" : "2025-10-07T12:32:10.287669+02:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
 											"uidString" : "Hhfzn/D8DQC+y1vjD+Wivg=="
 										},
-										"code" : "Gt4BpTicTacToeExamples compile: '\rnewScripter\r\t<gtExample>\r\t<return: #BlScripter>\r\t^ BlScripter new' classified: #example.\r\t\rGt4BpTicTacToeExamples compile: '\rscripterWithTrivialLogicGame\r\t<gtExample>\r\t<return: #BlScripter>\r\t| game aScripter |\r\tgame := self trivialLogicGame.\r\taScripter := self newScripter.\r\taScripter\r\t\tmodel: game; \r\t\telement: game asElement.\r\taScripter\t\t\r\t\tcheckStep: [ :s | \r\t\t\ts label: ''Check that all cells are empty'';\r\t\t\t\tsatisfies: [ :buttons | buttons allSatisfy: [ :button | button label asString = '''' ] ];\r\t\t\t\tonSpaceRoot;\r\t\t\t\t// BrButton ].\r\t^ aScripter' classified: #example.\r\t\rGt4BpTicTacToeExamples compile: '\rscripterWithTrivialLogicGameClickCells\r\t<gtExample>\r\t<return: #BlScripter>\r\t| aScripter |\r\taScripter := self scripterWithTrivialLogicGame.\r\t[ aScripter\r\t\tdoStep: [ :s | \r\t\t\ts\r\t\t\t\tlabel: ''Starts the game'';\r\t\t\t\tblock: [ :game | game start ];\r\t\t\t\tonModel ].\r\taScripter\r\t\tclickStep: [ :s | \r\t\t\ts\r\t\t\t\tlabel: ''Click on the first cell'';\r\t\t\t\t// BrButton;\r\t\t\t\t@ 1 ].\r\t\t\t\t\r\taScripter\r\t\tclickStep: [ :s | \r\t\t\ts\r\t\t\t\tlabel: ''Click on the nineth cell'';\r\t\t\t\t// BrButton;\r\t\t\t\t@ 9 ].\r\r\taScripter wait\r\t\tlabel: ''Waits for the state is updated'';\r\t\tforElementCondition: [ :gameElement | \r\t\t\t\t(gameElement children\r\t\t\t\t\tselect: [ :eachCell | (eachCell label asString = '''') not ]) size = 2 ]\r\t\t\ttimeout: 2 seconds;\r\t\tonSpaceRoot;\r\t\tonChildAt: 1;\r\t\tplay.\r\r\taScripter\r\t\tcheckStep: [ :s | \r\t\t\ts\r\t\t\t\tlabel: ''Check that the clicked cell is labeled with X'';\r\t\t\t\tvalue: [ :button | button label asString ] equals: [ ''X'' ];\r\t\t\t\t// BrButton;\r\t\t\t\t@ 1 ].\r\t\t\t\t\r\r\taScripter\r\t\tcheckStep: [ :s | \r\t\t\ts\r\t\t\t\tlabel: ''Check that the clicked cell is labeled with X'';\r\t\t\t\tvalue: [ :button | button label asString ] equals: [ ''X'' ];\r\t\t\t\t// BrButton;\r\t\t\t\t@ 1 ] \r\t] ensure: [ \r\t\taScripter\r\t\t\tdoStep: [ :s | \r\t\t\t\ts\r\t\t\t\t\tlabel: ''Stop the game'';\r\t\t\t\t\tblock: [ :game | game stop ];\r\t\t\t\t\tonModel ] ].\r\t^ aScripter' classified: #example."
+										"code" : "Gt4BpTicTacToeExamples compile: '\rnewScripter\r\t<gtExample>\r\t<return: #BlScripter>\r\t^ BlScripter new' classified: #example.\r\t\rGt4BpTicTacToeExamples compile: '\rscripterWithTrivialLogicGame\r\t<gtExample>\r\t<return: #BlScripter>\r\t| game aScripter |\r\tgame := self trivialLogicGame.\r\taScripter := self newScripter.\r\taScripter\r\t\tmodel: game; \r\t\telement: game asElement.\r\taScripter\t\t\r\t\tcheckStep: [ :s | \r\t\t\ts label: ''Check that all cells are empty'';\r\t\t\t\tsatisfies: [ :buttons | buttons allSatisfy: [ :button | button label asString = '''' ] ];\r\t\t\t\tonSpaceRoot;\r\t\t\t\t// BrButton ].\r\t^ aScripter' classified: #example.\r\t\rGt4BpTicTacToeExamples compile: '\rscripterWithTrivialLogicGameClickCells\r\t<gtExample>\r\t<return: #BlScripter>\r\t| aScripter |\r\taScripter := self scripterWithTrivialLogicGame.\r\t[ aScripter\r\t\tdoStep: [ :s | \r\t\t\ts\r\t\t\t\tlabel: ''Starts the game'';\r\t\t\t\tblock: [ :game | game start ];\r\t\t\t\tonModel ].\r\taScripter\r\t\tclickStep: [ :s | \r\t\t\ts\r\t\t\t\tlabel: ''Click on the first cell'';\r\t\t\t\t// BrButton;\r\t\t\t\t@ 1 ].\r\t\t\t\t\r\taScripter\r\t\tclickStep: [ :s | \r\t\t\ts\r\t\t\t\tlabel: ''Click on the nineth cell'';\r\t\t\t\t// BrButton;\r\t\t\t\t@ 9 ].\r\r\taScripter wait\r\t\tlabel: ''Waits for the state is updated'';\r\t\tforElementCondition: [ :gameElement | \r\t\t\t\t(gameElement children\r\t\t\t\t\tselect: [ :eachCell | (eachCell label asString = '''') not ]) size = 2 ]\r\t\t\ttimeout: 2 seconds;\r\t\tonSpaceRoot;\r\t\tonChildAt: 1;\r\t\tplay.\r\r\taScripter\r\t\tcheckStep: [ :s | \r\t\t\ts\r\t\t\t\tlabel: ''Check that the first cell is labeled with X'';\r\t\t\t\tvalue: [ :button | button label asString ] equals: [ ''X'' ];\r\t\t\t\t// BrButton;\r\t\t\t\t@ 1 ].\r\t\t\t\t\r\taScripter\r\t\tcheckStep: [ :s | \r\t\t\ts\r\t\t\t\tlabel: ''Check that the nineth cell is labeled with X'';\r\t\t\t\tvalue: [ :button | button label asString ] equals: [ ''X'' ];\r\t\t\t\t// BrButton;\r\t\t\t\t@ 9 ] \r\t] ensure: [ \r\t\taScripter\r\t\t\tdoStep: [ :s | \r\t\t\t\ts\r\t\t\t\t\tlabel: ''Stop the game'';\r\t\t\t\t\tblock: [ :game | game stop ];\r\t\t\t\t\tonModel ] ].\r\t^ aScripter' classified: #example."
 									},
 									{
 										"__type" : "textSnippet",

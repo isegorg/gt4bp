@@ -1,0 +1,943 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-07T16:21:19.485232+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-07T16:22:30.415142+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "j8ucAvT8DQCng/nABsRuTA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "The Tic Tac Toe game is very simple and it requires only a few rules to be implemented:"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-07T16:24:40.5794+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-07T16:25:34.131971+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "2PEpC/T8DQCp1PoLBsRuTA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "We define the following b-thread to manage the alterning player turns."
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-07T16:25:44.173765+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-07T16:51:22.972738+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "WjwkFPT8DQCuM91lBsRuTA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "The b-thread will control which player is moving so it's not required that the GUI sends the *player* value inside the *move* event's data."
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-07T16:29:47.8252+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-07T16:58:10.333296+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "v78RI/T8DQCyygHNBsRuTA=="
+							},
+							"code" : "btAlterningTurns := 'bp.registerBThread(\"TurnManager\", function(){\n    var moveES = bp.EventSet(\"move\", function(evt) {\n\t    return (evt.data == null) ? false : evt.name == \"move\";\n    });\n    while (true) {\n        // X''s turn\n        var xMove = bp.sync({ waitFor: moveES });\n        bp.sync({ request:bp.Event(\"moveAccepted\",\n            { \"player\": \"X\",\n\t          \"row\": xMove.data.row,\n\t          \"col\": xMove.data.col })\n        });\n\n        // O''s turn\n        var oMove = bp.sync({ waitFor: moveES });\n        bp.sync({ request:bp.Event(\"moveAccepted\",\n            { \"player\": \"O\",\n\t          \"row\": oMove.data.row,\n\t          \"col\": oMove.data.col })\n        });\n    }\n});'"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-10-07T16:37:05.699187+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-10-07T16:37:21.720899+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "pywrPfT8DQCsUe8oAiCXkA=="
+										},
+										"code" : "game := (Gt4BpTicTacToeExamples new emptyGame)\r\tloadBThread: btAlterningTurns named: 'alterningTurns.js';\r\tstart."
+									},
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-10-07T16:37:28.123538+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-10-07T16:37:30.40009+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "81eBPvT8DQCtCo5eAiCXkA=="
+										},
+										"code" : "game stop"
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-07T17:26:56.020844+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-07T17:27:12.040848+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "IN1n7/T8DQC6uXObCyEUPA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "We can test the logic with the following snippet:"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-10-07T17:33:22.000242+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-10-07T17:46:55.188678+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "/3BpBvX8DQC81oryCyEUPA=="
+										},
+										"code" : "Gt4BpTicTacToeExamples compile: '\rbtAlterningTurns\r\t^ ''bp.registerBThread(\"TurnManager\", function(){\n    var moveES = bp.EventSet(\"move\", function(evt) {\n\t    return (evt.data == null) ? false : evt.name == \"move\";\n    });\n    while (true) {\n        // X turn\n        var xMove = bp.sync({ waitFor: moveES });\n        bp.sync({ request:bp.Event(\"moveAccepted\",\n            { \"player\": \"X\",\n\t          \"row\": xMove.data.row,\n\t          \"col\": xMove.data.col })\n        });\n\n        // O turn\n        var oMove = bp.sync({ waitFor: moveES });\n        bp.sync({ request:bp.Event(\"moveAccepted\",\n            { \"player\": \"O\",\n\t          \"row\": oMove.data.row,\n\t          \"col\": oMove.data.col })\n        });\n    }\n});''' classified: #'example - support'.\r\rGt4BpTicTacToeExamples compile: '\ralterningTurnsGame\r\t<gtExample>\r\t| game |\r\tgame := self emptyGame.\r\tgame loadBThread: self btAlterningTurns named: ''test-AlterningTurns.js''.\r\t^ game' classified: #example.\r\t\rGt4BpTicTacToeExamples compile: '\rscripterWithAlterningTurnsGame\r\t<gtExample>\r\t<return: #BlScripter>\r\t| game aScripter |\r\tgame := self alterningTurnsGame.\r\taScripter := self newScripter.\r\taScripter\r\t\tmodel: game; \r\t\telement: game asElement.\r\t\t\r\t[ aScripter\r\t\tdoStep: [ :s | \r\t\t\ts\r\t\t\t\tlabel: ''Starts the game'';\r\t\t\t\tblock: [ :model | model start ];\r\t\t\t\tonModel ].\r\taScripter\r\t\tclickStep: [ :s | \r\t\t\ts\r\t\t\t\tlabel: ''Click on the first cell'';\r\t\t\t\t// BrButton;\r\t\t\t\t@ 1 ].\r\t\t\t\t\r\taScripter\r\t\tclickStep: [ :s | \r\t\t\ts\r\t\t\t\tlabel: ''Click on the sixth cell'';\r\t\t\t\t// BrButton;\r\t\t\t\t@ 6 ].\r\r\taScripter wait\r\t\tlabel: ''Waits for the state is updated'';\r\t\tforElementCondition: [ :gameElement | \r\t\t\t\t(gameElement children\r\t\t\t\t\tselect: [ :eachCell | (eachCell label asString = '''') not ]) size = 2 ]\r\t\t\ttimeout: 2 seconds;\r\t\tonSpaceRoot;\r\t\tonChildAt: 1;\r\t\tplay.\r\r\taScripter\r\t\tcheckStep: [ :s | \r\t\t\ts\r\t\t\t\tlabel: ''Check that the first cell is labeled with X'';\r\t\t\t\tvalue: [ :button | button label asString ] equals: [ ''X'' ];\r\t\t\t\t// BrButton;\r\t\t\t\t@ 1 ].\r\t\t\t\t\r\taScripter\r\t\tcheckStep: [ :s | \r\t\t\ts\r\t\t\t\tlabel: ''Check that the sixth cell is labeled with O'';\r\t\t\t\tvalue: [ :button | button label asString ] equals: [ ''O'' ];\r\t\t\t\t// BrButton;\r\t\t\t\t@ 6 ] \r\t] ensure: [ \r\t\taScripter\r\t\t\tdoStep: [ :s | \r\t\t\t\ts\r\t\t\t\t\tlabel: ''Stop the game'';\r\t\t\t\t\tblock: [ :model | model stop ];\r\t\t\t\t\tonModel ] ].\r\t\t\r\t^ aScripter' classified: #example."
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-10-07T17:44:30.86384+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-10-07T17:44:52.752641+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "n31HLvX8DQC/LckiCyEUPA=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "We can check the example we've just created:"
+									},
+									{
+										"__type" : "exampleSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-10-07T17:45:16.010893+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-10-07T17:45:16.010893+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "q1/4MPX8DQCAIdO3CyEUPA=="
+										},
+										"exampleSelector" : "scripterWithAlterningTurnsGame",
+										"previewHeight" : 200,
+										"previewShowSelector" : "gtViewsFor:",
+										"exampleBehaviorName" : "Gt4BpTicTacToeExamples",
+										"codeExpanded" : true,
+										"previewExpanded" : false,
+										"noCode" : false
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-07T17:27:33.978395+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-07T17:33:18.073432+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "dgWr8fT8DQC7sOc3CyEUPA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Or we can convert it into an example with assertions:"
+						}
+					]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-07T16:22:52.244439+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-07T16:24:02.247452+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "RkRjCfT8DQCpSPwQBsRuTA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "##Alterning player turns"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-07T18:01:07.313976+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-08T11:37:35.22191+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "eFx8S/X8DQCCFrTeCyEUPA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "We need to avoid further marking of a square already marked by X or O.\n\nWe can define **a b-thread for each square** that first waits for a move (X or O) in that position and then blocks any other move to the same position:"
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-07T18:02:06.132177+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-08T11:36:10.999796+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "7JstbfX8DQCEhStYCyEUPA=="
+							},
+							"code" : "squareTakenBlock := [ :row :col | \r\t'bp.registerBThread(\"SquareTaken(' , row , ',' , col\r\t\t, ')\", function() {\n    var moveToSquareES = bp.EventSet(\"moveToSquare\", function(evt) {\n        return (evt.name == \"move\") &&\n            (evt.data.row == '\r\t\t, row , ') &&\n            (evt.data.col == ' , col\r\t\t, ');\n    });\n    bp.sync({ waitFor: moveToSquareES });\n    bp.sync({ block: moveToSquareES });\n});' ].\r\rbtSquareTaken := ''.\r\r1 to: 3 do: [ :row | \r\t1 to: 3 do: [ :col | \r\t\tbtSquareTaken := btSquareTaken , \r\t\t\t(squareTakenBlock value: row asString value: col asString) , \r\t\t\tString crlf,\r\t\t\tString crlf ] ].\r\rbtSquareTaken"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-10-07T20:24:57.671247+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-10-07T20:25:23.111873+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "JusUbPf8DQC1+dEpDIWGoQ=="
+										},
+										"code" : "game := (Gt4BpTicTacToeExamples new alterningTurnsGame)\r\tloadBThread: btSquareTaken named: 'squareTaken.js';\r\tstart."
+									},
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-10-07T20:25:34.961288+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-10-07T20:25:37.802741+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "OOtNbvf8DQC22uAGDIWGoQ=="
+										},
+										"code" : "game stop"
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-08T11:37:47.605993+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-08T11:39:22.781248+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "6s2fLAT9DQCBJcTPCqcQZw=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "We now check the game working with the alternating turns logic and the new 9 b-threads  (one per each square) we've just defined:"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-10-08T11:42:17.354255+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-10-08T11:43:01.913823+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "edKzPAT9DQCRU5VmD/jyfQ=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "First, we write a supporting method to define the b-thread Javascript source code, as we did in a previous snippets:"
+									},
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-10-08T11:43:08.621349+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-10-08T11:47:51.567401+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "xxvCPwT9DQCUaK+5D/jyfQ=="
+										},
+										"code" : "Gt4BpTicTacToeExamples compile: '\rbtSquareTaken\r\t| squareTakenBlock btSquareTakenCode | \r\tsquareTakenBlock := [ :row :col | \r\t\t''bp.registerBThread(\"SquareTaken('' , row , '','' , col , '')\", function() {\n\t    var moveToSquareES = bp.EventSet(\"moveToSquare\", function(evt) {\n\t        return (evt.name == \"move\") &&\n\t            (evt.data.row == '' , row , '') &&\n\t            (evt.data.col == '' , col , '');\n\t    });\n\t    bp.sync({ waitFor: moveToSquareES });\n\t    bp.sync({ block: moveToSquareES });\n\t});'' ].\r\r\tbtSquareTakenCode := ''''.\r\t\r\t1 to: 3 do: [ :row | \r\t\t1 to: 3 do: [ :col | \r\t\t\tbtSquareTakenCode := btSquareTakenCode , \r\t\t\t\t(squareTakenBlock value: row asString value: col asString) , \r\t\t\t\tString crlf,\r\t\t\t\tString crlf ] ].\r\t\t\t\r\t^ btSquareTakenCode' classified: #'example - support'."
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-10-08T11:48:12.304174+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-10-08T11:53:52.660659+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "I/HbUQT9DQCXhBhPD/jyfQ=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "Now we can write an example that returns the game with the rules we have implemented until now, i.e. alterning turns and square taken:"
+									},
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-10-08T11:49:07.825161+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-10-08T11:50:06.589927+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "cR0rVQT9DQCagWU+D/jyfQ=="
+										},
+										"code" : "Gt4BpTicTacToeExamples compile: '\ralterningAndSquareTakenGame\r\t<gtExample>\r\t| game |\r\tgame := self alterningTurnsGame.\r\tgame loadBThread: self btSquareTaken named: ''test-SquareTaken.js''.\r\t^ game' classified: #example."
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-10-08T11:54:06.173033+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-10-08T11:55:16.005341+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "Lo3zZgT9DQCSsWUJBsaFdA=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "Finally, in order to check the expected behavior we write an example using the {{gtClass:name=BlScripter}} to control the game's UI and check its state:"
+									},
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-10-08T11:55:21.681852+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-10-08T11:58:22.622727+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "u7lzawT9DQCWEqaaBsaFdA=="
+										},
+										"code" : "Gt4BpTicTacToeExamples compile: '\rscripterWithSquareTakenGame\r\t<gtExample>\r\t<return: #BlScripter>\r\t| game aScripter |\r\tgame := self alterningAndSquareTakenGame.\r\taScripter := self newScripter.\r\taScripter\r\t\tmodel: game; \r\t\telement: game asElement.\r\t\t\r\t[ aScripter\r\t\tdoStep: [ :s | \r\t\t\ts\r\t\t\t\tlabel: ''Starts the game'';\r\t\t\t\tblock: [ :model | model start ];\r\t\t\t\tonModel ].\r\taScripter\r\t\tclickStep: [ :s | \r\t\t\ts\r\t\t\t\tlabel: ''Click on the first cell'';\r\t\t\t\t// BrButton;\r\t\t\t\t@ 1 ].\r\t\t\t\t\r\taScripter\r\t\tclickStep: [ :s | \r\t\t\ts\r\t\t\t\tlabel: ''Click again on the first cell'';\r\t\t\t\t// BrButton;\r\t\t\t\t@ 1 ].\r\r\taScripter wait\r\t\tlabel: ''Waits for the state is updated'';\r\t\tforElementCondition: [ :gameElement | \r\t\t\t\t(gameElement children\r\t\t\t\t\tselect: [ :eachCell | (eachCell label asString = '''') not ]) size = 1 ]\r\t\t\ttimeout: 2 seconds;\r\t\tonSpaceRoot;\r\t\tonChildAt: 1;\r\t\tplay.\r\r\taScripter\r\t\tcheckStep: [ :s | \r\t\t\ts\r\t\t\t\tlabel: ''Check that the first cell is labeled with X'';\r\t\t\t\tvalue: [ :button | button label asString ] equals: [ ''X'' ];\r\t\t\t\t// BrButton;\r\t\t\t\t@ 1 ].\r\t] ensure: [ \r\t\taScripter\r\t\t\tdoStep: [ :s | \r\t\t\t\ts\r\t\t\t\t\tlabel: ''Stop the game'';\r\t\t\t\t\tblock: [ :model | model stop ];\r\t\t\t\t\tonModel ] ].\r\t\t\r\t^ aScripter' classified: #example."
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-08T11:40:39.440092+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-08T11:42:12.533775+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "2sjdNgT9DQCFISQECqcQZw=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "As always, we convert the previous test into new examples with automatic assertions."
+						}
+					]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-07T17:51:50.074219+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-07T18:00:56.498587+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "n051SPX8DQCBfseoCyEUPA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "##Avoid marked cells"
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2025-10-07T16:20:43.227879+02:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2025-10-08T11:40:28.437697+02:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "Implementing the game rules as b-threads"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "78dd9b02-f4fc-0d00-a782-f39206c46e4c"
+	}
+}
