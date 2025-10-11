@@ -361,7 +361,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-10-09T18:04:53.904566+02:00"
+												"dateAndTimeString" : "2025-10-09T19:45:17.296941+02:00"
 											}
 										},
 										"editEmail" : {
@@ -372,17 +372,17 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-10-09T18:04:53.904566+02:00"
+												"dateAndTimeString" : "2025-10-09T19:45:36.931013+02:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
-											"uidString" : "q17csh39DQCJ1v8NDgJinQ=="
+											"uidString" : "wRDiGR/9DQCjAdUaCjcmGQ=="
 										},
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : ""
+										"string" : "[[R"
 									}
 								]
 							},
@@ -405,7 +405,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-10-09T17:46:00.294817+02:00"
+									"dateAndTimeString" : "2025-10-09T18:16:51.759751+02:00"
 								}
 							},
 							"uid" : {
@@ -415,7 +415,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[[Implementing the game rules as b-threads]]"
+							"string" : "[[Game rules as b-threads]]"
 						}
 					]
 				},

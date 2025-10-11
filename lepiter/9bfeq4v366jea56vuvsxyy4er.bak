@@ -8,217 +8,6 @@
 				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-09T18:11:02.763556+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-09T18:11:02.763556+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "P7jYyB39DQCLXfnYDgJinQ=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : ""
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [
-						{
-							"__type" : "pharoSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-10-09T18:12:58.620939+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-10-09T18:12:58.620939+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "NZDAzx39DQCMcrLRDgJinQ=="
-							},
-							"code" : "btDraw := 'bp.registerBThread(\"btDraw\", function() {\r    var moveAcceptedES = bp.EventSet(\"moveAcceptedES\", function(e) {\r        return e.name == \"moveAccepted\";\r    });\r    for (var i = 1; i <= 9; i++) { \r        bp.sync({ waitFor: moveAcceptedES }); \r    }\r    bp.sync({ request: bp.Event(\"gameOver\") });\r});'"
-						},
-						{
-							"__type" : "pharoSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-10-09T18:12:58.621041+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-10-09T18:12:58.621041+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "e5DAzx39DQCMc8gSDgJinQ=="
-							},
-							"code" : "Gt4BpTicTacToeGame compile: 'handleBPEvent: event\r\tevent name = ''moveAccepted''\r\t\tifTrue: [ | eventData player |\r\t\t\teventData := event data.\r\t\t\tplayer := eventData at: ''player''.\r\t\t\tself\r\t\t\t\tupdateCellAt: (eventData at: ''row'')\r\t\t\t\tcol: (eventData at: ''col'')\r\t\t\t\tplayer: player\t.\r\t\t\tself updateMessage: ''Move '' , player , '' Accepted'' ].\r\tevent name = ''gameOver''\r\t\tifTrue: [\r\t\t    event data \r\t\t        ifNotNil: [ self updateMessage: ''Game Over: '' , (event data at: ''winner'') , '' wins!'' ] \r\t\t    \tifNil: [ self updateMessage: ''Game Over: Draw'' ]\r\t\t\t ]' classified: #'event - handling'."
-						},
-						{
-							"__type" : "pharoSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-10-09T18:12:58.621055+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-10-09T18:12:58.621055+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "g5DAzx39DQCMdEEfDgJinQ=="
-							},
-							"code" : "game := Gt4BpTicTacToeExamples new alterningAndSquareTakenAndWinnerGame\r\tloadBThread: btGameOver named: 'bt-gameover.js';\r\tloadBThread: btDraw named: 'bt-draw.js';\r\tstart."
-						},
-						{
-							"__type" : "pharoSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-10-09T18:12:58.621061+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-10-09T18:12:58.621061+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "iJDAzx39DQCMdZWlDgJinQ=="
-							},
-							"code" : "game stop\t\t"
-						}
-					]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-09T18:12:58.620827+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-09T18:12:58.620827+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "yI/Azx39DQCMcegQDgJinQ=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "The game finishes with a draw if all squares has been occupied and any player has won."
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
 					"items" : [
 						{
 							"__type" : "pharoSnippet",
@@ -245,14 +34,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-10-09T18:14:07.28698+02:00"
+									"dateAndTimeString" : "2025-10-09T18:56:39.724198+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "6lLY0x39DQCMjv04DgJinQ=="
 							},
-							"code" : "btDraw := 'bp.registerBThread(\"btDraw\", function() {\r    var moveAcceptedES = bp.EventSet(\"moveAcceptedES\", function(e) {\r        return e.name == \"moveAccepted\";\r    });\r    for (var i = 1; i <= 9; i++) { \r        bp.sync({ waitFor: moveAcceptedES }); \r    }\r    bp.sync({ request: bp.Event(\"gameOver\") });\r});'"
+							"code" : "btDraw := 'bp.registerBThread(\"btDraw\", function() {\r    var moveAcceptedES = bp.EventSet(\"moveAcceptedES\", function(e) {\r        return e.name == \"moveAccepted\";\r    });\r    for (var i = 1; i <= 9; i++) { \r        bp.sync({ waitFor: moveAcceptedES }); \r    }\r    bp.sync({ request: bp.Event(\"gameOver\") });\r});'\t\t\t"
 						},
 						{
 							"__type" : "pharoSnippet",
@@ -313,14 +102,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-10-09T18:14:07.287115+02:00"
+									"dateAndTimeString" : "2025-10-09T18:50:27.625895+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "UFPY0x39DQCMkDKeDgJinQ=="
 							},
-							"code" : "game := Gt4BpTicTacToeExamples new alterningAndSquareTakenAndWinnerGame\r\tloadBThread: btGameOver named: 'bt-gameover.js';\r\tloadBThread: btDraw named: 'bt-draw.js';\r\tstart."
+							"code" : "game := Gt4BpTicTacToeExamples new alterningAndSquareTakenAndWinnerAndGameOverGame\r\tloadBThread: btDraw named: 'bt-draw.js';\r\tstart."
 						},
 						{
 							"__type" : "pharoSnippet",
@@ -347,14 +136,348 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-10-09T18:14:07.287122+02:00"
+									"dateAndTimeString" : "2025-10-09T19:17:28.875551+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "VVPY0x39DQCMkTyKDgJinQ=="
 							},
-							"code" : "game stop\t\t"
+							"code" : "game stop"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-09T19:17:19.852064+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-09T19:32:39.033887+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "Q0bmtR79DQC7LhJqDtujPw=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "We're going to write an example with the corresponding assertions  to check if a game ends with draw:"
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-09T19:18:00.488222+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-09T19:40:51.266635+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "TlVSuB79DQC80JX5DtujPw=="
+							},
+							"code" : "Gt4BpTicTacToeExamples compile: '\rbtDraw\r    <gtExample>\r    ^ ''bp.registerBThread(\"btDraw\", function() {\r    var moveAcceptedES = bp.EventSet(\"moveAcceptedES\", function(e) {\r        return e.name == \"moveAccepted\";\r    });\r    for (var i = 1; i <= 9; i++) { \r        bp.sync({ waitFor: moveAcceptedES }); \r    }\r    bp.sync({ request: bp.Event(\"gameOver\") });\r});''' classified: #'example - support'.\r\rGt4BpTicTacToeExamples compile: '\rallRulesGame\r\t<gtExample>\r    ^ self alterningAndSquareTakenAndWinnerAndGameOverGame\r\t\tloadBThread: self btDraw named: ''test-Draw.js'';\r\t    yourself' classified: #example.\r\t    \rGt4BpTicTacToeExamples compile: '\rscripterWithAllRulesGameCheckDraw\r\t<gtExample>\r\t<return: #BlScripter>\r\t| game aScripter |\r\tgame := self allRulesGame.\r\taScripter := self newScripter.\r\taScripter\r\t\tmodel: game; \r\t\telement: game asElement.\r\t\t\r\t[ aScripter\r\t\tdoStep: [ :s | \r\t\t\ts\r\t\t\t\tlabel: ''Starts the game'';\r\t\t\t\tblock: [ :model | model start ];\r\t\t\t\tonModel ].\r\taScripter\r\t\tclickStep: [ :s | \r\t\t\ts\r\t\t\t\tlabel: ''X(2, 2)'';\r\t\t\t\t// BrButton;\r\t\t\t\t@ 5 ].\r\t\t\t\t\r\taScripter\r\t\tclickStep: [ :s | \r\t\t\ts\r\t\t\t\tlabel: ''O(1, 1)'';\r\t\t\t\t// BrButton;\r\t\t\t\t@ 1 ].\r\t\t\t\t\r\taScripter\r\t\tclickStep: [ :s | \r\t\t\ts\r\t\t\t\tlabel: ''X(1, 2)'';\r\t\t\t\t// BrButton;\r\t\t\t\t@ 2 ].\r\t\t\t\t\r\taScripter\r\t\tclickStep: [ :s | \r\t\t\ts\r\t\t\t\tlabel: ''O(3, 2)'';\r\t\t\t\t// BrButton;\r\t\t\t\t@ 8 ].\r\t\t\t\t\r\taScripter\r\t\tclickStep: [ :s | \r\t\t\ts\r\t\t\t\tlabel: ''X(3, 1)'';\r\t\t\t\t// BrButton;\r\t\t\t\t@ 7 ].\r\t\t\t\t\r\taScripter\r\t\tclickStep: [ :s | \r\t\t\ts\r\t\t\t\tlabel: ''O(1, 3)'';\r\t\t\t\t// BrButton;\r\t\t\t\t@ 3 ].\r\t\t\t\t\r\taScripter\r\t\tclickStep: [ :s | \r\t\t\ts\r\t\t\t\tlabel: ''X(2, 3)'';\r\t\t\t\t// BrButton;\r\t\t\t\t@ 6 ].\r\t\t\t\t\r\taScripter\r\t\tclickStep: [ :s | \r\t\t\ts\r\t\t\t\tlabel: ''O(2, 1)'';\r\t\t\t\t// BrButton;\r\t\t\t\t@ 4 ].\r\t\t\t\t\r\taScripter\r\t\tclickStep: [ :s | \r\t\t\ts\r\t\t\t\tlabel: ''X(3, 3)'';\r\t\t\t\t// BrButton;\r\t\t\t\t@ 9 ].\r\r\taScripter wait\r\t\tlabel: ''Waits for the state is updated'';\r\t\tforElementCondition: [ :gameElement | \r\t\t\t\t(gameElement children\r\t\t\t\t\tselect: [ :eachCell | (eachCell label asString = '''') not ]) size = 9 ]\r\t\t\ttimeout: 2 seconds;\r\t\tonSpaceRoot;\r\t\t// #board asBlocElementId;\r\t\tplay.\r\r\taScripter\r\t\tcheckStep: [ :s | \r\t\t\ts\r\t\t\t\tlabel: ''Check if the message label says draw'';\r\t\t\t\tvalue: [ :label | label text asString ] equals: [ ''Game Over: Draw'' ];\r\t\t\t\t// BrLabel ].\r\r\t] ensure: [ \r\t\taScripter\r\t\t\tdoStep: [ :s | \r\t\t\t\ts\r\t\t\t\t\tlabel: ''Stop the game'';\r\t\t\t\t\tblock: [ :model | model stop ];\r\t\t\t\t\tonModel ] ].\r\t\t\r\t^ aScripter' classified: #example."
+						},
+						{
+							"__type" : "exampleSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-09T19:41:02.901423+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-09T19:41:02.901423+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "0Ui4Ch/9DQCvhBzvBQmM2w=="
+							},
+							"exampleSelector" : "scripterWithAllRulesGameCheckDraw",
+							"previewHeight" : 200,
+							"previewShowSelector" : "gtViewsFor:",
+							"exampleBehaviorName" : "Gt4BpTicTacToeExamples",
+							"codeExpanded" : true,
+							"previewExpanded" : false,
+							"noCode" : false
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-10-09T19:33:22.02421+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-10-09T19:36:45.503748+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "MNs/7x79DQCerGYlBtAv+A=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "The previous b-thread checks draw in a very naive way. It only counts the number of squares taken, but what if a player wins in her last move? In that case, we'll have two b-threads requesting at same time the winner and draw events."
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-10-09T19:37:26.507385+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-10-09T19:38:15.175293+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "9JbA+x79DQCrmxr7BQmM2w=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "We can write an example to show a sequence of moves that ends with all squares taken and with X player as winner:"
+									},
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-10-09T19:38:24.456373+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-10-09T19:43:29.969164+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "05pGAR/9DQCuQQEhBQmM2w=="
+										},
+										"code" : "Gt4BpTicTacToeExamples compile: '\rscripterWithAllRulesGameCheckDrawWinnerConflict\r\t<gtExample>\r\t<return: #BlScripter>\r\t| game aScripter |\r\tgame := self allRulesGame.\r\taScripter := self newScripter.\r\taScripter\r\t\tmodel: game; \r\t\telement: game asElement.\r\t\t\r\t[ aScripter\r\t\tdoStep: [ :s | \r\t\t\ts\r\t\t\t\tlabel: ''Starts the game'';\r\t\t\t\tblock: [ :model | model start ];\r\t\t\t\tonModel ].\r\taScripter\r\t\tclickStep: [ :s | \r\t\t\ts\r\t\t\t\tlabel: ''X(1, 1)'';\r\t\t\t\t// BrButton;\r\t\t\t\t@ 1 ].\r\t\t\t\t\r\taScripter\r\t\tclickStep: [ :s | \r\t\t\ts\r\t\t\t\tlabel: ''O(1, 2)'';\r\t\t\t\t// BrButton;\r\t\t\t\t@ 2 ].\r\t\t\t\t\r\taScripter\r\t\tclickStep: [ :s | \r\t\t\ts\r\t\t\t\tlabel: ''X(2, 2)'';\r\t\t\t\t// BrButton;\r\t\t\t\t@ 5 ].\r\t\t\t\t\r\taScripter\r\t\tclickStep: [ :s | \r\t\t\ts\r\t\t\t\tlabel: ''O(1, 3)'';\r\t\t\t\t// BrButton;\r\t\t\t\t@ 3 ].\r\t\t\t\t\r\taScripter\r\t\tclickStep: [ :s | \r\t\t\ts\r\t\t\t\tlabel: ''X(2, 1)'';\r\t\t\t\t// BrButton;\r\t\t\t\t@ 4 ].\r\t\t\t\t\r\taScripter\r\t\tclickStep: [ :s | \r\t\t\ts\r\t\t\t\tlabel: ''O(2, 3)'';\r\t\t\t\t// BrButton;\r\t\t\t\t@ 6 ].\r\t\t\t\t\r\taScripter\r\t\tclickStep: [ :s | \r\t\t\ts\r\t\t\t\tlabel: ''X(3, 2)'';\r\t\t\t\t// BrButton;\r\t\t\t\t@ 8 ].\r\t\t\t\t\r\taScripter\r\t\tclickStep: [ :s | \r\t\t\ts\r\t\t\t\tlabel: ''O(3, 1)'';\r\t\t\t\t// BrButton;\r\t\t\t\t@ 7 ].\r\t\t\t\t\r\taScripter\r\t\tclickStep: [ :s | \r\t\t\ts\r\t\t\t\tlabel: ''X(3, 3)'';\r\t\t\t\t// BrButton;\r\t\t\t\t@ 9 ].\r\r\taScripter wait\r\t\tlabel: ''Waits for the state is updated'';\r\t\tforElementCondition: [ :gameElement | \r\t\t\t\t(gameElement children\r\t\t\t\t\tselect: [ :eachCell | (eachCell label asString = '''') not ]) size = 9 ]\r\t\t\ttimeout: 2 seconds;\r\t\tonSpaceRoot;\r\t\t// #board asBlocElementId;\r\t\tplay.\r\r\taScripter\r\t\tcheckStep: [ :s | \r\t\t\ts\r\t\t\t\tlabel: ''Check if the message label says X Win'';\r\t\t\t\tvalue: [ :label | label text asString ] equals: [ ''Game Over: X wins!'' ];\r\t\t\t\t// BrLabel ].\r\r\t] ensure: [ \r\t\taScripter\r\t\t\tdoStep: [ :s | \r\t\t\t\ts\r\t\t\t\t\tlabel: ''Stop the game'';\r\t\t\t\t\tblock: [ :model | model stop ];\r\t\t\t\t\tonModel ] ].\r\t\t\r\t^ aScripter' classified: #example."
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-10-09T19:41:52.174442+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-10-09T19:43:01.727635+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "hyGoDR/9DQCv8DzXBQmM2w=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "As the b-thread coordinator will choose between both requested events equally, the previous example sometimes will pass, but other will fail:"
+									},
+									{
+										"__type" : "exampleSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-10-09T19:43:08.053707+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-10-09T19:43:08.053707+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "7PQtEh/9DQCy4TiYBQmM2w=="
+										},
+										"exampleSelector" : "scripterWithAllRulesGameCheckDrawWinnerConflict",
+										"previewHeight" : 200,
+										"previewShowSelector" : "gtViewsFor:",
+										"exampleBehaviorName" : "Gt4BpTicTacToeExamples",
+										"codeExpanded" : true,
+										"previewExpanded" : false,
+										"noCode" : false
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-09T19:32:48.610129+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-09T19:34:45.088469+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "bv9B7R79DQCdb8g0BtAv+A=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "##Resolving conflicts between b-threads"
 						}
 					]
 				},

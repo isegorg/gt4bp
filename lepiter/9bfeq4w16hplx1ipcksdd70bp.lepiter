@@ -356,7 +356,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-09T17:50:00.134837+02:00"
+						"dateAndTimeString" : "2025-10-09T18:29:33.840235+02:00"
 					}
 				},
 				"uid" : {
@@ -366,7 +366,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "We define the following b-thread to manage the alterning player turns."
+				"string" : "\t\t\t\t\t\tWe define the following b-thread to manage the alterning player turns."
 			}
 		]
 	},

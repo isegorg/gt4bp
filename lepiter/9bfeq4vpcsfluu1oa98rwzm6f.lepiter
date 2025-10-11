@@ -173,14 +173,91 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-10-09T18:09:52.136437+02:00"
+									"dateAndTimeString" : "2025-10-09T18:48:06.090969+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "+AijxB39DQCLAw69DgJinQ=="
 							},
-							"code" : ""
+							"code" : "Gt4BpTicTacToeExamples compile: '\rbtGameOver\r    <gtExample>\r    ^ ''bp.registerBThread(\"btGameOver\", function() {\r    var gameOverES = bp.EventSet(\"gameOverES\", function(e) {\r        return e.name == \"gameOver\";\r    });\r    bp.sync({ waitFor: gameOverES });\r    bp.sync({ block: bp.eventSets.all });\r});''' classified: #'example - support'.\r\rGt4BpTicTacToeExamples compile: '\ralterningAndSquareTakenAndWinnerAndGameOverGame\r\t<gtExample>\r    ^ self alterningAndSquareTakenAndWinnerGame\r\t\tloadBThread: self btGameOver named: ''test-Gameover.js'';\r\t    yourself' classified: #example.\r\t    \rGt4BpTicTacToeExamples compile: '\rscripterWithGameOverGame\r\t<gtExample>\r\t<return: #BlScripter>\r\t| aScripter game |\r\taScripter := self scripterWithWinnerGame.\r\tgame := aScripter model.\r\tgame loadBThread: self btGameOver named: ''test-Gameover.js''.\r\t\r\t[ aScripter\r\t\tdoStep: [ :s | \r\t\t\ts\r\t\t\t\tlabel: ''Starts the game'';\r\t\t\t\tblock: [ :model | model start ];\r\t\t\t\tonModel ].\r\taScripter\r\t\tclickStep: [ :s | \r\t\t\ts\r\t\t\t\tlabel: ''O(1, 3)'';\r\t\t\t\t// BrButton;\r\t\t\t\t@ 3 ].\r\r\taScripter wait\r\t\tlabel: ''Waits for the state is updated'';\r\t\tforElementCondition: [ :gameElement | \r\t\t\t\t(gameElement children\r\t\t\t\t\tselect: [ :eachCell | (eachCell label asString = '''') not ]) size = 5 ]\r\t\t\ttimeout: 2 seconds;\r\t\tonSpaceRoot;\r\t\t// #board asBlocElementId;\r\t\tplay.\r\r\taScripter\r\t\tcheckStep: [ :s | \r\t\t\ts\r\t\t\t\tlabel: ''Check (1,3) is not occupied'';\r\t\t\t\tvalue: [ :button | button label asString ] equals: [ '''' ];\r\t\t\t\t// BrButton; \r\t\t\t\t@3 ].\r\r\t] ensure: [ \r\t\taScripter\r\t\t\tdoStep: [ :s | \r\t\t\t\ts\r\t\t\t\t\tlabel: ''Stop the game'';\r\t\t\t\t\tblock: [ :model | model stop ];\r\t\t\t\t\tonModel ] ].\r\t^ aScripter' classified: #example."
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-09T18:48:11.459055+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-09T18:48:32.591325+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "DeqvTR79DQC5Dkd5DtujPw=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Check that the previous example passes successfully:"
+						},
+						{
+							"__type" : "exampleSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-09T18:48:36.69849+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-09T18:48:36.69849+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "lwkxTx79DQC6KIkFDtujPw=="
+							},
+							"exampleSelector" : "scripterWithGameOverGame",
+							"previewHeight" : 200,
+							"previewShowSelector" : "gtViewsFor:",
+							"exampleBehaviorName" : "Gt4BpTicTacToeExamples",
+							"codeExpanded" : true,
+							"previewExpanded" : false,
+							"noCode" : false
 						}
 					]
 				},
@@ -203,7 +280,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-09T18:09:52.136169+02:00"
+						"dateAndTimeString" : "2025-10-09T18:32:53.594082+02:00"
 					}
 				},
 				"uid" : {
@@ -213,7 +290,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "To avoid the game can continue when the *gameOver* event is fired, we add another b-thread responsible to block any other event after the *gameOver*:"
+				"string" : "To avoid that the game  continue when the *gameOver* event is fired, we add another b-thread responsible to block any other event after the *gameOver*:"
 			}
 		]
 	},
