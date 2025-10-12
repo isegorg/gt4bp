@@ -359,7 +359,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-11T19:06:12.528756+02:00"
+						"dateAndTimeString" : "2025-10-11T19:06:35.103597+02:00"
 					}
 				},
 				"uid" : {
@@ -369,7 +369,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "After these adjustments, if you che"
+				"string" : "After these adjustments, if you check again the previous example, you can check that it always passes successfully."
 			}
 		]
 	},

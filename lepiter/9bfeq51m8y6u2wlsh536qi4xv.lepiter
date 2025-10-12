@@ -34,14 +34,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-10-09T17:52:42.665383+02:00"
+									"dateAndTimeString" : "2025-10-12T14:10:20.552836+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "EY5Ghx39DQCHKFjLDgJinQ=="
 							},
-							"code" : "squareTakenBlock := [ :row :col | \r\t'bp.registerBThread(\"SquareTaken(' , row , ',' , col\r\t\t, ')\", function() {\n    var moveToSquareES = bp.EventSet(\"moveToSquare\", function(evt) {\n        return (evt.name == \"move\") &&\n            (evt.data.row == '\r\t\t, row , ') &&\n            (evt.data.col == ' , col\r\t\t, ');\n    });\n    bp.sync({ waitFor: moveToSquareES });\n    bp.sync({ block: moveToSquareES });\n});' ].\r\rbtSquareTaken := ''.\r\r1 to: 3 do: [ :row | \r\t1 to: 3 do: [ :col | \r\t\tbtSquareTaken := btSquareTaken , \r\t\t\t(squareTakenBlock value: row asString value: col asString) , \r\t\t\tString crlf,\r\t\t\tString crlf ] ].\r\rbtSquareTaken"
+							"code" : "squareTakenBlock := [ :row :col | \r\t'bp.registerBThread(\"SquareTaken(' , row , ',' , col , ')\", function() {\n    var moveAcceptedToSquareES = bp.EventSet(\"moveAcceptedToSquare\", function(evt) {\n        return (evt.name == \"moveAccepted\") &&\n            (evt.data.row == ' , row , ') &&\n            (evt.data.col == ' , col\r\t\t, ');\n    });\r    var moveToSquareES = bp.EventSet(\"moveToSquare\", function(evt) {\n        return (evt.name == \"move\") &&\n            (evt.data.row == ' , row , ') &&\n            (evt.data.col == ' , col\r\t\t, ');\n    });\n    bp.sync({ waitFor: moveAcceptedToSquareES });\n    bp.sync({ block: moveToSquareES });\n});' ].\r\rbtSquareTaken := ''.\r\r1 to: 3 do: [ :row | \r\t1 to: 3 do: [ :col | \r\t\tbtSquareTaken := btSquareTaken , \r\t\t\t(squareTakenBlock value: row asString value: col asString) , \r\t\t\tString crlf,\r\t\t\tString crlf ] ].\r\rbtSquareTaken"
 						},
 						{
 							"__type" : "textSnippet",
@@ -216,14 +216,14 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-10-09T17:52:42.665604+02:00"
+												"dateAndTimeString" : "2025-10-12T14:11:19.752394+02:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
 											"uidString" : "iI5Ghx39DQCHLk4YDgJinQ=="
 										},
-										"code" : "Gt4BpTicTacToeExamples compile: '\rbtSquareTaken\r\t| squareTakenBlock btSquareTakenCode | \r\tsquareTakenBlock := [ :row :col | \r\t\t''bp.registerBThread(\"SquareTaken('' , row , '','' , col , '')\", function() {\n\t    var moveToSquareES = bp.EventSet(\"moveToSquare\", function(evt) {\n\t        return (evt.name == \"move\") &&\n\t            (evt.data.row == '' , row , '') &&\n\t            (evt.data.col == '' , col , '');\n\t    });\n\t    bp.sync({ waitFor: moveToSquareES });\n\t    bp.sync({ block: moveToSquareES });\n\t});'' ].\r\r\tbtSquareTakenCode := ''''.\r\t\r\t1 to: 3 do: [ :row | \r\t\t1 to: 3 do: [ :col | \r\t\t\tbtSquareTakenCode := btSquareTakenCode , \r\t\t\t\t(squareTakenBlock value: row asString value: col asString) , \r\t\t\t\tString crlf,\r\t\t\t\tString crlf ] ].\r\t\t\t\r\t^ btSquareTakenCode' classified: #'example - support'."
+										"code" : "Gt4BpTicTacToeExamples compile: '\rbtSquareTaken\r\t| squareTakenBlock btSquareTakenCode | \r\tsquareTakenBlock := [ :row :col | \r\t\t''bp.registerBThread(\"SquareTaken('' , row , '','' , col , '')\", function() {\n\t    var moveAcceptedToSquareES = bp.EventSet(\"moveAcceptedToSquare\", function(evt) {\n\t        return (evt.name == \"moveAccepted\") &&\n\t            (evt.data.row == '' , row , '') &&\n\t            (evt.data.col == '' , col , '');\n\t    });\r\t    var moveToSquareES = bp.EventSet(\"moveToSquare\", function(evt) {\n\t        return (evt.name == \"move\") &&\n\t            (evt.data.row == '' , row , '') &&\n\t            (evt.data.col == '' , col , '');\n\t    });\n\t    bp.sync({ waitFor: moveAcceptedToSquareES });\n\t    bp.sync({ block: moveToSquareES });\n\t});'' ].\r\r\tbtSquareTakenCode := ''''.\r\t\r\t1 to: 3 do: [ :row | \r\t\t1 to: 3 do: [ :col | \r\t\t\tbtSquareTakenCode := btSquareTakenCode , \r\t\t\t\t(squareTakenBlock value: row asString value: col asString) , \r\t\t\t\tString crlf,\r\t\t\t\tString crlf ] ].\r\t\t\t\r\t^ btSquareTakenCode' classified: #'example - support'."
 									},
 									{
 										"__type" : "textSnippet",

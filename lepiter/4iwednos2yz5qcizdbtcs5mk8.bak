@@ -34,7 +34,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-10-09T18:15:59.077407+02:00"
+									"dateAndTimeString" : "2025-10-12T11:17:13.47964+02:00"
 								}
 							},
 							"uid" : {
@@ -44,7 +44,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[[Alterning player turns]]\n\n[[Avoid marked squares]]\n\n[[Detect winner]]\n\n[[Finish when game over]]\n\n[[Detect draw]]"
+							"string" : "[[Alterning player turns]]\n\n[[Avoid marked squares]]\n\n[[Detect winner]]\n\n[[Finish when game over]]\n\n[[Detect draw]]\n\n[[Resolving conflicts between Winner and Draw b-threads]]\n\n[[Handle the player O moves]]"
 						}
 					]
 				},

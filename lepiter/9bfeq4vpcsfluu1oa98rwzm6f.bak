@@ -251,10 +251,10 @@
 								"__type" : "uid",
 								"uidString" : "lwkxTx79DQC6KIkFDtujPw=="
 							},
-							"exampleSelector" : "scripterWithGameOverG",
+							"exampleSelector" : "scripterWithGameOverGame",
 							"previewHeight" : 200,
 							"previewShowSelector" : "gtViewsFor:",
-							"exampleBehaviorName" : "Gt4BpTicTacToeExample",
+							"exampleBehaviorName" : "Gt4BpTicTacToeExamples",
 							"codeExpanded" : true,
 							"previewExpanded" : false,
 							"noCode" : false
