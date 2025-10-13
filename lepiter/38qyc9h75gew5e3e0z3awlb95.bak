@@ -18,6 +18,43 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-13T11:59:24.024738+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-13T11:59:47.934933+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "23caD2n9DQCxmD18CH6uPw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "##Design of the BPjs Bridge for GToolkit"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
 						"dateAndTimeString" : "2025-09-30T10:33:26.585572+02:00"
 					}
 				},
@@ -398,7 +435,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-10-12T13:37:09.803045+02:00"
+												"dateAndTimeString" : "2025-10-12T13:37:17.901065+02:00"
 											}
 										},
 										"editEmail" : {
@@ -409,7 +446,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-10-12T13:37:17.1957+02:00"
+												"dateAndTimeString" : "2025-10-12T13:37:17.907785+02:00"
 											}
 										},
 										"uid" : {
@@ -419,7 +456,7 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "[[Auto"
+										"string" : "[[Automating the player O moves]]"
 									}
 								]
 							},

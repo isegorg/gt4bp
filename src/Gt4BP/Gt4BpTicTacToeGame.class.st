@@ -59,21 +59,14 @@ Gt4BpTicTacToeGame >> gtLiveFor: aView [
 
 { #category : #'event - handling' }
 Gt4BpTicTacToeGame >> handleBPEvent: event [
+    Transcript crShow: 'BP Event: ', event asString.
 	event name = 'moveAccepted'
-		ifTrue: [ | eventData player |
+		ifTrue: [ | eventData |
 			eventData := event data.
-			player := eventData at: 'player'.
 			self
-				updateCellAt: (eventData at: 'row')
-				col: (eventData at: 'col')
-				player: player	.
-			self updateMessage: 'Move ' , player , ' Accepted' ].
-	event name = 'gameOver'
-		ifTrue: [
-		    event data 
-		        ifNotNil: [ self updateMessage: 'Game Over: ' , (event data at: 'winner') , ' wins!' ] 
-		    	ifNil: [ self updateMessage: 'Game Over: Draw' ]
-			 ]
+				updateCellAt: (eventData at: 'row') asInteger
+				col: (eventData at: 'col') asInteger
+				player: (eventData at: 'player') ]
 ]
 
 { #category : #'event - dispatching' }

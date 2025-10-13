@@ -140,14 +140,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-12T13:28:00.335865+02:00"
+						"dateAndTimeString" : "2025-10-13T12:49:29.828266+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "5NMJZFT9DQCSV9nOBr80cg=="
 				},
-				"code" : "btOPlayerBlock := [ :row :col |\r\t'bp.registerBThread(\"OPlayer(' , row asString , ', ' , col asString , ')\", function() {\n    var XMoveAcceptedES = bp.EventSet(\"XMoveAccepted\", function(e) {\n        return e.name == \"moveAccepted\" && e.data.player == \"X\";\n    });\r    while (true) {\n        bp.sync({ waitFor: XMoveAcceptedES });\n        bp.sync({ request: bp.Event(\"move\", { \"player\": \"O\", \"row\": ', row asString , ', \"col\": ' , col asString , '\t\t}) });\n    }\n});'\r].\t\t\t\r\rbtOPlayer := String streamContents: [:stream | \r\t1 to: 3 do: [ :row |\r\t    1 to: 3 do: [ :col |\r\t        stream nextPutAll: (btOPlayerBlock value: row value: col)\r\t    ]\r\t]\r].\r\rbtOPlayer"
+				"code" : "btOPlayerBlock := [ :row :col |\r\t'bp.registerBThread(\"OPlayer(' , row asString , ', ' , col asString , ')\", function() {\n    var XMoveAcceptedES = bp.EventSet(\"XMoveAccepted\", function(e) {\n        return e.name == \"moveAccepted\" && e.data.player == \"X\";\n    });\n    while (true) {\n        bp.sync({ waitFor: XMoveAcceptedES });\n        bp.sync({ request: bp.Event(\"move\", { \"player\": \"O\", \"row\": ', row asString , ', \"col\": ' , col asString , '}) });\n    }\n});'\r].\t\t\t\r\rbtOPlayer := String streamContents: [:stream | \r\t1 to: 3 do: [ :row |\r\t    1 to: 3 do: [ :col |\r\t        stream nextPutAll: (btOPlayerBlock value: row value: col)\r\t    ]\r\t]\r].\r\rbtOPlayer"
 			},
 			{
 				"__type" : "textSnippet",
@@ -248,14 +248,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-12T14:24:30.742026+02:00"
+						"dateAndTimeString" : "2025-10-12T14:25:06.183093+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "Fe7o8lb9DQCLKFBjDVuQdA=="
 				},
-				"code" : "Gt4BpTicTacToeExamples compile: '\rbtAlterningTurns\r\t^ ''bp.registerBThread(\"TurnManager\", function(){\n    var XMoveES = bp.EventSet(\"move\", function(evt) {\n\t    return (evt.data == null) ? false : (evt.name == \"move\" && evt.data.player == \"X\");\n    });\r    var OMoveES = bp.EventSet(\"move\", function(evt) {\n\t    return (evt.data == null) ? false : evt.name == \"move\" && evt.data.player == \"O\";\n    });\n    while (true) {\n        // X turn\n        var xMove = bp.sync({ waitFor: XMoveES, block: OMoveES });\n        bp.sync({ request:bp.Event(\"moveAccepted\",\n            { \"player\": \"X\",\n\t          \"row\": xMove.data.row,\n\t          \"col\": xMove.data.col })\n        });\n\n        // O turn\n        var oMove = bp.sync({ waitFor: moveES, block: XMoveES\t\t });\n        bp.sync({ request:bp.Event(\"moveAccepted\",\n            { \"player\": \"O\",\n\t          \"row\": oMove.data.row,\n\t          \"col\": oMove.data.col })\n        });\n    }\n});''' classified: #'example - support'."
+				"code" : "Gt4BpTicTacToeExamples compile: '\rbtAlterningTurns\r\t^ ''bp.registerBThread(\"TurnManager\", function(){\n    var XMoveES = bp.EventSet(\"move\", function(evt) {\n\t    return (evt.data == null) ? false : (evt.name == \"move\" && evt.data.player == \"X\");\n    });\r    var OMoveES = bp.EventSet(\"move\", function(evt) {\n\t    return (evt.data == null) ? false : evt.name == \"move\" && evt.data.player == \"O\";\n    });\n    while (true) {\n        // X turn\n        var xMove = bp.sync({ waitFor: XMoveES, block: OMoveES });\n        bp.sync({ request:bp.Event(\"moveAccepted\",\n            { \"player\": \"X\",\n\t          \"row\": xMove.data.row,\n\t          \"col\": xMove.data.col })\n        });\n\n        // O turn\n        var oMove = bp.sync({ waitFor: OMoveES, block: XMoveES });\n        bp.sync({ request:bp.Event(\"moveAccepted\",\n            { \"player\": \"O\",\n\t          \"row\": oMove.data.row,\n\t          \"col\": oMove.data.col })\n        });\n    }\n});''' classified: #'example - support'."
 			},
 			{
 				"__type" : "textSnippet",
@@ -319,14 +319,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-12T13:34:57.787638+02:00"
+						"dateAndTimeString" : "2025-10-13T12:49:38.13972+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "MkWMwFT9DQC4AYrCBr80cg=="
 				},
-				"code" : "game := Gt4BpTicTacToeExamples new allRulesGame\r\tloadBThread: btOPlayer named: 'btOPlayer.js';\r\tstart.\t\t\t\t\t\t\t\t\t\t"
+				"code" : "game := Gt4BpTicTacToeExamples new allRulesGame\r\tloa\t\tdBThread: btOPlayer named: 'btOPlayer.js';\r\tstart.\t\t\t\t\t\t\t\t\t\t"
 			},
 			{
 				"__type" : "pharoSnippet",

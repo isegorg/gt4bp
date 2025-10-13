@@ -140,14 +140,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-12T13:28:00.335865+02:00"
+						"dateAndTimeString" : "2025-10-13T12:49:29.828266+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "5NMJZFT9DQCSV9nOBr80cg=="
 				},
-				"code" : "btOPlayerBlock := [ :row :col |\r\t'bp.registerBThread(\"OPlayer(' , row asString , ', ' , col asString , ')\", function() {\n    var XMoveAcceptedES = bp.EventSet(\"XMoveAccepted\", function(e) {\n        return e.name == \"moveAccepted\" && e.data.player == \"X\";\n    });\r    while (true) {\n        bp.sync({ waitFor: XMoveAcceptedES });\n        bp.sync({ request: bp.Event(\"move\", { \"player\": \"O\", \"row\": ', row asString , ', \"col\": ' , col asString , '\t\t}) });\n    }\n});'\r].\t\t\t\r\rbtOPlayer := String streamContents: [:stream | \r\t1 to: 3 do: [ :row |\r\t    1 to: 3 do: [ :col |\r\t        stream nextPutAll: (btOPlayerBlock value: row value: col)\r\t    ]\r\t]\r].\r\rbtOPlayer"
+				"code" : "btOPlayerBlock := [ :row :col |\r\t'bp.registerBThread(\"OPlayer(' , row asString , ', ' , col asString , ')\", function() {\n    var XMoveAcceptedES = bp.EventSet(\"XMoveAccepted\", function(e) {\n        return e.name == \"moveAccepted\" && e.data.player == \"X\";\n    });\n    while (true) {\n        bp.sync({ waitFor: XMoveAcceptedES });\n        bp.sync({ request: bp.Event(\"move\", { \"player\": \"O\", \"row\": ', row asString , ', \"col\": ' , col asString , '}) });\n    }\n});'\r].\t\t\t\r\rbtOPlayer := String streamContents: [:stream | \r\t1 to: 3 do: [ :row |\r\t    1 to: 3 do: [ :col |\r\t        stream nextPutAll: (btOPlayerBlock value: row value: col)\r\t    ]\r\t]\r].\r\rbtOPlayer"
 			},
 			{
 				"__type" : "textSnippet",
@@ -319,7 +319,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-12T13:34:57.787638+02:00"
+						"dateAndTimeString" : "2025-10-13T12:49:47.231576+02:00"
 					}
 				},
 				"uid" : {
