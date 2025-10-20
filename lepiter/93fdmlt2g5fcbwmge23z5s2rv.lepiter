@@ -327,14 +327,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-09-23T14:17:14.609938+02:00"
+									"dateAndTimeString" : "2025-10-20T12:43:12.22627+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "GifDWtj7DQC78NaQA2HKBQ=="
 							},
-							"code" : "Gt4BpRunnerBridge compile: '\rinitialize\r\r\tisRunning := false.\r\tbtDirectory := self class defaultBtDirectory.\r\tannouncer := Announcer new.\r'\r\tclassified: #initialization"
+							"code" : "Gt4BpRunnerBridge compile: '\rinitialize\r\r\tisRunning := false.\r\tself btDirectory: self class defaultBtDirectory.\r\tannouncer := Announcer new.\r'\r\tclassified: #initialization"
 						}
 					]
 				},
@@ -508,14 +508,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-10-01T11:37:40.467673+02:00"
+									"dateAndTimeString" : "2025-10-20T12:43:29.881249+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "xjEX3Nj7DQCYIgeDAV+bBw=="
 							},
-							"code" : "Gt4BpRunnerBridge class compile: '\rdefaultBtDirectory\r    ^ ''bThreads''\r' classified: #'default values'.\r\r\rGt4BpRunnerBridge compile: '\rbtDirectory\r    ^ btDirectory' classified: #accessing.\r    \rGt4BpRunnerBridge compile: '\rbtDirectory: aFileReferenceOrDirName\r    btDirectory := aFileReferenceOrDirName asFileReference' classified: #accessing.\r\rGt4BpRunnerBridge compile: '\risRunning\r    ^ isRunning' classified: #accessing.\r    \rGt4BpRunnerBridge compile: '\rannouncer\r    ^ announcer' classified: #accessing."
+							"code" : "Gt4BpRunnerBridge class compile: '\rdefaultBtDirectory\r    ^ ''bThreads''\r' classified: #'default values'.\r\r\rGt4BpRunnerBridge compile: '\rbtDirectory\r    ^ btDirectory' classified: #accessing.\r    \rGt4BpRunnerBridge compile: '\rbtDirectory: aFileReferenceOrDirName\r    btDirectory := aFileReferenceOrDirName asFileReference ensureDeleteAll ensureCreateDirectory' classified: #accessing.\r\rGt4BpRunnerBridge compile: '\risRunning\r    ^ isRunning' classified: #accessing.\r    \rGt4BpRunnerBridge compile: '\rannouncer\r    ^ announcer' classified: #accessing."
 						}
 					]
 				},

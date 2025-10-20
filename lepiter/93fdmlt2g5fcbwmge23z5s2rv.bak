@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-08T13:17:12.748933+02:00"
+						"dateAndTimeString" : "2025-10-08T22:07:26.10761+02:00"
 					}
 				},
 				"uid" : {
@@ -39,7 +39,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "\t\tThe **BPjs Runner Bridge**  ([https://github.com/isegorg/BPjsRunnerBridge](https://github.com/isegorg/BPjsRunnerBridge)) is a  lightweight Java bridge to run **BPjs** runner ([https://github.com/bThink-BGU/BPjs](https://github.com/bThink-BGU/BPjs)) using the command line or from external tools. \n\nAt the same time, the BPjs is  an environment for running behavioral programs written in JavaScript. "
+				"string" : "The **BPjs Runner Bridge**  ([https://github.com/isegorg/BPjsRunnerBridge](https://github.com/isegorg/BPjsRunnerBridge)) is a  lightweight Java bridge to run **BPjs** runner ([https://github.com/bThink-BGU/BPjs](https://github.com/bThink-BGU/BPjs)) using the command line or from external tools. \n\nAt the same time, the BPjs is  an environment for running behavioral programs written in JavaScript. "
 			},
 			{
 				"__type" : "textSnippet",
@@ -327,14 +327,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-09-23T14:17:14.609938+02:00"
+									"dateAndTimeString" : "2025-10-20T12:43:06.046151+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "GifDWtj7DQC78NaQA2HKBQ=="
 							},
-							"code" : "Gt4BpRunnerBridge compile: '\rinitialize\r\r\tisRunning := false.\r\tbtDirectory := self class defaultBtDirectory.\r\tannouncer := Announcer new.\r'\r\tclassified: #initialization"
+							"code" : "Gt4BpRunnerBridge compile: '\rinitialize\r\r\tisRunning := false.\r\tbtDirectory : self class defaultBtDirectory.\r\tannouncer := Announcer new.\r'\r\tclassified: #initialization"
 						}
 					]
 				},

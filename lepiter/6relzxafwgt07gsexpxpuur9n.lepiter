@@ -174,7 +174,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-12T13:36:14.719629+02:00"
+						"dateAndTimeString" : "2025-10-20T12:09:14.342327+02:00"
 					}
 				},
 				"uid" : {
@@ -248,14 +248,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-20T11:39:19.816542+02:00"
+						"dateAndTimeString" : "2025-10-20T12:19:36.081344+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "Fe7o8lb9DQCLKFBjDVuQdA=="
 				},
-				"code" : "Gt4BpTicTacToeExamples compile: '\rbtAlterningTurns\r\t^ ''bp.registerBThread(\"TurnManager\", function(){\n    var XMoveES = bp.EventSet(\"move\", function(evt) {\n\t    return (evt.data == null) ? false : (evt.name == \"move\" && evt.data.player == \"X\");\n    });\r    var OMoveES = bp.EventSet(\"move\", function(evt) {\n\t    return (evt.data == null) ? false : evt.name == \"move\" && evt.data.player == \"O\";\n    });\n    while (true) {\n        // X turn\n        var xMove = bp.sync({ waitFor: XMoveES , block: OMoveES });\n        bp.sync({ request:bp.Event(\"moveAccepted\",\n            { \"player\": \"X\",\n\t          \"row\": xMove.data.row,\n\t          \"col\": xMove.data.col })\n        }, 1);\n\n        // O turn\n        var oMove = bp.sync({ waitFor: OMoveES, block: XMoveES });\n        bp.sync({ request:bp.Event(\"moveAccepted\",\n            { \"player\": \"O\",\n\t          \"row\": oMove.data.row,\n\t          \"col\": oMove.data.col })\t\n        }, 1);\n    }\n});''' classified: #'example - support'."
+				"code" : "Gt4BpTicTacToeExamples compile: '\rbtHumanVsMachineTurns\r\t^ ''bp.registerBThread(\"TurnManager\", function(){\n    var XMoveES = bp.EventSet(\"move\", function(evt) {\n\t    return (evt.data == null) ? false : (evt.name == \"move\" && evt.data.player == \"X\");\n    });\r    var OMoveES = bp.EventSet(\"move\", function(evt) {\n\t    return (evt.data == null) ? false : evt.name == \"move\" && evt.data.player == \"O\";\n    });\n    while (true) {\n        // X turn\n        var xMove = bp.sync({ waitFor: XMoveES , block: OMoveES });\n        bp.sync({ request:bp.Event(\"moveAccepted\",\n            { \"player\": \"X\",\n\t          \"row\": xMove.data.row,\n\t          \"col\": xMove.data.col })\n        }, 1);\n\n        // O turn\n        var oMove = bp.sync({ waitFor: OMoveES, block: XMoveES });\n        bp.sync({ request:bp.Event(\"moveAccepted\",\n            { \"player\": \"O\",\n\t          \"row\": oMove.data.row,\n\t          \"col\": oMove.data.col })\t\n        }, 1);\n    }\n});''' classified: #'example - support'.\r\rGt4BpTicTacToeExamples compile: '\rhumanVsMachineTurnsGame\r\t<gtExample>\r    ^ self emptyGame\r    \tloadBThread: self btHumanVsMachineTurns named: ''test-HumanVsMachineTurns.js'';\r    \tloadBThread: self btSquareTaken named: ''test-SquareTaken.js'';\r    \tloadBThread: self btXWin named: ''test-XWin.js'';\r    \tloadBThread: self btOWin named: ''test-OWin.js'';\r\t\tloadBThread: self btDraw named: ''test-Draw.js'';\r\t\tloadBThread: self btGameOver named: ''test-GameOver.js'';\r\t    yourself' classified: #example."
 			},
 			{
 				"__type" : "textSnippet",
@@ -282,7 +282,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-12T11:46:02.30835+02:00"
+						"dateAndTimeString" : "2025-10-20T12:09:48.400091+02:00"
 					}
 				},
 				"uid" : {
@@ -292,7 +292,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "## Let's try it"
+				"string" : "##Let's try it"
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -353,14 +353,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-20T11:38:46.469724+02:00"
+						"dateAndTimeString" : "2025-10-20T12:21:02.759241+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "MkWMwFT9DQC4AYrCBr80cg=="
 				},
-				"code" : "game := Gt4BpTicTacToeExamples new allRulesGame\r\tloadBThread: btOPlayer named: 'btOPlayer.js';\r\tstart.\t\t\t\t\t\t\t\t\t\t"
+				"code" : "game := Gt4BpTicTacToeExamples new humanVsMachineTurnsGame \r\tloadBThread: btOPlayer named: 'btOPlayer.js';\r\tstart.\t\t\t\t\t\t\t\t\t\t"
 			},
 			{
 				"__type" : "pharoSnippet",
