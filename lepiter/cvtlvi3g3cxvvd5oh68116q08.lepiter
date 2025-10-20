@@ -435,7 +435,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-10-07T10:03:38.900389+02:00"
+									"dateAndTimeString" : "2025-10-14T11:33:43.799492+02:00"
 								}
 							},
 							"uid" : {
@@ -950,14 +950,14 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-10-07T12:18:19.462701+02:00"
+												"dateAndTimeString" : "2025-10-14T11:41:43.296359+02:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
 											"uidString" : "lGEwRe/8DQCvbmVIBq57oQ=="
 										},
-										"code" : "Gt4BpTicTacToeExamples compile: '\rbtAcceptAnyMove\r\t^ ''bp.registerBThread(\"AcceptAnyMove\", function() {\n    var anyMoveEvents = bp.EventSet(\"anyMoveEvents\", function (evt) {\n        return (evt.data == null) ? false : evt.name == \"move\";\n    });\n    while (true) {\n        var evt = bp.sync({waitFor: anyMoveEvents});\n\t    bp.sync({request: bp.Event(\"moveAccepted\", evt.data)});\n    }\n});''' classified: #'example - support'.\r\rGt4BpTicTacToeExamples compile: '\rtrivialLogicGame\r\t<gtExample>\r\t| game |\r\tgame := self emptyGame.\r\tgame loadBThread: self btAcceptAnyMove named: ''test-AcceptAnyMove.js''.\r\t^ game' classified: #example.\t\r"
+										"code" : "Gt4BpTicTacToeExamples compile: '\rbtAcceptAnyMove\r\t^ ''bp.registerBThread(\"AcceptAnyMove\", function() {\n    var anyMoveEvents = bp.EventSet(\"anyMoveEvents\", function (evt) {\n        return (evt.data == null) ? false : evt.name == \"move\";\n    });\n    while (true) {\n        var evt = bp.sync({waitFor: anyMoveEvents});\n\t    bp.sync({request: bp.Event(\"moveAccepted\", evt.data)});\n    }\n});''' classified: #'example - support'.\r\r\tGt4BpTicTacToeExamples compile: '\rtrivialLogicGame\r\t<gtExample>\r\t| game |\r\tgame := self emptyGame.\r\tgame loadBThread: self btAcceptAnyMove named: ''test-AcceptAnyMove.js''.\r\t^ game' classified: #example.\t\r"
 									},
 									{
 										"__type" : "textSnippet",

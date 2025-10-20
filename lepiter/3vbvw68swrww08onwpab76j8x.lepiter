@@ -498,14 +498,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-09-29T12:58:42.516459+02:00"
+						"dateAndTimeString" : "2025-10-14T10:47:54.637873+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "OtKiIsb7DQC/VMDXDNInGg=="
 				},
-				"code" : "transcript := GtTranscript new.\r\treader := process asynchronousStdout\r\tpollStringEvery: 0.5 second\r\tdo: [ :aString | transcript show: aString ].\r\rtranscript"
+				"code" : "transcript := GtTranscript new.\r\treader := process asynchronousStdout\r\tpollStringEvery: 0.5 second\r\tdo:\t\t\t [ :aString | transcript show: aString ].\r\rtranscript"
 			},
 			{
 				"__type" : "textSnippet",

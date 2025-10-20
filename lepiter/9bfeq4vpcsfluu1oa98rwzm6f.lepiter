@@ -34,14 +34,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-10-09T18:09:52.136272+02:00"
+									"dateAndTimeString" : "2025-10-14T12:01:13.29634+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "dQijxB39DQCK/66UDgJinQ=="
 							},
-							"code" : "btGameOver :='bp.registerBThread(\"btGameOver\", function() {\r    var gameOverES = bp.EventSet(\"gameOverES\", function(e) {\r        return e.name == \"gameOver\";\r    });\r    bp.sync({ waitFor: gameOverES });\r    bp.sync({ block: bp.eventSets.all });\r});'"
+							"code" : "btGameOver :='bp.registerBThread(\"btGameOver\", function() {\r    var gameOverES = bp.EventSet(\"gameOverES\", function(e) {\r        return e.name == \"gameOver\";\r    });\r    bp.sync({ waitFor: gameOverES });\r    bp.sync({ block: bp.eventSets.all });\t\t\r});'"
 						},
 						{
 							"__type" : "pharoSnippet",

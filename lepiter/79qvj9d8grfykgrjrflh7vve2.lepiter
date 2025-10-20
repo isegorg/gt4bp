@@ -23,7 +23,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-10-09T18:15:33.1655+02:00"
+									"dateAndTimeString" : "2025-10-20T11:25:06.759169+02:00"
 								}
 							},
 							"editEmail" : {
@@ -34,17 +34,17 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-10-20T11:20:39.223148+02:00"
+									"dateAndTimeString" : "2025-10-20T11:25:08.978084+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "P5Jj2B39DQCyHTr7D42JWg=="
+								"uidString" : "ig9IZPX9DQCtlGhPBb7Peg=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[[Alterning player turns]]\n\n[[Avoid marked squares]]\n\n[[Detect winner]]\n\n[[Finish when game over]]\n\n[[Detect draw]]\n\n[[Resolving conflicts between Winner and Draw b-threads]]\n\n[[Trivial logic for player O]]"
+							"string" : "[[Trivial logic for player O]]"
 						}
 					]
 				},
@@ -56,7 +56,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-07T16:21:19.485232+02:00"
+						"dateAndTimeString" : "2025-10-20T11:22:29.060103+02:00"
 					}
 				},
 				"editEmail" : {
@@ -67,17 +67,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-07T16:22:30.415142+02:00"
+						"dateAndTimeString" : "2025-10-20T11:24:42.468814+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "j8ucAvT8DQCng/nABsRuTA=="
+					"uidString" : "IWr4W/X9DQCmhZitBb7Peg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "The Tic Tac Toe game is very simple and it requires only a few rules to be implemented:"
+				"string" : "First, we should adapt the game to the new requirement, i.e.  only moves by player X will be produced as response to the user's actions on the GUI, meanwhile the player O moves will be produced applying game strategies implemented as behaviors."
 			}
 		]
 	},
@@ -89,7 +89,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2025-10-07T16:20:43.227879+02:00"
+			"dateAndTimeString" : "2025-10-20T11:22:29.036118+02:00"
 		}
 	},
 	"editEmail" : {
@@ -100,15 +100,15 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2025-10-09T18:16:51.747833+02:00"
+			"dateAndTimeString" : "2025-10-20T11:22:29.036118+02:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Game rules as b-threads"
+		"title" : "Human-vs-Machine"
 	},
 	"uid" : {
 		"__type" : "uuid",
-		"uuid" : "78dd9b02-f4fc-0d00-a782-f39206c46e4c"
+		"uuid" : "aa0bf85b-f5fd-0d00-a684-b8e005becf7a"
 	}
 }

@@ -177,14 +177,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-09-29T13:10:17.60639+02:00"
+						"dateAndTimeString" : "2025-10-14T10:54:06.709889+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "/bmTYsb7DQCtbHHNB+prlQ=="
 				},
-				"code" : "btCoffee := '\rbp.registerBThread(\"coffee supply\", function() {\n  var coffeeOrderES = bp.EventSet( \"coffee orders\", function(evt){\n    return evt.name.endsWith(\"coffee\");\n  });\n\t\t  while ( true ) {\n\t\t    for ( var i=0; i<10; i++ ) {\n\t\t\t\t\t\t\t\t\t      bp.sync({waitFor:coffeeOrderES});\n\t\t    }\n\t\t    bp.sync({request:bp.Event(\"Grind more coffee!\"),\n\t\t           block:coffeeOrderES});\n\t\t  }\t\t\t\n\t\t});'\t\t\t"
+				"code" : "btCoffee := '\rbp.registerBThread(\"coffee supply\", function() {\n  var coffeeOrderES = bp.EventSet(\"coffee orders\", function(evt){\n    return evt.name.endsWith(\"coffee\");\n  });\n  while ( true ) {\n    for ( var i=0; i < 10; i++ ) {\r        bp.sync({ waitFor:coffeeOrderES });\n    }\n    bp.sync({ request:bp.Event(\"Grind more coffee!\"), block: coffeeOrderES});\n  }\t\t\t\n});'\t\t\t"
 			},
 			{
 				"__type" : "textSnippet",
@@ -319,7 +319,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-09-29T12:37:21.617283+02:00"
+						"dateAndTimeString" : "2025-10-14T10:56:03.294278+02:00"
 					}
 				},
 				"uid" : {
@@ -390,14 +390,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-09-29T13:11:09.015099+02:00"
+						"dateAndTimeString" : "2025-10-14T10:55:35.997407+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "XZWsesb7DQCWGJxcA8suMw=="
 				},
-				"code" : "process stdin\r\t\t\t\tnextPutAll: '{\"type\": \"enqueueEvent\", \"name\": \"bla bla coffee\" }'; crlf"
+				"code" : "process stdin\r    nextPutAll: '{\"type\": \"enqueueEvent\", \"name\": \"bla bla coffee\" }'; crlf"
 			},
 			{
 				"__type" : "textSnippet",
@@ -424,7 +424,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-09-22T16:51:35.444098+02:00"
+						"dateAndTimeString" : "2025-10-14T10:57:22.64821+02:00"
 					}
 				},
 				"uid" : {
@@ -434,7 +434,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "You can observe how the coffee order events are requested by the B-Program. Also, how when the number of coffee orders reach 10, then the B-Programs requests the \"Grind more coffee!\" event."
+				"string" : "You can observe how the coffee order events are requested by the B-Program. Also, how when the number of coffee orders reach 10, then the B-Program\t\t\t requests the \"Grind more coffee!\" event."
 			},
 			{
 				"__type" : "textSnippet",

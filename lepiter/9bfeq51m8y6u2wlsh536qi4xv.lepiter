@@ -34,14 +34,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-10-12T14:10:20.552836+02:00"
+									"dateAndTimeString" : "2025-10-14T12:52:58.407959+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "EY5Ghx39DQCHKFjLDgJinQ=="
 							},
-							"code" : "squareTakenBlock := [ :row :col | \r\t'bp.registerBThread(\"SquareTaken(' , row , ',' , col , ')\", function() {\n    var moveAcceptedToSquareES = bp.EventSet(\"moveAcceptedToSquare\", function(evt) {\n        return (evt.name == \"moveAccepted\") &&\n            (evt.data.row == ' , row , ') &&\n            (evt.data.col == ' , col\r\t\t, ');\n    });\r    var moveToSquareES = bp.EventSet(\"moveToSquare\", function(evt) {\n        return (evt.name == \"move\") &&\n            (evt.data.row == ' , row , ') &&\n            (evt.data.col == ' , col\r\t\t, ');\n    });\n    bp.sync({ waitFor: moveAcceptedToSquareES });\n    bp.sync({ block: moveToSquareES });\n});' ].\r\rbtSquareTaken := ''.\r\r1 to: 3 do: [ :row | \r\t1 to: 3 do: [ :col | \r\t\tbtSquareTaken := btSquareTaken , \r\t\t\t(squareTakenBlock value: row asString value: col asString) , \r\t\t\tString crlf,\r\t\t\tString crlf ] ].\r\rbtSquareTaken"
+							"code" : "squareTakenBlock := [ :row :col | \r\t'bp.registerBThread(\"SquareTaken(' , row , ',' , col , ')\", function() {\n    var moveAcceptedToSquareES = bp.EventSet(\"moveAcceptedToSquare\", function(evt) {\n        return (evt.name == \"moveAccepted\") &&\n            (evt.data.row == ' , row , ') &&\n            (evt.data.col == ' , col\r\t\t, ');\n    });\r    var moveToSquareES = bp.EventSet(\"moveToSquare\", function(evt) {\n        return (evt.name == \"move\") &&\n            (evt.data.row == ' , row , ') &&\n            (evt.data.col == ' , col\r\t\t, ');\t\t\t\n    });\n    bp.sync({ waitFor: moveAcceptedToSquareES });\n    bp.sync({ block: moveToSquareES });\n});' ].\t\t\t\r\rbtSquareTaken := ''.\r\r1 to: 3 do: [ :row | \r\t1 to: 3 do: [ :col | \r\t\tbtSquareTaken := btSquareTaken , \r\t\t\t(squareTakenBlock value: row asString value: col asString) , \r\t\t\tString crlf,\r\t\t\tString crlf ] ].\r\rbtSquareTaken"
 						},
 						{
 							"__type" : "textSnippet",
@@ -216,7 +216,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-10-12T14:11:19.752394+02:00"
+												"dateAndTimeString" : "2025-10-14T12:53:41.6094+02:00"
 											}
 										},
 										"uid" : {
