@@ -1,0 +1,286 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-21T18:08:01.267517+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-21T18:17:21.846014+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "DAwzIw/+DQC5QlRxBIXCSQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "We can benefit from the *prioritized event selection strategy* used by the b-threads coordinator to be able to express behaviors to prefer the O moves in the following **order of center, corners and edges**.\n\nNote the use of the second argument of the *registerBThread* function in order to define the priority value for the synchronization points in the following b-threads:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-21T18:09:31.269485+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-21T18:38:37.2265+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "jSF9KQ/+DQC958PjBIXCSQ=="
+				},
+				"code" : "btOPlayerCenter := 'bp.registerBThread(\"OPlayerCenter\", function() {\r    while (true) {\n        bp.sync({ request: \r            bp.Event(\"move\", { \"player\": \"O\", \"row\": 2, \"col\": 2}) \r        }, 50);\r    }\n});'.\r\r\rbtOPlayerCorners := 'bp.registerBThread(\"OPlayerCorners\", function() {\r    while (true) {\n        bp.sync({ request: [\r            bp.Event(\"move\", { \"player\": \"O\", \"row\": 1, \"col\": 1}),\r            bp.Event(\"move\", { \"player\": \"O\", \"row\": 1, \"col\": 3}),\r            bp.Event(\"move\", { \"player\": \"O\", \"row\": 3, \"col\": 1}),\r            bp.Event(\"move\", { \"player\": \"O\", \"row\": 3, \"col\": 3}) ] \r        }, 40);\r    }\n});'.\r\rbtOPlayerEdges := 'bp.registerBThread(\"OPlayerEdges\", function() {\r    while (true) {\n        bp.sync({ request: [\r            bp.Event(\"move\", { \"player\": \"O\", \"row\": 1, \"col\": 2}),\r            bp.Event(\"move\", { \"player\": \"O\", \"row\": 2, \"col\": 1}),\r            bp.Event(\"move\", { \"player\": \"O\", \"row\": 2, \"col\": 3}),\r            bp.Event(\"move\", { \"player\": \"O\", \"row\": 3, \"col\": 2}) ] \r        }, 30);\r    }\n});'."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-21T18:30:09.200055+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-21T18:40:10.30297+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "fagDcw/+DQCa/f6qAxjNVA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "We can try a new version of the game loading the previous 3 b-threads and check if the O player is playing how we expect:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-21T18:30:46.878077+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-21T18:32:14.015767+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "nl+FdQ/+DQCdtXIVAxjNVA=="
+				},
+				"code" : "game := Gt4BpTicTacToeExamples new humanVsMachineTrivialGame\r\tloadBThread: btOPlayerCenter named: 'btOPlayerCenter.js';\r\tloadBThread: btOPlayerCorners named: 'btOPlayerCorners.js';\r\tloadBThread: btOPlayerEdges named: 'btOPlayerEdges.js';\r\tstart"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-21T18:32:17.357008+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-21T18:32:20.438378+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "7vjpeg/+DQCfHzmhAxjNVA=="
+				},
+				"code" : "game stop"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-21T18:18:21.774188+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-21T18:19:51.955473+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "lv0bSQ/+DQCPFf5dAxjNVA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "We can define an example to build this new version of the human-vs-machine game with the O player exhibiting the modified behavior:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-21T18:19:58.354512+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-21T18:40:46.091145+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "gLDdTg/+DQCTBG1KAxjNVA=="
+				},
+				"code" : "Gt4BpTicTacToeExamples compile: '\rbtOPlayerCenter\r    <gtExample>\r    ^ ''bp.registerBThread(\"OPlayerCenter\", function() {\r    while (true) {\n        bp.sync({ request: \r            bp.Event(\"move\", { \"player\": \"O\", \"row\": 2, \"col\": 2}) \r        }, 50);\r    }\n});''' classified: #'example - support'.\r\rGt4BpTicTacToeExamples compile: '\rbtOPlayerCorners\r    <gtExample>\r    ^ ''bp.registerBThread(\"OPlayerCorners\", function() {\r    while (true) {\n        bp.sync({ request: [\r            bp.Event(\"move\", { \"player\": \"O\", \"row\": 1, \"col\": 1}),\r            bp.Event(\"move\", { \"player\": \"O\", \"row\": 1, \"col\": 3}),\r            bp.Event(\"move\", { \"player\": \"O\", \"row\": 3, \"col\": 1}),\r            bp.Event(\"move\", { \"player\": \"O\", \"row\": 3, \"col\": 3}) ] \r        }, 40);\r    }\n});''' classified: #'example - support'.\r\rGt4BpTicTacToeExamples compile: '\rbtOPlayerEdges\r    <gtExample>\r    ^ ''bp.registerBThread(\"OPlayerEdges\", function() {\r    while (true) {\n        bp.sync({ request: [\r            bp.Event(\"move\", { \"player\": \"O\", \"row\": 1, \"col\": 2}),\r            bp.Event(\"move\", { \"player\": \"O\", \"row\": 2, \"col\": 1}),\r            bp.Event(\"move\", { \"player\": \"O\", \"row\": 2, \"col\": 3}),\r            bp.Event(\"move\", { \"player\": \"O\", \"row\": 3, \"col\": 2}) ] \r        }, 30);\r    }\n});''' classified: #'example - support'.\r\rGt4BpTicTacToeExamples compile: '\rhumanVsMachineWithPreferedSquaresGame\r\t<gtExample>\r    ^ self humanVsMachineTrivialGame\r\t\tloadBThread: self btOPlayerCenter named: ''test-OPlayerCenter.js'';\r\t\tloadBThread: self btOPlayerCorners named: ''test-OPlayerCorners.js'';\r\t\tloadBThread: self btOPlayerEdges named: ''test-OPlayerEdges.js'';\r\t    yourself' classified: #example."
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2025-10-21T18:07:45.720499+02:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2025-10-21T18:42:09.096326+02:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "Occupy the center, corners and edges"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "e9933223-0ffe-0d00-b941-b6060485c249"
+	}
+}
