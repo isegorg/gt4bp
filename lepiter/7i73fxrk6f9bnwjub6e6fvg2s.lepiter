@@ -656,14 +656,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-21T13:19:50.363755+02:00"
+						"dateAndTimeString" : "2025-10-21T17:48:42.731776+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "A4pXsfv9DQClTq2nBfHvPA=="
 				},
-				"code" : "\rbtDirectory := (FileLocator temp / 'bt-examples' / 'coffee') asFileReference.\r\rbtCoffeeSuply := 'bp.registerBThread(\"coffee supply\", function() {\n  var coffeeOrderES = bp.EventSet(\"coffee orders\", function(evt){\n    return evt.name.endsWith(\"coffee\");\n  });\n  while ( true ) {\n     \t\t bp.sync({waitFor:coffeeOrderES});\n  }\t\t\t\t\n});'.\r\rbtCoffeeOrders := 'bp.registerBThread(\"coffee orders\", function() {\n    for ( var i=0; i<=14\t\t\t; i++ ) {\t\t\t\n        bp.sync({ request:bp.Event(\"espresso coffee\") });\n    }\t\t\n});'.\r\rbtCoffeeSatefy := 'bp.registerBThread(\"coffee safety\", function() {\n    var coffeeOrderES = bp.EventSet(\"coffee orders\", function(evt){\n        return evt.name.endsWith(\"coffee\");\n    });\n    for ( var i=0; i<10; i++ ) {\t\t\t\n        bp.sync({ waitFor: coffeeOrderES });\n    };\n    var eleventhEvent = bp.sync({ waitFor: bp.eventSets.all });\n    if (eleventhEvent.name !== \"Grind more coffee!\") {\n\t    bp.ASSERT(false, \"Coffee should be grinded\");\n    }\n});'.\r"
+				"code" : "\rbtDirectory := (FileLocator temp / 'bt-examples' / 'coffee') asFileReference.\r\rbtCoffeeSuply := 'bp.registerBThread(\"coffee supply\", function() {\n  var coffeeOrderES = bp.EventSet(\"coffee orders\", function(evt){\n    return evt.name.endsWith(\"coffee\");\n  });\n  while ( true ) {\r      \t\t\tbp.sync({waitFor:coffeeOrderES});\n  }\t\t\t\t\n});'.\r\rbtCoffeeOrders := 'bp.registerBThread(\"coffee orders\", function() {\n    for ( var i=0; i<=10; i++ ) {\t\t\t\n        bp.sync({ request:bp.Event(\"espresso coffee\") });\n    }\t\t\n});'.\r\rbtCoffeeSatefy := 'bp.registerBThread(\"coffee safety\", function() {\n    var coffeeOrderES = bp.EventSet(\"coffee orders\", function(evt){\n        return evt.name.endsWith(\"coffee\");\n    });\n    for ( var i=0; i<10; i++ ) {\t\t\t\n        bp.sync({ waitFor: coffeeOrderES });\n    };\n    var eleventhEvent = bp.sync({ waitFor: bp.eventSets.all });\n    if (eleventhEvent.name !== \"Grind more coffee!\") {\n\t    bp.ASSERT(false, \"Coffee should be grinded\");\n    }\n});'.\r"
 			},
 			{
 				"__type" : "textSnippet",
@@ -735,6 +735,148 @@
 					"uidString" : "ScHRtgr+DQC6rd2qC6FfSA=="
 				},
 				"code" : "bridge := (Gt4BpVerifierBridge fromDirectory: btDirectory)\r\tloadBProgram: btCoffeeSuply named: 'bt-CoffeeSuply.js';\r\tloadBProgram: btCoffeeOrders named: 'bt-CoffeeOrders.js';\r\tloadBProgram: btCoffeeSatefy named: 'bt-CoffeeSafety.js';\r\tonVerificationResult: [:event | Transcript crShow: 'Verification result: ', event asString];\r\tverify.\t\t\t\r\t\rTranscript"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-21T17:40:24.146189+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-21T17:40:54.72317+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "OiVawQ7+DQCeSecsBIXCSQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "In order to satisfy the safety property we fix the previous *coffee supply* b-thread as the following:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-21T17:40:57.728095+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-21T17:46:42.737017+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "g5Baww7+DQCgj4USBIXCSQ=="
+				},
+				"code" : "btFixedCoffeeSuply := 'bp.registerBThread(\"coffee supply\", function() {\n  var coffeeOrderES = bp.EventSet(\"coffee orders\", function(evt){\n    return evt.name.endsWith(\"coffee\");\n  });\n  while ( true ) {\r      for (var i=0; i<10; i++) {\r          bp.sync({ waitFor: coffeeOrderES });\r      }\r      bp.sync({ request: bp.Event(\"Grind more coffee!\"), block: coffeeOrderES });\n  }\t\t\t\t\n});'."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-21T17:42:21.728783+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-21T17:42:47.872897+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "MFBcyA7+DQCja/G0BIXCSQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "If we verify the patched b-program, now the verifier should finish without detecting any violation:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-21T17:42:51.280282+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-21T17:48:58.308544+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "xTsfyg7+DQCl3lhnBIXCSQ=="
+				},
+				"code" : "bridge := (Gt4BpVerifierBridge fromDirectory: btDirectory)\r\tloadBProgram: btFixedCoffeeSuply named: 'bt-FixedCoffeeSuply.js';\r\tloadBProgram: btCoffeeOrders named: 'bt-CoffeeOrders.js';\t\t\t\r\tloadBProgram: btCoffeeSatefy named: 'bt-CoffeeSafety.js';\r\tonVerificationResult: [:event | Transcript crShow: 'Verification result: ', event asString];\r\tverify.\t\t\t\r\t\rTranscript"
 			}
 		]
 	},
