@@ -551,14 +551,48 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-21T13:24:28.604297+02:00"
+						"dateAndTimeString" : "2025-10-21T17:32:58.555492+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "8Z2QhAn+DQCsO7E/C+5Y+w=="
 				},
-				"code" : "Announcement\r\tsubclass: #Gt4BpVerificationResult\r\tinstanceVariableNames: 'violation violationDescription counterExample timeInMillis statesScanned edgesScanned'\r\tclassVariableNames: ''\r\tcategory: 'Gt4BP-Events'.\r\t\rGt4BpVerificationResult compile: '\risViolation\r\t^ violation\r' classified: #accessing.\r\rGt4BpVerificationResult compile: '\rviolation: anObject\r\tviolation := anObject\r' classified: #accessing.\r\rGt4BpVerificationResult compile: '\rtimeInMillis\r\t^ timeInMillis\r' classified: #accessing.\r\rGt4BpVerificationResult compile: '\rtimeInMillis: anObject\r\ttimeInMillis := anObject\r' classified: #accessing.\r\rGt4BpVerificationResult compile: '\rstatesScanned\r\t^ statesScanned\r' classified: #accessing.\r\rGt4BpVerificationResult compile: '\rstatesScanned: anObject\r\tstatesScanned := anObject\r' classified: #accessing.\r\r\rGt4BpVerificationResult compile: '\redgesScanned\r\t^ edgesScanned\r' classified: #accessing.\r\rGt4BpVerificationResult compile: '\redgesScanned: anObject\r\tedgesScanned := anObject\r' classified: #accessing.\r\r\rGt4BpVerificationResult compile: '\rviolationDescription\r\t^ violationDescription\r' classified: #accessing.\r\rGt4BpVerificationResult compile: '\rviolationDescription: aString\r\tviolationDescription := aString\r' classified: #accessing.\r\rGt4BpVerificationResult compile: '\rcounterExample\r\t^ counterExample\r' classified: #accessing.\r\rGt4BpVerificationResult compile: '\raddCounterExampleEvent: aBPEvent\r\tcounterExample ifNil: [ counterExample := OrderedCollection empty].\r\tcounterExample add: aBPEvent\r' classified: #accessing.\r\rGt4BpVerificationResult compile: '\rprintString\r\t^ self toJson\r' classified: #printing.\r\rGt4BpVerificationResult compile: '\rtoJson\r    | dictionary |\r\tdictionary := {\r\t    ''type'' -> ''verificationResult'' .\r\t\t''isViolation'' -> violation .\r\t\t''statesScanned'' -> statesScanned .\r\t\t''edgesScanned'' -> edgesScanned .\r\t\t''timeMillis'' -> timeInMillis } asDictionary.\r\tviolationDescription ifNotNil: [ dictionary at: ''violationDescription'' put: violationDescription ].\r\tcounterExample ifNotNil: [ dictionary at: ''counterexample'' put: counterExample ].\r\t^ NeoJSONWriter toString: dictionary\r' classified: #json.\r\t\rGt4BpVerificationResult class compile: '\rfromJson: aString\r\t[ | dictionary |\r\t   dictionary := NeoJSONReader fromString: aString.\r\t   ^ self fromDictionary: dictionary ]\r\ton: Exception\r\tdo: [ :ex |\r\t\tTranscript crShow: ''Bridge output is invalid JSON: '', aString , ''.''.\r\t\tex signal.\r\t]\r' classified: #json.\r\rGt4BpVerificationResult class compile: '\rfromDictionary: aDictionary\r    | result |\r    result := self new\r          violation: (aDictionary at: ''isViolation'');\r\t      timeInMillis: (aDictionary at: ''timeMillis'');\r\t      statesScanned: (aDictionary at: ''statesScanned'');\r\t      edgesScanned: (aDictionary at: ''edgesScanned'');\r          yourself.\r    aDictionary at: ''violation'' ifPresent: [ :violationDict |\r    \tviolationDict at: ''description'' ifPresent: [ :description | \r    \t    result violationDescription: description.\r    \t].\r    \tviolationDict at: ''counterExampleTrace'' ifPresent: [ :events |\r    \t\tevents do: [ :anEvent | result addCounterExampleEvent: anEvent ]\r    \t]\r    ].\r    ^ result\r' classified: #json.\r"
+				"code" : "Announcement\r\tsubclass: #Gt4BpVerificationResult\r\tinstanceVariableNames: 'violation violationDescription counterExample timeInMillis statesScanned edgesScanned'\r\tclassVariableNames: ''\r\tcategory: 'Gt4BP-Events'."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-21T17:32:45.25587+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-21T17:32:47.244999+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "KQkApg7+DQCvrNYAATbi+w=="
+				},
+				"code" : "Gt4BpVerificationResult compile: '\risViolation\r\t^ violation\r' classified: #accessing.\r\rGt4BpVerificationResult compile: '\rviolation: anObject\r\tviolation := anObject\r' classified: #accessing.\r\rGt4BpVerificationResult compile: '\rtimeInMillis\r\t^ timeInMillis\r' classified: #accessing.\r\rGt4BpVerificationResult compile: '\rtimeInMillis: anObject\r\ttimeInMillis := anObject\r' classified: #accessing.\r\rGt4BpVerificationResult compile: '\rstatesScanned\r\t^ statesScanned\r' classified: #accessing.\r\rGt4BpVerificationResult compile: '\rstatesScanned: anObject\r\tstatesScanned := anObject\r' classified: #accessing.\r\r\rGt4BpVerificationResult compile: '\redgesScanned\r\t^ edgesScanned\r' classified: #accessing.\r\rGt4BpVerificationResult compile: '\redgesScanned: anObject\r\tedgesScanned := anObject\r' classified: #accessing.\r\r\rGt4BpVerificationResult compile: '\rviolationDescription\r\t^ violationDescription\r' classified: #accessing.\r\rGt4BpVerificationResult compile: '\rviolationDescription: aString\r\tviolationDescription := aString\r' classified: #accessing.\r\rGt4BpVerificationResult compile: '\rcounterExample\r\t^ counterExample\r' classified: #accessing.\r\rGt4BpVerificationResult compile: '\raddCounterExampleEvent: aBPEvent\r\tcounterExample ifNil: [ counterExample := OrderedCollection empty].\r\tcounterExample add: aBPEvent\r' classified: #accessing.\r\rGt4BpVerificationResult compile: '\rprintString\r\t^ self toJson\r' classified: #printing.\r\rGt4BpVerificationResult compile: '\rtoJson\r    | dictionary |\r\tdictionary := {\r\t    ''type'' -> ''verificationResult'' .\r\t\t''isViolation'' -> violation .\r\t\t''statesScanned'' -> statesScanned .\r\t\t''edgesScanned'' -> edgesScanned .\r\t\t''timeMillis'' -> timeInMillis } asDictionary.\r\tviolationDescription ifNotNil: [ dictionary at: ''violationDescription'' put: violationDescription ].\r\tcounterExample ifNotNil: [ dictionary at: ''counterexample'' put: counterExample ].\r\t^ NeoJSONWriter toString: dictionary\r' classified: #json.\r\t\rGt4BpVerificationResult class compile: '\rfromJson: aString\r\t[ | dictionary |\r\t   dictionary := NeoJSONReader fromString: aString.\r\t   ^ self fromDictionary: dictionary ]\r\ton: Exception\r\tdo: [ :ex |\r\t\tTranscript crShow: ''Bridge output is invalid JSON: '', aString , ''.''.\r\t\tex signal.\r\t]\r' classified: #json.\r\rGt4BpVerificationResult class compile: '\rfromDictionary: aDictionary\r    | result |\r    result := self new\r          violation: (aDictionary at: ''isViolation'');\r\t      timeInMillis: (aDictionary at: ''timeMillis'');\r\t      statesScanned: (aDictionary at: ''statesScanned'');\r\t      edgesScanned: (aDictionary at: ''edgesScanned'');\r          yourself.\r    aDictionary at: ''violation'' ifPresent: [ :violationDict |\r    \tviolationDict at: ''description'' ifPresent: [ :description | \r    \t    result violationDescription: description.\r    \t].\r    \tviolationDict at: ''counterExampleTrace'' ifPresent: [ :events |\r    \t\tevents do: [ :anEvent | result addCounterExampleEvent: anEvent ]\r    \t]\r    ].\r    ^ result\r' classified: #json."
 			},
 			{
 				"__type" : "textSnippet",
