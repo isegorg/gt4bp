@@ -66,7 +66,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-13T12:01:16.496333+02:00"
+						"dateAndTimeString" : "2025-10-20T18:13:20.171778+02:00"
 					}
 				},
 				"uid" : {
@@ -76,7 +76,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[[Using Moldable Literate Programming]]\n\n[[Spawning BPjs Runner Bridge as an external process]]\n\n[[Enqueueing events to the B-Program]]\n\n[[Design of the BPjs Runner Bridge integration for GToolkit]]"
+				"string" : "[[Using Moldable Literate Programming]]\n\n[[Spawning BPjs Runner Bridge as an external process]]\n\n[[Enqueueing events to the B-Program]]\n\n[[Design of the BPjs Runner Bridge integration for GToolkit]]\n\n[[Design of the BPjs Verifier Bridge for GToolkit]]"
 			},
 			{
 				"__type" : "textSnippet",

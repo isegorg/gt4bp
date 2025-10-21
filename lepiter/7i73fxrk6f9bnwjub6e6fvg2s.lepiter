@@ -1,0 +1,737 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-20T18:13:33.276493+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-20T18:36:28.050376+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "ZH0SGvv9DQCJLDlOCcjGfg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "#Base class Gt4BpBridge"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-20T18:20:19.904509+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-20T18:20:42.639239+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "IiRPMvv9DQCdxJyXBfHvPA=="
+				},
+				"code" : "Object\r\tsubclass: #Gt4BpBridge\r\tinstanceVariableNames: 'btDirectory announcer'\r\tclassVariableNames: ''\r\tcategory: 'Gt4BP-Core'"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-20T18:21:09.293961+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-20T18:27:26.358905+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "ucNANfv9DQCeG2u9BfHvPA=="
+				},
+				"code" : "Gt4BpBridge compile: '\rinitialize\r\r\tself btDirectory: self class defaultBtDirectory.\r\tannouncer := Announcer new.\r'\r\tclassified: #initialization"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-20T18:28:32.425448+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-20T18:28:39.274564+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "D2qqT/v9DQCeZWN4BfHvPA=="
+				},
+				"code" : "Gt4BpBridge class compile: '\rfromDirectory: aString\r\t^ self new \r\t    btDirectory: aString; \r\t    yourself\r' classified: #'instance creation'"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-20T18:29:43.453439+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-20T18:32:35.107866+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "IzfmU/v9DQCei97XBfHvPA=="
+				},
+				"code" : "Gt4BpBridge class compile: '\rdefaultBtDirectory\r    ^ ''bThreads''\r' classified: #'default values'.\r\r\rGt4BpBridge compile: '\rbtDirectory\r    ^ btDirectory' classified: #accessing.\r    \rGt4BpBridge compile: '\rbtDirectory: aFileReferenceOrDirName\r    btDirectory := aFileReferenceOrDirName asFileReference ensureDeleteAll ensureCreateDirectory' classified: #accessing.\r    \r    \rGt4BpBridge compile: '\rannouncer\r    ^ announcer' classified: #accessing."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-20T18:33:37.411561+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-20T18:33:44.17798+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "GyLYYfv9DQCfTaSABfHvPA=="
+				},
+				"code" : "Gt4BpBridge compile: '\rloadBProgram: bProgramCode named: bProgramFilename\r\t(btDirectory / bProgramFilename) \r\t\tensureCreateFile; \r\t\twriteStreamDo: [ :s | s << bProgramCode ].\r' classified: #loading"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-20T18:36:42.711835+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-20T18:36:52.985054+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "3eBfbPv9DQCf+wYOBfHvPA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "#Refactor Gt4BpRunnerBridge"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-20T18:39:50.974405+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-20T18:42:32.600127+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "7D8cePv9DQChgvllBfHvPA=="
+				},
+				"code" : "Smalltalk removeClassNamed: #Gt4BpRunnerBridge"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-20T18:36:57.98866+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-20T18:43:45.551309+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "aLLMbfv9DQCg8i1WBfHvPA=="
+				},
+				"code" : "Gt4BpBridge\r\tsubclass: #Gt4BpRunnerBridge\r\tinstanceVariableNames: 'process isRunning'\r\tclassVariableNames: ''\r\tcategory: 'Gt4BP-Core'"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-20T18:43:52.402706+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-20T18:46:55.131839+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "OSeAhvv9DQCj4lHTBfHvPA=="
+				},
+				"code" : "Gt4BpRunnerBridge compile: '\rinitialize\r\r\tisRunning := false.\r'\r\tclassified: #initialization.\r\t\rGt4BpRunnerBridge compile: '\risRunning\r    ^ isRunning' classified: #accessing.\r    \rGt4BpRunnerBridge compile: '\ronEvent: aBlock\r    announcer when: Gt4BpEvent do: [ :event | aBlock value: event ]\r' classified: #'events'.\r\rGt4BpRunnerBridge compile: '\rstart\r\tisRunning\r\t\tifFalse: [ \r\t\t\tprocess := self newBridgeProcess.\r\t\t\tisRunning := true.\r\t\t\tself forkStdOutObserver.\r\t\t\tself forkStdErrObserver ]\r' classified: #lifecycle.\r\rGt4BpRunnerBridge compile: '\rstop\r\tisRunning ifTrue: [ \r\t    process kill.\r\t    isRunning := false \r\t]\r' classified: #lifecycle.\r\rGt4BpRunnerBridge compile: '\rnewBridgeProcess\r\t^ GtExternalProcessBuilder new\r\t\tcommand: ''java'';\r\t\targs: {''-jar''.\r\t\t\t\t''pharo-local/iceberg/isegorg/gt4bp/BPjsRunnerBridge-0.1.0-SNAPSHOT.jar''.\r\t\t\t\tbtDirectory pathString};\r\t\tpipeStdout;\r\t\tpipeStdin;\r\t\tpipeStderr;\r\t\tspawn\r' classified: #'private - lifecycle'.\r\rGt4BpRunnerBridge compile: '\rforkStdOutObserver\r\t[ | lines line event |\r\tlines := process stdoutStream lines.\r\t[ isRunning ]\r\t\twhileTrue: [ \r\t\t    line := lines next wait.\r\t\t    [ event := Gt4BpEvent fromJson: line value.\r\t\t\t  announcer announce: event ] on: Exception do: [ ''do nothing'' ] ] ]\r\t\tforkNamed: ''BPjs Bridge [PID:'' , process id asString , ''] StdOut Observer''\r' classified: #'private - lifecycle'.\r\rGt4BpRunnerBridge compile: '\rforkStdErrObserver\r\t[ | lines line |\r\tlines := process stderrStream lines.\r\t[ isRunning ]\r\t\twhileTrue: [ \r\t\t    line := lines next wait.\r\t\t\t[ Transcript crShow: ''BPjs Bridge Error: '' , line value ]\r\t\t\t\ton: Exception\r\t\t\t\tdo: [ ''do nothing'' ] ] ]\r\t\tforkNamed: ''BPjs Bridge [PID:'' , process id asString , ''] StdErr Observer''\r' classified: #'private - lifecycle'."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-20T18:47:25.166393+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-20T18:47:27.570679+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "ZKsuk/v9DQCkXOHOBfHvPA=="
+				},
+				"code" : "Gt4BpRunnerBridge compile: '\renqueueEvent: aBpEvent\r\taBpEvent type: ''enqueueEvent''.\r\tprocess stdin nextPutAll: aBpEvent toJson; nextPutAll: String crlf\r' classified: #events"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-20T18:50:43.168589+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-20T18:50:54.927012+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "dPH7nvv9DQCkarUkBfHvPA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "#Gt4BpVerifierBridge"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-20T18:50:58.566763+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-20T18:51:48.57793+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "q+bmn/v9DQCk0J1uBfHvPA=="
+				},
+				"code" : "Gt4BpBridge\r\tsubclass: #Gt4BpVerifierBridge\r\tinstanceVariableNames: ''\r\tclassVariableNames: ''\r\tcategory: 'Gt4BP-Core'"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-21T11:34:33.056113+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-21T11:39:38.816989+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "ChX3pAn+DQCw2jWjC+5Y+w=="
+				},
+				"code" : "Gt4BpVerifierBridge compile: '\rverify\r\tprocess := GtExternalProcessBuilder new\r\t\tcommand: ''java'';\r\t\targs: {''-jar''.\r\t\t\t\t''pharo-local/iceberg/isegorg/gt4bp/BPjsRunnerBridge-0.1.0-SNAPSHOT.jar''.\r\t\t\t\tbtDirectory pathString.\r\t\t\t\t''--verify''};\r\t\toutput.\r\tself parseVerificationResult: process stdout.\r' classified: #verification.\r\rGt4BpVerifierBridge compile: '\ronVerificationResult: aBlock\r    announcer when: Gt4BpVerificationResult do: [ :event | aBlock value: event ]\r' classified: #events.\r\rGt4BpVerifierBridge compile: '\rparseVerificationResult: aString\r\taString lines\r\t\tdo: [ :eachLine | \r\t\t\t[ | result |\r\t\t\tresult := Gt4BpVerificationResult fromJson: eachLine.\r\t\t\tannouncer announce: result ] on: Exception do: [ ''do nothing'' ] ]\r' classified: #private.\r\r"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-21T11:25:08.372762+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-21T11:25:19.260577+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "TLVOgwn+DQCrnDiuC+5Y+w=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "##Gt4BpVerificationResult event"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-21T11:25:29.469389+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-21T13:24:28.604297+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "8Z2QhAn+DQCsO7E/C+5Y+w=="
+				},
+				"code" : "Announcement\r\tsubclass: #Gt4BpVerificationResult\r\tinstanceVariableNames: 'violation violationDescription counterExample timeInMillis statesScanned edgesScanned'\r\tclassVariableNames: ''\r\tcategory: 'Gt4BP-Events'.\r\t\rGt4BpVerificationResult compile: '\risViolation\r\t^ violation\r' classified: #accessing.\r\rGt4BpVerificationResult compile: '\rviolation: anObject\r\tviolation := anObject\r' classified: #accessing.\r\rGt4BpVerificationResult compile: '\rtimeInMillis\r\t^ timeInMillis\r' classified: #accessing.\r\rGt4BpVerificationResult compile: '\rtimeInMillis: anObject\r\ttimeInMillis := anObject\r' classified: #accessing.\r\rGt4BpVerificationResult compile: '\rstatesScanned\r\t^ statesScanned\r' classified: #accessing.\r\rGt4BpVerificationResult compile: '\rstatesScanned: anObject\r\tstatesScanned := anObject\r' classified: #accessing.\r\r\rGt4BpVerificationResult compile: '\redgesScanned\r\t^ edgesScanned\r' classified: #accessing.\r\rGt4BpVerificationResult compile: '\redgesScanned: anObject\r\tedgesScanned := anObject\r' classified: #accessing.\r\r\rGt4BpVerificationResult compile: '\rviolationDescription\r\t^ violationDescription\r' classified: #accessing.\r\rGt4BpVerificationResult compile: '\rviolationDescription: aString\r\tviolationDescription := aString\r' classified: #accessing.\r\rGt4BpVerificationResult compile: '\rcounterExample\r\t^ counterExample\r' classified: #accessing.\r\rGt4BpVerificationResult compile: '\raddCounterExampleEvent: aBPEvent\r\tcounterExample ifNil: [ counterExample := OrderedCollection empty].\r\tcounterExample add: aBPEvent\r' classified: #accessing.\r\rGt4BpVerificationResult compile: '\rprintString\r\t^ self toJson\r' classified: #printing.\r\rGt4BpVerificationResult compile: '\rtoJson\r    | dictionary |\r\tdictionary := {\r\t    ''type'' -> ''verificationResult'' .\r\t\t''isViolation'' -> violation .\r\t\t''statesScanned'' -> statesScanned .\r\t\t''edgesScanned'' -> edgesScanned .\r\t\t''timeMillis'' -> timeInMillis } asDictionary.\r\tviolationDescription ifNotNil: [ dictionary at: ''violationDescription'' put: violationDescription ].\r\tcounterExample ifNotNil: [ dictionary at: ''counterexample'' put: counterExample ].\r\t^ NeoJSONWriter toString: dictionary\r' classified: #json.\r\t\rGt4BpVerificationResult class compile: '\rfromJson: aString\r\t[ | dictionary |\r\t   dictionary := NeoJSONReader fromString: aString.\r\t   ^ self fromDictionary: dictionary ]\r\ton: Exception\r\tdo: [ :ex |\r\t\tTranscript crShow: ''Bridge output is invalid JSON: '', aString , ''.''.\r\t\tex signal.\r\t]\r' classified: #json.\r\rGt4BpVerificationResult class compile: '\rfromDictionary: aDictionary\r    | result |\r    result := self new\r          violation: (aDictionary at: ''isViolation'');\r\t      timeInMillis: (aDictionary at: ''timeMillis'');\r\t      statesScanned: (aDictionary at: ''statesScanned'');\r\t      edgesScanned: (aDictionary at: ''edgesScanned'');\r          yourself.\r    aDictionary at: ''violation'' ifPresent: [ :violationDict |\r    \tviolationDict at: ''description'' ifPresent: [ :description | \r    \t    result violationDescription: description.\r    \t].\r    \tviolationDict at: ''counterExampleTrace'' ifPresent: [ :events |\r    \t\tevents do: [ :anEvent | result addCounterExampleEvent: anEvent ]\r    \t]\r    ].\r    ^ result\r' classified: #json.\r"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-21T11:36:12.907152+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-21T12:29:42.465619+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "wLLqqgn+DQCxRoBZC+5Y+w=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "#Let's verify..."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-20T18:55:51.16131+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-21T13:19:50.363755+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "A4pXsfv9DQClTq2nBfHvPA=="
+				},
+				"code" : "\rbtDirectory := (FileLocator temp / 'bt-examples' / 'coffee') asFileReference.\r\rbtCoffeeSuply := 'bp.registerBThread(\"coffee supply\", function() {\n  var coffeeOrderES = bp.EventSet(\"coffee orders\", function(evt){\n    return evt.name.endsWith(\"coffee\");\n  });\n  while ( true ) {\n     \t\t bp.sync({waitFor:coffeeOrderES});\n  }\t\t\t\t\n});'.\r\rbtCoffeeOrders := 'bp.registerBThread(\"coffee orders\", function() {\n    for ( var i=0; i<=14\t\t\t; i++ ) {\t\t\t\n        bp.sync({ request:bp.Event(\"espresso coffee\") });\n    }\t\t\n});'.\r\rbtCoffeeSatefy := 'bp.registerBThread(\"coffee safety\", function() {\n    var coffeeOrderES = bp.EventSet(\"coffee orders\", function(evt){\n        return evt.name.endsWith(\"coffee\");\n    });\n    for ( var i=0; i<10; i++ ) {\t\t\t\n        bp.sync({ waitFor: coffeeOrderES });\n    };\n    var eleventhEvent = bp.sync({ waitFor: bp.eventSets.all });\n    if (eleventhEvent.name !== \"Grind more coffee!\") {\n\t    bp.ASSERT(false, \"Coffee should be grinded\");\n    }\n});'.\r"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-21T12:51:31.659109+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-21T13:25:05.779104+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "lJbItwr+DQC6w5e7C6FfSA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "We verify the previous b-threads and check as the verifier finds a violation of the safety property and it provides us with a counterexample trace:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-21T12:51:07.566367+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-21T12:51:20.23286+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "ScHRtgr+DQC6rd2qC6FfSA=="
+				},
+				"code" : "bridge := (Gt4BpVerifierBridge fromDirectory: btDirectory)\r\tloadBProgram: btCoffeeSuply named: 'bt-CoffeeSuply.js';\r\tloadBProgram: btCoffeeOrders named: 'bt-CoffeeOrders.js';\r\tloadBProgram: btCoffeeSatefy named: 'bt-CoffeeSafety.js';\r\tonVerificationResult: [:event | Transcript crShow: 'Verification result: ', event asString];\r\tverify.\t\t\t\r\t\rTranscript"
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2025-10-20T18:13:33.247342+02:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2025-10-20T18:13:33.247342+02:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "Design of the BPjs Verifier Bridge for GToolkit"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "240a121a-fbfd-0d00-892b-422b09c8c67e"
+	}
+}

@@ -63,15 +63,12 @@ Gt4BpTicTacToeExamples >> btAcceptAnyMove [
 { #category : #'example - support' }
 Gt4BpTicTacToeExamples >> btAlterningTurns [
 	^ 'bp.registerBThread("TurnManager", function(){
-    var XMoveES = bp.EventSet("move", function(evt) {
-	    return (evt.data == null) ? false : (evt.name == "move" && evt.data.player == "X");
-    });
-    var OMoveES = bp.EventSet("move", function(evt) {
-	    return (evt.data == null) ? false : evt.name == "move" && evt.data.player == "O";
+    var moveES = bp.EventSet("move", function(evt) {
+	    return (evt.data == null) ? false : evt.name == "move"		;
     });
     while (true) {
         // X turn
-        var xMove = bp.sync({ waitFor: XMoveES, block: OMoveES });
+        var xMove = bp.sync({ waitFor: moveES });
         bp.sync({ request:bp.Event("moveAccepted",
             { "player": "X",
 	          "row": xMove.data.row,
@@ -79,7 +76,7 @@ Gt4BpTicTacToeExamples >> btAlterningTurns [
         });
 
         // O turn
-        var oMove = bp.sync({ waitFor: OMoveES, block: XMoveES });
+        var oMove = bp.sync({ waitFor: moveES });
         bp.sync({ request:bp.Event("moveAccepted",
             { "player": "O",
 	          "row": oMove.data.row,
@@ -99,7 +96,7 @@ Gt4BpTicTacToeExamples >> btDraw [
     for (var i = 1; i <= 9; i++) { 
         bp.sync({ waitFor: moveAcceptedES }); 
     }
-    bp.sync({ request: bp.Event("gameOver") }, 9);
+    bp.sync({ request: bp.Event("gameOver") }, 9		);
 });'
 ]
 
@@ -112,6 +109,35 @@ Gt4BpTicTacToeExamples >> btGameOver [
     });
     bp.sync({ waitFor: gameOverES });
     bp.sync({ block: bp.eventSets.all });
+});'
+]
+
+{ #category : #'example - support' }
+Gt4BpTicTacToeExamples >> btHumanVsMachineTurns [
+	^ 'bp.registerBThread("TurnManager", function(){
+    var XMoveES = bp.EventSet("move", function(evt) {
+	    return (evt.data == null) ? false : (evt.name == "move" && evt.data.player == "X");
+    });
+    var OMoveES = bp.EventSet("move", function(evt) {
+	    return (evt.data == null) ? false : evt.name == "move" && evt.data.player == "O";
+    });
+    while (true) {
+        // X turn
+        var xMove = bp.sync({ waitFor: XMoveES , block: OMoveES });
+        bp.sync({ request:bp.Event("moveAccepted",
+            { "player": "X",
+	          "row": xMove.data.row,
+	          "col": xMove.data.col })
+        }, 1);
+
+        // O turn
+        var oMove = bp.sync({ waitFor: OMoveES, block: XMoveES });
+        bp.sync({ request:bp.Event("moveAccepted",
+            { "player": "O",
+	          "row": oMove.data.row,
+	          "col": oMove.data.col })	
+        }, 1);
+    }
 });'
 ]
 
@@ -190,6 +216,19 @@ Gt4BpTicTacToeExamples >> emptyGame [
 		assert: (game cells allSatisfy: [ :cell | cell isOccupied not ])
 		description: 'cells should be not occupied initially'.
 	^ game
+]
+
+{ #category : #example }
+Gt4BpTicTacToeExamples >> humanVsMachineTurnsGame [
+	<gtExample>
+    ^ self emptyGame
+    	loadBThread: self btHumanVsMachineTurns named: 'test-HumanVsMachineTurns.js';
+    	loadBThread: self btSquareTaken named: 'test-SquareTaken.js';
+    	loadBThread: self btXWin named: 'test-XWin.js';
+    	loadBThread: self btOWin named: 'test-OWin.js';
+		loadBThread: self btDraw named: 'test-Draw.js';
+		loadBThread: self btGameOver named: 'test-GameOver.js';
+	    yourself
 ]
 
 { #category : #'example - support' }
@@ -422,7 +461,7 @@ Gt4BpTicTacToeExamples >> scripterWithAllRulesGameCheckDrawWinnerConflict [
 		forElementCondition: [ :gameElement | 
 				(gameElement children
 					select: [ :eachCell | (eachCell label asString = '') not ]) size = 9 ]
-			timeout: 5 seconds;
+			timeout: 2 seconds;
 		onSpaceRoot;
 		// #board asBlocElementId;
 		play.
@@ -673,7 +712,7 @@ Gt4BpTicTacToeExamples >> scripterWithTrivialLogicGameClickCells [
 					select: [ :eachCell | (eachCell label asString = '') not ]) size = 2 ]
 			timeout: 2 seconds;
 		onSpaceRoot;
-		/ #board asBlocElementId;
+		// #board asBlocElementId;
 		play.
 
 	aScripter
