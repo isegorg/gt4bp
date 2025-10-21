@@ -18,11 +18,3 @@ BaselineOfGt4BP class >> loadLepiter [
 		ifNone: [
 			self inform: 'Repository not found.' ]
 ]
-
-{ #category : #baseline }
-BaselineOfGt4BP >> baseline: spec [
-	<baseline>
-		^ spec for: #common do: [
-			spec package: 'Gt4BP'
-		]
-]
