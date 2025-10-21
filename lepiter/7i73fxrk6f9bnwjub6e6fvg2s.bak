@@ -656,7 +656,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-21T13:24:47.978294+02:00"
+						"dateAndTimeString" : "2025-10-21T13:25:05.779104+02:00"
 					}
 				},
 				"uid" : {
@@ -666,7 +666,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "We verify the previous b-threads and check that the verifier finds a violation of the safety property and it provides us a counterexample:"
+				"string" : "We verify the previous b-threads and check as the verifier finds a violation of the safety property and it provides us with a counterexample trace:"
 			},
 			{
 				"__type" : "pharoSnippet",
