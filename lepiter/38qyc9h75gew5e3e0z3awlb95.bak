@@ -66,7 +66,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-13T12:01:16.496333+02:00"
+						"dateAndTimeString" : "2025-10-20T18:13:20.171778+02:00"
 					}
 				},
 				"uid" : {
@@ -76,7 +76,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[[Using Moldable Literate Programming]]\n\n[[Spawning BPjs Runner Bridge as an external process]]\n\n[[Enqueueing events to the B-Program]]\n\n[[Design of the BPjs Runner Bridge integration for GToolkit]]"
+				"string" : "[[Using Moldable Literate Programming]]\n\n[[Spawning BPjs Runner Bridge as an external process]]\n\n[[Enqueueing events to the B-Program]]\n\n[[Design of the BPjs Runner Bridge integration for GToolkit]]\n\n[[Design of the BPjs Verifier Bridge for GToolkit]]"
 			},
 			{
 				"__type" : "textSnippet",
@@ -495,6 +495,80 @@
 											"__type" : "textStyle"
 										},
 										"string" : "[[Trivial logic for player O]]"
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-10-22T16:03:14.30171+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-10-22T16:03:14.314344+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "bQBLgyH+DQCQ2RVeBGbCpg=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "[[Occupy the center, corners and edges]]"
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-10-22T16:03:21.813979+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-10-22T16:03:21.824664+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "CdnxgyH+DQCQ+fjLBGbCpg=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "[[Prevent third X]]"
 									}
 								]
 							},

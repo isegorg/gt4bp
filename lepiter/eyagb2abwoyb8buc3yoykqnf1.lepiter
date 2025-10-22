@@ -1,0 +1,434 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "blockQuoteSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T16:38:47.691488+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T16:40:43.468806+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "a/exACL+DQCaHdQuBdyQ/A=="
+				},
+				"string" : "\n“Program testing can be used to show the presence of bugs, but never to show their absence!”\n\n― Edsger W. Dijkstra\n"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T16:32:26.061185+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T16:39:19.579897+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "luEe7CH+DQCXRc8VBdyQ/A=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "How can we assure that the gaming strategies we've provided until now are good enough to never be defeated?"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T16:39:42.475338+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T16:40:21.173534+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "gggiBiL+DQCbkYhxBdyQ/A=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "BP programs can be analyzed by traversing their possible runtime states. In other words, given enough time and resources, it is possible to visit each state a b-program might reach. Such traversal can be used to verify both that all states are OK (for some formal definition of “OK”) and that transitions between states conform to certain constraints. "
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T16:41:11.961036+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T16:42:34.100463+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "+Xl3CyL+DQCcuuoqBdyQ/A=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "BPjs, and therefore the BPjs Bridge, supports **formal verification** of a b-program."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T16:42:20.014958+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T16:47:59.293303+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "luWFDyL+DQCeTJrVBdyQ/A=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "We're going to use this powerful feature to verify if our b-program is *correct*. We can understand that our player O automation is \"correct\" if certain event (in our case the *gameOver* event with the player X as winner) could never be produced."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T16:46:25.602904+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T16:47:05.434086+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "g0UpHiL+DQCkIHWYBdyQ/A=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "We can express this **anti-scenario** using the function *bp.ASSERT* as we do in the following b-thread:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T16:47:08.871806+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T16:47:51.23735+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "noC9ICL+DQCmdUKdBdyQ/A=="
+				},
+				"code" : "btXShouldNeverWin :=\r\t'bp.registerBThread(\"XShouldNeverWin\", function() {\r\t    var XWinES = bp.EventSet(\"XWin\", function(evt) {\r\t    \treturn evt.data == null ? false : (evt.name == \"gameOver\" && evt.data.winner == \"X\");\r\t    });\n        bp.sync({ waitFor: XWinES });\r        bp.ASSERT(false, \"X should never win\");\n});'."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T16:48:22.759479+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T16:49:42.20655+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "Y/AkJSL+DQCm0P1lBdyQ/A=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "In order to the verifier can traverse the state space of our program we need to define a b-thread that simulates the moves of player X, as the following:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T16:49:45.449912+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T16:49:57.456965+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "2rESKiL+DQCrjNpbBdyQ/A=="
+				},
+				"code" : "btXPlayer :=\r\t'bp.registerBThread(\"XPlayer\", function() {\r\t    while(true) {\n\t        bp.sync({ request: [ \r\t            bp.Event(\"move\", { \"player\": \"X\", \"row\": 1, \"col\": 1}), \r\t            bp.Event(\"move\", { \"player\": \"X\", \"row\": 1, \"col\": 2}), \r\t            bp.Event(\"move\", { \"player\": \"X\", \"row\": 1, \"col\": 3}), \r\t            bp.Event(\"move\", { \"player\": \"X\", \"row\": 2, \"col\": 1}), \r\t            bp.Event(\"move\", { \"player\": \"X\", \"row\": 2, \"col\": 2}), \r\t            bp.Event(\"move\", { \"player\": \"X\", \"row\": 2, \"col\": 3}), \r\t            bp.Event(\"move\", { \"player\": \"X\", \"row\": 3, \"col\": 1}), \r\t            bp.Event(\"move\", { \"player\": \"X\", \"row\": 3, \"col\": 2}), \r\t            bp.Event(\"move\", { \"player\": \"X\", \"row\": 3, \"col\": 3}) ]});\r\t        }\r});'"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T16:50:27.500953+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T16:51:35.981858+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "vYRJLCL+DQCrlaPVBdyQ/A=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "In order to verify the latest version of our Human-vs-Machine TicTacToe we only need to add the two previous b-theads to the existing ones and use the verification feature supported by Gt4BP:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T16:51:41.776279+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T17:40:25.605653+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "v7EBMSL+DQCvyqmTBdyQ/A=="
+				},
+				"code" : "Gt4BpTicTacToeExamples new humanVsMachineAddThirdOGame\r\tloadBThread: btXShouldNeverWin named: 'bt-XShouldNeverWin.js';\r\tloadBThread: btXPlayer named: 'bt-XPlayer.js';\r\tverifyWithOptions: { #inspections -> #('FAILED_ASSERTIONS') } asDictionary\r\t"
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2025-10-22T16:32:26.02542+02:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2025-10-22T16:36:28.906566+02:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "Analysis and verification"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "0d551eec-21fe-0d00-9744-719405dc90fc"
+	}
+}

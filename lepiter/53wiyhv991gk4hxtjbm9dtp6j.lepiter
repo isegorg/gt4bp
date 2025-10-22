@@ -1,0 +1,431 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-21T21:07:16.44385+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-21T21:16:37.460773+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "8S4CpBH+DQCdUzmnCJxJVg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "The following strategy prevents the third move in a line of player X.\t"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-21T21:18:25.006129+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T15:08:58.542092+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "cToIzRH+DQCgOIMpCJxJVg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "As in the case of the [[Detect winner]] behavior, the following b-threads do not maintain a copy of the board, but instead are simply waiting for very specific two events in a given order and responding with a third event.\n\nThus, there is a separate instance of a b-thread for each ordering of the three events in each row, column and diagonal:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T15:09:26.088537+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T15:52:01.897374+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "godKwyD+DQC/XNQlDBhQSw=="
+				},
+				"code" : "bThreadsPreventThirdX := Gt4BpTicTacToeExamples new linePermutations collect: [ :aLine | \r\t'bp.registerBThread(\"PreventThirdX(', aLine asString ,')\", function() {' , \r\tString crlf ,\r\t'    bp.sync({ waitFor: bp.EventSet(\"X', aLine first asString ,'\", function(e) {' , String crlf ,\r\t'        return e.name == \"moveAccepted\" && ', String crlf ,\r\t'            e.data.player == \"X\" && ' , String crlf ,\r\t'            e.data.row == ', aLine first x asString , ' && ' , String crlf ,\r\t'            e.data.col == ', aLine first y asString , '; ', String crlf ,\r\t'         }) }); ' , String crlf ,\r\t'    bp.sync({ waitFor: bp.EventSet(\"X', aLine second asString ,'\", function(e) {' , String crlf ,\r\t'        return e.name == \"moveAccepted\" && ', String crlf ,\r\t'            e.data.player == \"X\" && ' , String crlf ,\r\t'            e.data.row == ', aLine second x asString , ' && ' , String crlf ,\r\t'            e.data.col == ', aLine second y asString , '; ', String crlf ,\r\t'         }) }); ' , String crlf ,\r\t'    bp.sync({ request: bp.Event(\"move\", ' ,\r\t'{ \"player\": \"O\", ',\r\t'\"row\": ', aLine third x asString , ', ',\r\t'\"col\": ', aLine third y asString , \r\t'}) }, 60);' , String crlf ,\r'}); ', String crlf , String crlf ].\r\rbtPreventThirdX := String streamContents: [ :stream |\t\t\r\tbThreadsPreventThirdX do: [ :bThread | \r\t\tstream nextPutAll: bThread ]]"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-21T21:49:39.377122+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-21T21:49:53.082255+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "JtzAPBL+DQCpD+EjCJxJVg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "##Let's try the behavior"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T15:12:40.033655+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T15:13:17.94771+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "VMvxzSD+DQCBHvtwDBhQSw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "If we start from the last version of the game and add the previous b-threads we can check the new skills of the player O:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T15:13:22.006043+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T15:41:23.332079+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "OFha0SD+DQCEU496DBhQSw=="
+				},
+				"code" : "game := Gt4BpTicTacToeExamples new humanVsMachineWithPreferedSquaresGame\r\tloadBThread: btPreventThirdX named: 'bt-preventThirdX.js';\r\tstart"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T15:14:24.626086+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T15:14:27.130182+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "xNkV1SD+DQCFO1yHDBhQSw=="
+				},
+				"code" : "game stop"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T16:14:12.007167+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T16:14:27.140311+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "LPHoqiH+DQCxg9LaDhpd1Q=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "##Convert into an example"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T15:56:02.986753+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T16:02:42.591054+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "LM//aSH+DQChZl2vCTU6pA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "As usual we proceed to convert the previous version of the game into a reproducible example:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-21T21:21:08.512328+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T16:01:16.862822+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "gSLH1hH+DQCmkZWfCJxJVg=="
+				},
+				"code" : "Gt4BpTicTacToeExamples compile: '\rbtPreventThirdX\r\t<gtExample>\r    | bThreadsPreventThirdX |\r\tbThreadsPreventThirdX := self linePermutations collect: [ :aLine | \r\t''bp.registerBThread(\"PreventThirdX('', aLine asString ,'')\", function() {'' , \r\tString crlf ,\r\t''    bp.sync({ waitFor: bp.EventSet(\"X'', aLine first asString ,''\", function(e) {'' , String crlf ,\r\t''        return e.name == \"moveAccepted\" && '', String crlf ,\r\t''            e.data.player == \"X\" && '' , String crlf ,\r\t''            e.data.row == '', aLine first x asString , '' && '' , String crlf ,\r\t''            e.data.col == '', aLine first y asString , ''; '', String crlf ,\r\t''         }) }); '' , String crlf ,\r\t''    bp.sync({ waitFor: bp.EventSet(\"X'', aLine second asString ,''\", function(e) {'' , String crlf ,\r\t''        return e.name == \"moveAccepted\" && '', String crlf ,\r\t''            e.data.player == \"X\" && '' , String crlf ,\r\t''            e.data.row == '', aLine second x asString , '' && '' , String crlf ,\r\t''            e.data.col == '', aLine second y asString , ''; '', String crlf ,\r\t''         }) }); '' , String crlf ,\r\t''    bp.sync({ request: bp.Event(\"move\", '' ,\r\t''{ \"player\": \"O\", '',\r\t''\"row\": '', aLine third x asString , '', '' ,\r\t''\"col\": '', aLine third y asString ,\r\t''}) }, 60); '' , String crlf ,\r''}); '', String crlf , String crlf ].\r\r^ String streamContents: [ :stream |\r\tbThreadsPreventThirdX do: [ :bThread | stream nextPutAll: bThread ] \r]' classified: #'example - support'."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-21T21:49:57.230889+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T16:01:37.487797+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "bknRPRL+DQCpneyiCJxJVg=="
+				},
+				"code" : "Gt4BpTicTacToeExamples compile: '\rhumanVsMachinePreventThirdXGame\r\t<gtExample>\r    ^ self humanVsMachineWithPreferedSquaresGame\r\t\tloadBThread: self btPreventThirdX named: ''test-OPlayerPreventThirdX.js'';\r\t    yourself' classified: #example."
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2025-10-21T21:06:56.680707+02:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2025-10-21T21:06:56.680707+02:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "Prevent third X"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "bb3501a4-11fe-0d00-9d52-912d089c4956"
+	}
+}

@@ -1,0 +1,394 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T16:06:47.276471+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T16:08:31.813901+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "Dm5YjyH+DQCVv3cHBGbCpg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "For this behavior we follow a similar design to the [[Prevent third X]], i.e. we define an specific b-thread for each combination of three O's to win the game, so when the first two O's have been added, the b-thread adds the third O to win:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T16:08:38.848405+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T16:09:41.271323+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "tVcNlyH+DQCcHuEGBGbCpg=="
+				},
+				"code" : "bThreadsAddThirdO := Gt4BpTicTacToeExamples new linePermutations collect: [ :aLine | \r\t'bp.registerBThread(\"AddThirdX(', aLine asString ,')\", function() {' , \r\tString crlf ,\r\t'    bp.sync({ waitFor: bp.EventSet(\"O', aLine first asString ,'\", function(e) {' , String crlf ,\r\t'        return e.name == \"moveAccepted\" && ', String crlf ,\r\t'            e.data.player == \"O\" && ' , String crlf ,\r\t'            e.data.row == ', aLine first x asString , ' && ' , String crlf ,\r\t'            e.data.col == ', aLine first y asString , '; ', String crlf ,\r\t'         }) }); ' , String crlf ,\r\t'    bp.sync({ waitFor: bp.EventSet(\"O', aLine second asString ,'\", function(e) {' , String crlf ,\r\t'        return e.name == \"moveAccepted\" && ', String crlf ,\r\t'            e.data.player == \"O\" && ' , String crlf ,\r\t'            e.data.row == ', aLine second x asString , ' && ' , String crlf ,\r\t'            e.data.col == ', aLine second y asString , '; ', String crlf ,\r\t'         }) }); ' , String crlf ,\r\t'    bp.sync({ request: bp.Event(\"move\", ' ,\r\t'{ \"player\": \"O\", ',\r\t'\"row\": ', aLine third x asString , ', ',\r\t'\"col\": ', aLine third y asString , \r\t'}) }, 70);' , String crlf ,\r'}); ', String crlf , String crlf ].\r\rbtAddThirdO := String streamContents: [ :stream |\t\t\r\tbThreadsAddThirdO do: [ :bThread | \r\t\tstream nextPutAll: bThread ]]"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T16:10:18.054242+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T16:10:26.498365+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "ihr3nCH+DQCYXu+iArM3sQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "##Let's try the behavior"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T16:10:29.867143+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T16:10:31.367613+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "sVqrnSH+DQCY2GCKArM3sQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "If we start from the last version of the game and add the previous b-threads we can check the new skills of the player O:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T16:10:46.687249+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T16:11:53.601908+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "OAKsniH+DQCY4LfUArM3sQ=="
+				},
+				"code" : "game := Gt4BpTicTacToeExamples new humanVsMachinePreventThirdXGame\r\tloadBThread: btAddThirdO named: 'bt-AddThirdO.js';\r\tstart"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T16:12:17.196841+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T16:12:20.468634+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "UhMRpCH+DQCajVNvArM3sQ=="
+				},
+				"code" : "game stop"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T16:14:40.685283+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T16:14:46.405447+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "DYmerCH+DQCyAmvkDhpd1Q=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "##Convert into an example"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T16:14:49.981635+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T16:14:51.627544+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "HmMsrSH+DQCygWGWDhpd1Q=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "As usual we proceed to convert the previous version of the game into a reproducible example:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T16:14:56.345777+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T16:16:06.853768+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "1H6NrSH+DQCyiOnWDhpd1Q=="
+				},
+				"code" : "Gt4BpTicTacToeExamples compile: '\rbtAddThirdO\r\t<gtExample>\r    | bThreadsAddThirdO |\r\tbThreadsAddThirdO := self linePermutations collect: [ :aLine | \r\t''bp.registerBThread(\"AddThirdO('', aLine asString ,'')\", function() {'' , \r\tString crlf ,\r\t''    bp.sync({ waitFor: bp.EventSet(\"O'', aLine first asString ,''\", function(e) {'' , String crlf ,\r\t''        return e.name == \"moveAccepted\" && '', String crlf ,\r\t''            e.data.player == \"O\" && '' , String crlf ,\r\t''            e.data.row == '', aLine first x asString , '' && '' , String crlf ,\r\t''            e.data.col == '', aLine first y asString , ''; '', String crlf ,\r\t''         }) }); '' , String crlf ,\r\t''    bp.sync({ waitFor: bp.EventSet(\"O'', aLine second asString ,''\", function(e) {'' , String crlf ,\r\t''        return e.name == \"moveAccepted\" && '', String crlf ,\r\t''            e.data.player == \"O\" && '' , String crlf ,\r\t''            e.data.row == '', aLine second x asString , '' && '' , String crlf ,\r\t''            e.data.col == '', aLine second y asString , ''; '', String crlf ,\r\t''         }) }); '' , String crlf ,\r\t''    bp.sync({ request: bp.Event(\"move\", '' ,\r\t''{ \"player\": \"O\", '',\r\t''\"row\": '', aLine third x asString , '', '' ,\r\t''\"col\": '', aLine third y asString ,\r\t''}) }, 70); '' , String crlf ,\r''}); '', String crlf , String crlf ].\r\r^ String streamContents: [ :stream |\r\tbThreadsAddThirdO do: [ :bThread | stream nextPutAll: bThread ] \r]' classified: #'example - support'."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T16:16:24.375268+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T16:16:51.493502+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "A7jMsiH+DQCz057oDhpd1Q=="
+				},
+				"code" : "Gt4BpTicTacToeExamples compile: '\rhumanVsMachineAddThirdOGame\r\t<gtExample>\r    ^ self humanVsMachinePreventThirdXGame\r\t\tloadBThread: self btPreventThirdX named: ''test-OPlayerPreventThirdX.js'';\r\t    yourself' classified: #example."
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2025-10-22T16:06:29.517345+02:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2025-10-22T16:06:29.517345+02:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "Add third O"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "24e7578f-21fe-0d00-95be-f3d20466c2a6"
+	}
+}

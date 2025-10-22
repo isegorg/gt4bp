@@ -248,14 +248,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-21T18:21:58.172051+02:00"
+						"dateAndTimeString" : "2025-10-21T18:35:04.192908+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "Fe7o8lb9DQCLKFBjDVuQdA=="
 				},
-				"code" : "Gt4BpTicTacToeExamples compile: '\rbtHumanVsMachineTurns\r\t^ ''bp.registerBThread(\"TurnManager\", function(){\n    var XMoveES = bp.EventSet(\"move\", function(evt) {\n\t    return (evt.data == null) ? false : (evt.name == \"move\" && evt.data.player == \"X\");\n    });\r    var OMoveES = bp.EventSet(\"move\", function(evt) {\n\t    return (evt.data == null) ? false : evt.name == \"move\" && evt.data.player == \"O\";\n    });\n    while (true) {\n        // X turn\n        var xMove = bp.sync({ waitFor: XMoveES , block: OMoveES });\n        bp.sync({ request:bp.Event(\"moveAccepted\",\n            { \"player\": \"X\",\n\t          \"row\": xMove.data.row,\n\t          \"col\": xMove.data.col })\n        }, 1);\n\n        // O turn\n        var oMove = bp.sync({ waitFor: OMoveES, block: XMoveES });\n        bp.sync({ request:bp.Event(\"moveAccepted\",\n            { \"player\": \"O\",\n\t          \"row\": oMove.data.row,\n\t          \"col\": oMove.data.col })\t\n        }, 1);\n    }\n});''' classified: #'example - support'.\r\rGt4BpTicTacToeExamples compile: '\rhumanVsMachineTurnsGame\r\t<gtExample>\r    ^ self emptyGame\r    \tloadBThread: self btHumanVsMachineTurns named: ''test-HumanVsMachineTurns.js'';\r    \tloadBThread: self btSquareTaken named: ''test-SquareTaken.js'';\r    \tloadBThread: self btXWin named: ''test-XWin.js'';\r    \tloadBThread: self btOWin named: ''test-OWin.js'';\r\t\tloadBThread: self btDraw named: ''test-Draw.js'';\r\t\tloadBThread: self btGameOver named: ''test-GameOver.js'';\r\t    yourself' classified: #example."
+				"code" : "Gt4BpTicTacToeExamples compile: '\rbtHumanVsMachineTurns\r\t^ ''bp.registerBThread(\"TurnManager\", function(){\n    var XMoveES = bp.EventSet(\"move\", function(evt) {\n\t    return (evt.data == null) ? false : (evt.name == \"move\" && evt.data.player == \"X\");\n    });\r    var OMoveES = bp.EventSet(\"move\", function(evt) {\n\t    return (evt.data == null) ? false : evt.name == \"move\" && evt.data.player == \"O\";\n    });\n    while (true) {\n        // X turn\n        var xMove = bp.sync({ waitFor: XMoveES , block: OMoveES });\n        bp.sync({ request:bp.Event(\"moveAccepted\",\n            { \"player\": \"X\",\n\t          \"row\": xMove.data.row,\n\t          \"col\": xMove.data.col })\n        }, 100);\n\n        // O turn\n        var oMove = bp.sync({ waitFor: OMoveES, block: XMoveES });\n        bp.sync({ request:bp.Event(\"moveAccepted\",\n            { \"player\": \"O\",\n\t          \"row\": oMove.data.row,\n\t          \"col\": oMove.data.col })\t\n        }, 100);\n    }\n});''' classified: #'example - support'.\r\rGt4BpTicTacToeExamples compile: '\rhumanVsMachineTurnsGame\r\t<gtExample>\r    ^ self emptyGame\r    \tloadBThread: self btHumanVsMachineTurns named: ''test-HumanVsMachineTurns.js'';\r    \tloadBThread: self btSquareTaken named: ''test-SquareTaken.js'';\r    \tloadBThread: self btXWin named: ''test-XWin.js'';\r    \tloadBThread: self btOWin named: ''test-OWin.js'';\r\t\tloadBThread: self btDraw named: ''test-Draw.js'';\r\t\tloadBThread: self btGameOver named: ''test-GameOver.js'';\r\t    yourself' classified: #example."
 			},
 			{
 				"__type" : "textSnippet",
@@ -569,14 +569,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-20T11:32:34.774358+02:00"
+						"dateAndTimeString" : "2025-10-22T16:28:04.120156+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "faSB4aj9DQCyKqsqAC1iog=="
 				},
-				"code" : "btXShouldNotWin :=\r\t'bp.registerBThread(\"XShouldNotWin\", function() {\r\t    var XWinES = bp.EventSet(\"XWin\", function(evt) {\r\t    \treturn evt.data == null ? false : (evt.name == \"gameOver\" && evt.data.winner == \"X\");\r\t    });\n        bp.sync({ waitFor: XWinES });\r        bp.ASSERT(false, \"X should never win\");\n});'.\r\rbtXPlayer :=\r\t'bp.registerBThread(\"XPlayer\", function() {\r\t    while(true) {\n\t        bp.sync({ request: [ \r\t            bp.Event(\"move\", { \"player\": \"X\", \"row\": 1, \"col\": 1}), \r\t            bp.Event(\"move\", { \"player\": \"X\", \"row\": 1, \"col\": 2}), \r\t            bp.Event(\"move\", { \"player\": \"X\", \"row\": 1, \"col\": 3}), \r\t            bp.Event(\"move\", { \"player\": \"X\", \"row\": 2, \"col\": 1}), \r\t            bp.Event(\"move\", { \"player\": \"X\", \"row\": 2, \"col\": 2}), \r\t            bp.Event(\"move\", { \"player\": \"X\", \"row\": 2, \"col\": 3}), \r\t            bp.Event(\"move\", { \"player\": \"X\", \"row\": 3, \"col\": 1}), \r\t            bp.Event(\"move\", { \"player\": \"X\", \"row\": 3, \"col\": 2}), \r\t            bp.Event(\"move\", { \"player\": \"X\", \"row\": 3, \"col\": 3}) ]});\r\t        }\r});'"
+				"code" : ""
 			}
 		]
 	},
