@@ -350,14 +350,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-22T16:16:51.493502+02:00"
+						"dateAndTimeString" : "2025-10-22T16:17:20.94069+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "A7jMsiH+DQCz057oDhpd1Q=="
 				},
-				"code" : "Gt4BpTicTacToeExamples compile: '\rhumanVsMachineAddThirdOGame\r\t<gtExample>\r    ^ self humanVsMachinePreventThirdXGame\r\t\tloadBThread: self btPreventThirdX named: ''test-OPlayerPreventThirdX.js'';\r\t    yourself' classified: #example."
+				"code" : "Gt4BpTicTacToeExamples compile: '\rhumanVsMachineAddThirdOGame\r\t<gtExample>\r    ^ self humanVsMachinePreventThirdXGame\r\t\tloadBThread: self btAddThirdO named: ''test-OPlayerAddThirdO.js'';\r\t    yourself' classified: #example."
 			}
 		]
 	},
