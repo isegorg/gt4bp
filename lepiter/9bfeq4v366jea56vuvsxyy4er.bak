@@ -68,14 +68,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-10-20T12:27:15.031472+02:00"
+									"dateAndTimeString" : "2025-10-23T14:55:31.864917+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "OlPY0x39DQCMj3MjDgJinQ=="
 							},
-							"code" : "Gt4BpTicTacToeGame compile: 'handleBPEvent: event\r    Transcript crShow: ''BP Event: '', event asString.\r\tevent name = ''moveAccepted''\r\t\tifTrue: [ | eventData player |\r\t\t\teventData := event data.\r\t\t\tplayer := eventData at: ''player''.\r\t\t\tself\r\t\t\t\tupdateCellAt: (eventData at: ''row'') asInteger\r\t\t\t\tcol: (eventData at: ''col'') asInteger\r\t\t\t\tplayer: player\t.\r\t\t\tself updateMessage: ''Move '' , player , '' Accepted'' ].\r\tevent name = ''gameOver''\r\t\tifTrue: [\r\t\t    event data \r\t\t        ifNotNil: [ self updateMessage: ''Game Over: '' , (event data at: ''winner'') , '' wins!'' ] \r\t\t    \tifNil: [ self updateMessage: ''Game Over: Draw'' ]\r\t\t\t ]' classified: #'event - handling'."
+							"code" : "Gt4BpTicTacToeGame compile: 'handleBPEvent: event\r    Transcript crShow: ''BP Event: '', event asString.\r\tevent name = ''moveAccepted''\r\t\tifTrue: [ | eventData player |\r\t\t\teventData := event data.\r\t\t\tplayer := eventData at: ''player''.\r\t\t\tself\r\t\t\t\tupdateCellAt: (eventData at: ''row'') asInteger\r\t\t\t\tcol: (eventData at: ''col'') asInteger\r\t\t\t\tplayer: player\t.\r\t\t\tself message: ''Move '' , player , '' Accepted'' ].\r\tevent name = ''gameOver''\r\t\tifTrue: [\r\t\t    event data \r\t\t        ifNotNil: [ self message: ''Game Over: '' , (event data at: ''winner'') , '' wins!'' ] \r\t\t    \tifNil: [ self message: ''Game Over: Draw'' ]\r\t\t\t ]' classified: #'event - handling'."
 						},
 						{
 							"__type" : "pharoSnippet",
