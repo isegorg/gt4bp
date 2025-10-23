@@ -29,14 +29,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-22T16:40:43.468806+02:00"
+						"dateAndTimeString" : "2025-10-22T18:08:13.804819+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "a/exACL+DQCaHdQuBdyQ/A=="
 				},
-				"string" : "\n“Program testing can be used to show the presence of bugs, but never to show their absence!”\n\n― Edsger W. Dijkstra\n"
+				"string" : "\n\"Program testing can be used to show the presence of bugs, but never to show their absence!\"\n\n― Edsger W. Dijkstra\n"
 			},
 			{
 				"__type" : "textSnippet",
@@ -148,6 +148,222 @@
 					"__type" : "textStyle"
 				},
 				"string" : "BPjs, and therefore the BPjs Bridge, supports **formal verification** of a b-program."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T18:43:51.540858+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T18:44:04.797137+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "pMAhwiP+DQCKq5eiCD9HEw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "##Add verification to the TicTacToe game"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T18:44:09.398639+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T18:44:24.289987+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "mz0ywyP+DQCLdHLbCD9HEw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "We add the following *verify* method to our TicTacToe game:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T18:44:32.416189+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-23T14:22:51.7853+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "2nWRxCP+DQCMnMA7CD9HEw=="
+				},
+				"code" : "Gt4BpTicTacToeGame\r\tcompile: 'verify\r\t| verificationResult |\r\tverificationResult := (Gt4BpVerifierBridge\r\t\t\tfromDirectory: bpRunner btDirectory\r\t\t\tensureDelete: false)\r\t\t\tverifyWithOptions: {Gt4BpVerifierBridge inspectionsOption -> #(''FAILED_ASSERTIONS'')} asDictionary.\r\tverificationResult\r\t\ttransformation: [ :anEvent | \r\t\t\t| allEvents pastEvents |\r\t\t\tallEvents := verificationResult counterExample.\r\t\t\tpastEvents := allEvents copyFrom: 1 to: (allEvents find: anEvent).\r\t\t\tGt4BpTicTacToeGame new withEvents: pastEvents ].\r\t^ verificationResult'\r\tclassified: #verification"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-23T14:23:48.644127+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-23T14:25:16.010076+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "8gYCPTT+DQCot31gBcjYgw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "In the case a violation was found by the verification, we'd like to visualize each of the counterexample's events on the TicTacToe board, so we define a way to build a *TicTacToe* from a collection of BP events:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-23T14:25:22.307052+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-23T14:29:03.722486+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "EwCNQzT+DQCu8wkaBcjYgw=="
+				},
+				"code" : "Gt4BpTicTacToeGame class\r\tcompile: 'withEvents: aCollectionOfEvents\r\t| game |\r\tgame := self new.\r\taCollectionOfEvents do: [ :anEvent | game handleBPEvent: anEvent ].\r\t^ game'\r\tclassified: 'instance - creation'"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T18:45:33.434294+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T18:45:50.786852+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "44U0yCP+DQCNb40PCD9HEw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "##Verify the current game implementation"
 			},
 			{
 				"__type" : "textSnippet",
@@ -390,14 +606,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-22T17:40:07.941753+02:00"
+						"dateAndTimeString" : "2025-10-22T18:23:46.556079+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "v7EBMSL+DQCvyqmTBdyQ/A=="
 				},
-				"code" : "Gt4BpTicTacToeExamples new humanVsMachineAddThirdOGame\r\tloadBThread: btXShouldNeverWin named: 'bt-XShouldNeverWin.js';\r\tloadBThread: btXPlayer named: 'bt-XPlayer.js';\r\tverifyWithOptions: { #inspections -> #('FAILED_ASSERTIONS') }"
+				"code" : "(Gt4BpTicTacToeExamples new humanVsMachineAddThirdOGame)\r\tloadBThread: btXShouldNeverWin named: 'bt-XShouldNeverWin.js';\r\tloadBThread: btXPlayer named: 'bt-XPlayer.js';\r\tverify"
 			}
 		]
 	},
