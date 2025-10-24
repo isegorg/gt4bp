@@ -549,7 +549,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-10-23T19:15:55.731656+02:00"
+									"dateAndTimeString" : "2025-10-24T09:39:59.319164+02:00"
 								}
 							},
 							"uid" : {
@@ -559,7 +559,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[[The \"corner-opposing corner\" fork]]"
+							"string" : "[[The \"corner-opposite-corner\" fork]]"
 						}
 					]
 				},

@@ -1,0 +1,977 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T11:59:10.236116+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T12:00:10.873085+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "cgogWUT+DQCQkCuEBTaFoA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "The formal verification of the current O player strategies shows that the O player loses in the following given situation that we'll call *\"corner-opossite-corner\" fork."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T12:00:35.079886+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T12:02:28.735996+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "YUtUWkb+DQCPcbUtBGI9OA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "When the first two Xs are marked in two opposite corners and the first O is marked at the center square, there is an immediate threat for 2 different forks because the next X move could be any of the two free corners, and so creating a fork situation."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T12:02:36.623529+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T12:03:57.59168+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "RGjWYkb+DQCS0onlBGI9OA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "The following board shows the described pattern:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T12:02:52.815291+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T12:03:02.155219+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "13vNY0b+DQCTrQD5BGI9OA=="
+				},
+				"code" : "Gt4BpTicTacToeGame\r\twithEvents: {\r\t    Gt4BpEvent new\r\t\t\tname: 'moveAccepted';\r\t\t\tdata: {'player' -> 'X'.\r\t\t\t\t\t'row' -> 1.\r\t\t\t\t\t'col' -> 1} asDictionary.\r\t\tGt4BpEvent new\r\t\t\tname: 'moveAccepted';\r\t\t\tdata: {'player' -> 'O'.\r\t\t\t\t\t'row' -> 2.\r\t\t\t\t\t'col' -> 2} asDictionary.\r\t\tGt4BpEvent new\r\t\t\tname: 'moveAccepted';\r\t\t\tdata: {'player' -> 'X'.\r\t\t\t\t\t'row' -> 3.\r\t\t\t\t\t'col' -> 3} asDictionary}"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T12:04:09.443089+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T12:08:17.636403+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "L7teaEb+DQCT+vm9BGI9OA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "As the X player has two ways available to create the fork (the two free corners), the O player cannot avoid them directly.  In this case,  **the best defense is a good offense**, and O player move to (2,1). This move creates an attack that forces X to play to (2,3) and it avoids the fork threat."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T12:09:19.877103+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T12:09:22.41828+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "oJffekb+DQCYtZECA9j1Ag=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "##Behavior encoding as b-threads"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T12:14:37.347162+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T12:15:32.076344+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "8UQZe0b+DQCYvF9qA9j1Ag=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "As in the previous fork cases we'll follow a **stateless design** with each b-thread monitoring for an specific fork threat pattern."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T12:15:48.94408+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T12:16:09.449225+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "RUIQkkb+DQCZitTCA9j1Ag=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Also we're going to programmatically generate these b-threads with Smalltalk code in the following way:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T12:16:12.845889+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T12:22:33.67094+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "X/t8k0b+DQCaHwpGA9j1Ag=="
+				},
+				"code" : "xOpossiteCorners := {\r    { 1@1 . 3@3 } . { 3@3 . 1@1 } .\r    { 3@1 . 1@3 } . { 1@3 . 3@1 }\r}."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T12:22:39.531907+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T12:44:44.393088+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "o1eJqkb+DQCbZktGA9j1Ag=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "For each of the previously  squares we define a specific b-thread watching for *the first 2 X moves* and the first O move at the center square, and then it requests O move to the (2,1) square."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T12:23:59.133811+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T12:25:38.668619+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "OvZHr0b+DQCdF4urA9j1Ag=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Note that, in that case, we are only interested in the first 3 moves of the game, so the b-thread exits (using the *interrupt* to declare that any oner different event interrupts the b-thread):\t\t\t"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T12:25:41.913361+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T12:59:41.771156+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "MENotUb+DQCiL2KCA9j1Ag=="
+				},
+				"code" : "bThreadsCornerOpossiteCornerFork := xOpossiteCorners collect: [ :moves | \r\t'bp.registerBThread(\"CornerOpossiteCornerFork(', moves asString ,')\", function() {' , \r\tString crlf ,\r\t'    bp.setInterruptHandler(function(evt) { bp.log.warn(\"Interrupted: \" + evt); });', String crlf ,\r\t'    const firstX = bp.EventSet(\"firstX\", function(e) { return e.name == \"moveAccepted\" && e.data.player == \"X\" && e.data.row == ' , moves first x asString , ' && e.data.col == ', moves first y asString ,'; }); ', String crlf,\r\t'    const notFirstX = bp.EventSet(\"firstX\", function(e) { return e.name == \"moveAccepted\" && e.data.player == \"X\" && (e.data.row != ' , moves first x asString , ' || e.data.col != ', moves first y asString ,'); }); ', String crlf,\r\t'    const secondX = bp.EventSet(\"firstX\", function(e) { return e.name == \"moveAccepted\" && e.data.player == \"X\" && e.data.row == ' , moves second x asString , ' && e.data.col == ', moves second y asString ,'; }); ', String crlf,\r    '    const notSecondX = bp.EventSet(\"firstX\", function(e) { return e.name == \"moveAccepted\" && e.data.player == \"X\" && (e.data.row != ' , moves second x asString , ' || e.data.col != ', moves second y asString ,'); }); ', String crlf,\r\t'    const centerO = bp.EventSet(\"centerO\", function(e) { return e.name == \"moveAccepted\" && e.data.player == \"O\" && e.data.row == 2 && e.data.col == 2; }); ', String crlf,\r\t'    const notCenterO = bp.EventSet(\"centerO\", function(e) { return e.name == \"moveAccepted\" && e.data.player == \"O\" && (e.data.row != 2 || e.data.col != 2); }); ', String crlf, String crlf,\r\t'    bp.sync({ waitFor: firstX, interrupt: notFirstX });' , String crlf ,\r\t'    bp.sync({ waitFor: centerO, interrupt: notCenterO  });', String crlf ,\r\t'    bp.sync({ waitFor: secondX, interrupt: notSecondX  });' , String crlf ,\r\t'    bp.sync({ request: bp.Event(\"move\", { player: \"O\", row: 2, col: 1 }) }, 70);' , String crlf ,\r\t'});', String crlf, String crlf ].\r\rbtPreventCornerOpossiteCornerFork := String streamContents: [ :stream |\r\tbThreadsCornerOpossiteCornerFork do: [ :bThread | stream nextPutAll: bThread ] ]"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T12:35:20.185684+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T12:35:22.004803+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "KAPg10b+DQCym9YKBQYZkw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "## Let's try the new behavior"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T12:35:23.573431+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T12:35:56.622548+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "Eq4T2Eb+DQCyok7jBQYZkw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "We add these new b-threads to the last version of the game and try it:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T12:36:01.168826+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T12:37:39.404875+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "2llR2kb+DQCzm71ABQYZkw=="
+				},
+				"code" : "game := Gt4BpTicTacToeExamples new humanVsMachinePreventAdjacentEdgesFork \r\tloadBThread: btPreventCornerOpossiteCornerFork named: 'bt-PreventCornerOpossiteCornerFork.js';\r\tstart"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T12:37:55.078014+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T12:37:57.469979+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "f34b4Ub+DQCgvdFaAwitVQ=="
+				},
+				"code" : "game stop"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T13:01:37.431732+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T13:01:39.236786+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "pOLiNUf+DQC5FI8kA2WHhA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "##Capture into an example"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T13:02:45.40828+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T13:03:01.092008+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "ugkYNkf+DQC5HHqvA2WHhA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "We're going to capture all the scripts used in the previous snippets in a more programmatic example:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T13:03:06.216241+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T13:07:01.829227+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "YJstO0f+DQC5TTwLA2WHhA=="
+				},
+				"code" : "Gt4BpTicTacToeExamples compile: 'btPreventCornerOpossiteCornerFork\r    | bThreadsCornerOpossiteCornerFork |\r    bThreadsCornerOpossiteCornerFork := self xOpossiteCorners collect: [ :moves | \r\t''bp.registerBThread(\"CornerOpossiteCornerFork('', moves asString ,'')\", function() {'' , \r\tString crlf ,\r\t''    bp.setInterruptHandler(function(evt) { bp.log.warn(\"Interrupted: \" + evt); });'', String crlf ,\r\t''    const firstX = bp.EventSet(\"firstX\", function(e) { return e.name == \"moveAccepted\" && e.data.player == \"X\" && e.data.row == '' , moves first x asString , '' && e.data.col == '', moves first y asString ,''; }); '', String crlf,\r\t''    const notFirstX = bp.EventSet(\"firstX\", function(e) { return e.name == \"moveAccepted\" && e.data.player == \"X\" && (e.data.row != '' , moves first x asString , '' || e.data.col != '', moves first y asString ,''); }); '', String crlf,\r\t''    const secondX = bp.EventSet(\"firstX\", function(e) { return e.name == \"moveAccepted\" && e.data.player == \"X\" && e.data.row == '' , moves second x asString , '' && e.data.col == '', moves second y asString ,''; }); '', String crlf,\r    ''    const notSecondX = bp.EventSet(\"firstX\", function(e) { return e.name == \"moveAccepted\" && e.data.player == \"X\" && (e.data.row != '' , moves second x asString , '' || e.data.col != '', moves second y asString ,''); }); '', String crlf,\r\t''    const centerO = bp.EventSet(\"centerO\", function(e) { return e.name == \"moveAccepted\" && e.data.player == \"O\" && e.data.row == 2 && e.data.col == 2; }); '', String crlf,\r\t''    const notCenterO = bp.EventSet(\"centerO\", function(e) { return e.name == \"moveAccepted\" && e.data.player == \"O\" && (e.data.row != 2 || e.data.col != 2); }); '', String crlf, String crlf,\r\t''    bp.sync({ waitFor: firstX, interrupt: notFirstX });'' , String crlf ,\r\t''    bp.sync({ waitFor: centerO, interrupt: notCenterO  });'', String crlf ,\r\t''    bp.sync({ waitFor: secondX, interrupt: notSecondX  });'' , String crlf ,\r\t''    bp.sync({ request: bp.Event(\"move\", { player: \"O\", row: 2, col: 1 }) }, 70);'' , String crlf ,\r\t''});'', String crlf, String crlf ].\r\r    ^ String streamContents: [ :stream |\r\tbThreadsCornerOpossiteCornerFork do: [ :bThread | stream nextPutAll: bThread ] ]' \rclassified: #'example - support'.\r\t        \rGt4BpTicTacToeExamples compile: 'xOpossiteCorners\r    ^ { { 1@1 . 3@3 } . { 3@3 . 1@1 } . { 3@1 . 1@3 } . { 1@3 . 3@1 } }.' \r    classified: #'example - support'."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T13:07:28.899899+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T13:07:30.354543+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "atfVSkf+DQC7wPPNA2WHhA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Once defined all the required supporting methods, we define the new example as the following:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T13:07:34.511897+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T13:10:06.993997+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "NnkrS0f+DQC7x6EGA2WHhA=="
+				},
+				"code" : "Gt4BpTicTacToeExamples compile: '\rhumanVsMachinePreventCornerOpossiteCornerFork\r\t<gtExample>\r    ^ self humanVsMachinePreventAdjacentEdgesFork\r\t\tloadBThread: self btPreventCornerOpossiteCornerFork named: ''test-OPlayerPreventCornerOpossiteCornerFork.js'';\r\t    yourself' classified: #example."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T13:09:47.510603+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T13:09:49.250768+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "gt8YU0f+DQC8TbUZA2WHhA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "##Verification"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T13:09:53.306248+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T13:11:49.024384+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "r05xU0f+DQC8U883A2WHhA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Finally, we can verify the *\"corretness\"* of the previous game version adding the b-threads for declaring the *safety* property and for simulating the X player moves:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T13:11:35.811843+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T13:13:16.0123+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "IWuNWUf+DQCAqzP/A2WHhA=="
+				},
+				"code" : "examples := Gt4BpTicTacToeExamples new.\r(examples humanVsMachinePreventCornerOpossiteCornerFork)\t\t\r\tloadBThread: examples btXShouldNeverWin named: 'bt-XShouldNeverWin.js';\r\tloadBThread: examples btXPlayer named: 'bt-XPlayer.js';\r\tverify"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T13:09:26.309469+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T13:16:59.722714+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "iV7VUUf+DQC8S6W8A2WHhA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "As you can notice, the verifier has not found any violation of the safety properties, i.e. after traversing all the potential states of the b-program (*5839 states*) it has not found any situation in which the O player loses the game."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T13:17:01.615174+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T13:17:57.738919+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "wsD4bEf+DQCVkMZTC0yitA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Thus we can declare that our b-program to automate the O player moves is *\"free of bugs\"*."
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2025-10-24T09:36:43.710448+02:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2025-10-24T09:39:59.305523+02:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "The \"corner-opposite-corner\" fork"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "5c8f1f59-44fe-0d00-908f-1d4b053685a0"
+	}
+}
