@@ -176,14 +176,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-10-09T18:08:06.153438+02:00"
+									"dateAndTimeString" : "2025-10-24T09:33:33.739518+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "4dxRvh39DQCKMl+KDgJinQ=="
 							},
-							"code" : "bThreadsXWin := linePermutations collect: [ :aLine | \r\t'bp.registerBThread(\"XWin(', aLine asString ,')\", function() {' , \r\tString crlf ,\r\t(aLine flatCollect: [ :aPosition |\r\t    '    bp.sync({ waitFor: bp.EventSet(\"X', aPosition asString ,'\", function(e) {' , String crlf ,\r\t    '        return e.name == \"moveAccepted\" && ', String crlf ,\r\t    '            e.data.player == \"X\" && ' , String crlf ,\r\t    '            e.data.row == ', aPosition x asString , ' && ' , String crlf ,\r\t    '            e.data.col == ', aPosition y asString , '; ', String crlf ,\r\t    '         }) }); ' , String crlf\r\t]) ,\r\t'    bp.sync({ request: bp.Event(\"gameOver\", { winner: \"X\" }) }); ', String crlf ,\r'}); ', String crlf , String crlf\t\t\t\t\t\t ].\r\rbtXWin := String streamContents: [ :stream |\r\tbThreadsXWin do: [ :bThread | stream nextPutAll: bThread ] ]"
+							"code" : "bThreadsXWin := linePermutations collect: [ :aLine | \r\t'bp.registerBThread(\"XWin(', aLine asString ,')\", function() {' , \r\tString crlf ,\r\t(aLine flatCollect: [ :aPosition |\r\t    '    bp.sync({ waitFor: bp.EventSet(\"X', aPosition asString ,'\", function(e) {' , String crlf ,\r\t    '        return e.name == \"moveAccepted\" && ', String crlf ,\r\t    '            e.data.player == \"X\" && ' , String crlf ,\r\t    '            e.data.row == ', aPosition x asString , ' && ' , String crlf ,\r\t    '            e.data.col == ', aPosition y asString , '; ', String crlf ,\r\t    '         }) }); ' , String crlf\r\t]) ,\r\t'    bp.sync({ request: bp.Event(\"gameOver\", { winner: \"X\" }) }, 100); ', String crlf ,\r'}); ', String crlf , String crlf\t\t\t\t\t\t ].\r\rbtXWin := String streamContents: [ :stream |\r\tbThreadsXWin do: [ :bThread | stream nextPutAll: bThread ] ]"
 						},
 						{
 							"__type" : "textSnippet",
@@ -247,14 +247,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-10-09T18:08:06.153447+02:00"
+									"dateAndTimeString" : "2025-10-24T09:33:38.026331+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "69xRvh39DQCKNOxbDgJinQ=="
 							},
-							"code" : "bThreadsOWin := linePermutations collect: [ :aLine | \r\t'bp.registerBThread(\"OWin(', aLine asString ,')\", function() {' , \r\tString crlf ,\r\t(aLine flatCollect: [ :aPosition |\r\t    '    bp.sync({ waitFor: bp.EventSet(\"O', aPosition asString ,'\", function(e) {' , String crlf ,\r\t    '        return e.name == \"moveAccepted\" && ', String crlf ,\r\t    '            e.data.player == \"O\" && ' , String crlf ,\r\t    '            e.data.row == ', aPosition x asString , ' && ' , String crlf ,\r\t    '            e.data.col == ', aPosition y asString , '; ', String crlf ,\r\t    '         }) }); ' , String crlf\r\t]) ,\r\t'    bp.sync({ request: bp.Event(\"gameOver\", { winner: \"O\" }) }); ', String crlf ,\r'}); ', String crlf , String crlf].\r\rbtOWin := String streamContents: [ :stream |\r\tbThreadsOWin do: [ :bThread | stream nextPutAll: bThread ] ]"
+							"code" : "bThreadsOWin := linePermutations collect: [ :aLine | \r\t'bp.registerBThread(\"OWin(', aLine asString ,')\", function() {' , \r\tString crlf ,\r\t(aLine flatCollect: [ :aPosition |\r\t    '    bp.sync({ waitFor: bp.EventSet(\"O', aPosition asString ,'\", function(e) {' , String crlf ,\r\t    '        return e.name == \"moveAccepted\" && ', String crlf ,\r\t    '            e.data.player == \"O\" && ' , String crlf ,\r\t    '            e.data.row == ', aPosition x asString , ' && ' , String crlf ,\r\t    '            e.data.col == ', aPosition y asString , '; ', String crlf ,\r\t    '         }) }); ' , String crlf\r\t]) ,\r\t'    bp.sync({ request: bp.Event(\"gameOver\", { winner: \"O\" }) },); ', String crlf ,\r'}); ', String crlf , String crlf].\r\rbtOWin := String streamContents: [ :stream |\r\tbThreadsOWin do: [ :bThread | stream nextPutAll: bThread ] ]"
 						},
 						{
 							"__type" : "textSnippet",
