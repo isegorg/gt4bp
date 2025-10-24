@@ -1,0 +1,758 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-23T20:47:30.030029+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-23T20:48:24.170624+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "50kmmjn+DQCPyc0tA7ZOsw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "This fork pattern consists of X occuping to adjacent edge squares, then X threatens to win by forking in the next move to the intersection corner. E.g.:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-23T20:48:49.197355+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-23T20:49:06.307067+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "SUnenjn+DQCRThA1A7ZOsw=="
+				},
+				"code" : "Gt4BpTicTacToeGame\r\twithEvents: {\r\t    Gt4BpEvent new\r\t\t\tname: 'moveAccepted';\r\t\t\tdata: {'player' -> 'X'.\r\t\t\t\t\t'row' -> 1.\r\t\t\t\t\t'col' -> 2} asDictionary.\r\t\tGt4BpEvent new\r\t\t\tname: 'moveAccepted';\r\t\t\tdata: {'player' -> 'O'.\r\t\t\t\t\t'row' -> 2.\r\t\t\t\t\t'col' -> 2} asDictionary.\r\t\tGt4BpEvent new\r\t\t\tname: 'moveAccepted';\r\t\t\tdata: {'player' -> 'X'.\r\t\t\t\t\t'row' -> 2.\r\t\t\t\t\t'col' -> 1} asDictionary}"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-23T20:49:19.226226+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-23T20:49:21.410667+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "mn2ooDn+DQCRc4d4A7ZOsw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "To prevent that, O must play to the intersection corner to prevent the potential fork."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T09:06:57.141281+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T09:06:58.03305+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "vKWi7kP+DQC55SbHAAC+JQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "##Behavior encoding as b-threads"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T09:06:58.83323+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T09:08:31.030108+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "iXy87kP+DQC579sKAAC+JQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "As with [[The \"corner-opposite-edge\" fork]] case we'll follow a stateless design with each b-thread monitoring for an specific fork threat pattern."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T09:08:31.913842+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T09:08:32.866541+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "dclI9EP+DQC9RyVtAAC+JQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "As in previous cases we're going to programmatically generate these b-threads with Smalltalk code:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T09:08:44.495618+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T09:13:15.696267+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "I8cI9UP+DQC9UOy2AAC+JQ=="
+				},
+				"code" : "adjacentEdges := {\r    { 1@2 . 2@3 } . { 2@3 . 3@2 } .\r    { 3@2 . 2@1 } . { 2@1 . 1@2 }\r}.\r    \radjacentEdgesPermutations := OrderedCollection empty.\radjacentEdges do: [ :moves |\r\tmoves permutationsDo: [:move | adjacentEdgesPermutations add: move copy ]\r].\radjacentEdgesMoves := adjacentEdgesPermutations collect: [ :xMoves | \r\t{ xMoves . Gt4BpTicTacToeExamples intersectionCornerFor: xMoves } flattened ]"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T09:13:48.024698+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T09:13:50.224016+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "pkMgB0T+DQCAGFl9AAC+JQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "For each of the previously calculated moves we define a specific b-thread watching the first 2 X moves and requesting the third move for O player:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T09:14:00.074044+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T09:15:59.556054+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "Zh/YB0T+DQCAHwPDAAC+JQ=="
+				},
+				"code" : "bThreadsAdjacentEdgesFork := adjacentEdgesMoves collect: [ :moves | \r\t'bp.registerBThread(\"AdjacentEdgesFork(', moves asString ,')\", function() {' , \r\tString crlf ,\r\t((moves copyFrom: 1 to: 2) flatCollect: [ :aPosition |\r\t    '    bp.sync({ waitFor: bp.EventSet(\"X', aPosition asString ,'\", function(e) {' , String crlf ,\r\t    '        return e.name == \"moveAccepted\" && ', String crlf ,\r\t    '            e.data.player == \"X\" && ' , String crlf ,\r\t    '            e.data.row == ', aPosition x asString , ' && ' , String crlf ,\r\t    '            e.data.col == ', aPosition y asString , '; ', String crlf ,\r\t    '         }) }); ' , String crlf\r\t]) ,\r\t'    bp.sync({ request: bp.Event(\"move\", { player: \"O\", row: ', moves last x asString , ', col: ', moves last y asString , ' }) }, 70); ', String crlf ,\r'}); ', String crlf , String crlf ].\r\rbtPreventAdjacentEdgesFork := String streamContents: [ :stream |\r\tbThreadsAdjacentEdgesFork do: [ :bThread | stream nextPutAll: bThread ] ]"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T09:16:18.180657+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T09:16:19.971977+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "XHYTEET+DQCE6FATCHa1kw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "## Let's try the new behavior"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T09:16:25.642787+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T09:16:35.656669+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "t0+FEET+DQCE8P2cCHa1kw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "To try this new strategy, we simply have to add these new b-threads to the already defined previously:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T09:16:45.314513+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T09:17:15.418702+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "7n2xEUT+DQCE+fZUCHa1kw=="
+				},
+				"code" : "game := Gt4BpTicTacToeExamples new humanVsMachinePreventCornerOppositeEdgeFork\r\tloadBThread: btPreventAdjacentEdgesFork named: 'bt-PreventAdjacentEdgesFork.js';\r\tstart"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T09:17:19.415146+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T09:17:22.281625+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "h9O5E0T+DQCFXzWjCHa1kw=="
+				},
+				"code" : "game stop"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T09:18:43.639276+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T09:18:45.796005+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "wAW/GET+DQCEisAWCCxuGA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "##Capture into an example"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T09:18:56.099425+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T09:18:58.118869+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "kRx9GUT+DQCEkW+1CCxuGA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "As in the previous steps we're going to capture all the scripts used in the previous snippets in a more programmatic example:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T09:19:30.428249+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T09:26:21.863692+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "dO2IG0T+DQCEmGNnCCxuGA=="
+				},
+				"code" : "Gt4BpTicTacToeExamples compile: 'btPreventAdjacentEdgesFork\r\t<gtExample>\r\t| adjacentEdgesMoves bThreadsAdjacentEdgesFork |\r\tadjacentEdgesMoves := self adjacentEdgesPermutations collect: [ :xMoves | \r\t    { xMoves . self class intersectionCornerFor: xMoves } flattened ].\r\t\r\tbThreadsAdjacentEdgesFork := adjacentEdgesMoves collect: [ :moves | \r\t    ''bp.registerBThread(\"AdjacentEdgesFork('', moves asString ,'')\", function() {'' , \r\tString crlf ,\r\t((moves copyFrom: 1 to: 2) flatCollect: [ :aPosition |\r\t    ''    bp.sync({ waitFor: bp.EventSet(\"X'', aPosition asString ,''\", function(e) {'' , String crlf ,\r\t    ''        return e.name == \"moveAccepted\" && '', String crlf ,\r\t    ''            e.data.player == \"X\" && '' , String crlf ,\r\t    ''            e.data.row == '', aPosition x asString , '' && '' , String crlf ,\r\t    ''            e.data.col == '', aPosition y asString , ''; '', String crlf ,\r\t    ''         }) }); '' , String crlf\r\t]) ,\r\t''    bp.sync({ request: bp.Event(\"move\", { player: \"O\", row: '', moves last x asString , '', col: '', moves last y asString , '' }) }, 70); '', String crlf ,\r''}); '', String crlf , String crlf ].\r\r\t^ String streamContents: [ :stream |\r\t    bThreadsAdjacentEdgesFork do: [ :bThread | \r\t        stream nextPutAll: bThread ] ]' classified: #'example - support'.\r\t        \rGt4BpTicTacToeExamples compile: 'adjacentEdges\r    ^ {\r        { 1@2 . 2@3 } . { 2@3 . 3@2 } .\r        { 3@2 . 2@1 } . { 2@1 . 1@2 } }.' classified: #'example - support'.\r\rGt4BpTicTacToeExamples compile: 'adjacentEdgesPermutations\r    | adjacentEdgesPermutations |\r    adjacentEdgesPermutations := OrderedCollection empty.\r    self adjacentEdges do: [ :moves |\r\t    moves permutationsDo: [:move | adjacentEdgesPermutations add: move copy ]\r    ].\r    ^ adjacentEdgesPermutations' classified: #'example - support'."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T09:23:22.906422+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T09:23:24.854058+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "YENkKUT+DQCHzrDmCCxuGA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Once defined all the required supporting methods, we define the new example as the following:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T09:23:28.279092+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T09:25:17.942612+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "Wj62KUT+DQCH1Y/YCCxuGA=="
+				},
+				"code" : "Gt4BpTicTacToeExamples compile: '\rhumanVsMachinePreventAdjacentEdgesFork\r\t<gtExample>\r    ^ self humanVsMachinePreventCornerOppositeEdgeFork\r\t\tloadBThread: self btPreventAdjacentEdgesFork named: ''test-OPlayerPreventAdjacentEdgesFork.js'';\r\t    yourself' classified: #example."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T09:27:42.95393+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T09:27:45.406251+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "6UXkOET+DQCI5UKSCCxuGA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "##Verification"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T09:27:47.442231+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-24T09:28:03.011415+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "mbsoOUT+DQCI7aJ/CCxuGA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "We can run verification with the following snippet:"
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2025-10-23T20:47:29.996566+02:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2025-10-23T20:47:36.010558+02:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "The \"adjacent-edge-squares\" fork"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "07c6259a-39fe-0d00-8fc8-7c5103b64eb3"
+	}
+}

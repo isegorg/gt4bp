@@ -512,7 +512,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-10-23T19:15:35.14485+02:00"
+									"dateAndTimeString" : "2025-10-23T20:47:36.023136+02:00"
 								}
 							},
 							"uid" : {
@@ -522,7 +522,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[[The \"adjacent edge squares\" fork]]"
+							"string" : "[[The \"adjacent-edge-squares\" fork]]"
 						},
 						{
 							"__type" : "textSnippet",

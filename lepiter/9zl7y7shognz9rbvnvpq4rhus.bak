@@ -475,7 +475,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-10-23T19:15:04.519025+02:00"
+									"dateAndTimeString" : "2025-10-23T19:18:04.69665+02:00"
 								}
 							},
 							"uid" : {
@@ -485,7 +485,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[[The \"corner-opposing edge\" fork]]"
+							"string" : "[[The \"corner-opposite-edge\" fork]]"
 						},
 						{
 							"__type" : "textSnippet",
