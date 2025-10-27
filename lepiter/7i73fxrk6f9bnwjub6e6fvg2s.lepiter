@@ -66,14 +66,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-20T18:20:42.639239+02:00"
+						"dateAndTimeString" : "2025-10-27T13:56:30.30588+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "IiRPMvv9DQCdxJyXBfHvPA=="
 				},
-				"code" : "Object\r\tsubclass: #Gt4BpBridge\r\tinstanceVariableNames: 'btDirectory announcer'\r\tclassVariableNames: ''\r\tcategory: 'Gt4BP-Core'"
+				"code" : "Object\r\tsubclass: #Gt4BpBridge\r\tinstanceVariableNames: 'btDirectory announcer bThreads bProgram'\r\tclassVariableNames: ''\r\tcategory: 'Gt4BP-Core'"
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -100,14 +100,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-20T18:27:26.358905+02:00"
+						"dateAndTimeString" : "2025-10-27T13:57:35.951885+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "ucNANfv9DQCeG2u9BfHvPA=="
 				},
-				"code" : "Gt4BpBridge compile: '\rinitialize\r\r\tself btDirectory: self class defaultBtDirectory.\r\tannouncer := Announcer new.\r'\r\tclassified: #initialization"
+				"code" : "Gt4BpBridge compile: '\rinitialize\r\tself btDirectory: self class defaultBtDirectory.\r\tannouncer := Announcer new.\r\tbThreads := OrderedCollection empty.\r\tbProgram := '''''\rclassified: #initialization"
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -134,14 +134,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-22T18:42:29.886259+02:00"
+						"dateAndTimeString" : "2025-10-27T14:19:12.336894+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "D2qqT/v9DQCeZWN4BfHvPA=="
 				},
-				"code" : "Gt4BpBridge class compile: '\rfromDirectory: aString\r\t^ self fromDirectory: aString ensureDelete: true\r' classified: #'instance creation'.\r\rGt4BpBridge class compile: '\rfromDirectory: aString ensureDelete: aBoolean\r\t^ self new \r\t    btDirectory: aString ensureDelete: aBoolean;\r\t    yourself\r' classified: #'instance creation'"
+				"code" : "Gt4BpBridge class compile: '\rfromDirectory: aString\r\t^ self fromDirectory: aString ensureDelete: true\r' classified: #'instance creation'.\r\rGt4BpBridge class compile: '\rfromDirectory: aString ensureDelete: aBoolean\r\t^ self new \r\t    btDirectory: aString ensureDelete: aBoolean;\r\t    yourself\r' classified: #'instance creation'.\r\rGt4BpBridge class compile: '\rfromBpBridge: aBpBridge\r\t^ self fromBpBridge: aBpBridge andDirectory: aBpBridge btDirectory\r' classified: #'instance creation'.\r\rGt4BpBridge class compile: '\rfromBpBridge: aBpBridge andDirectory: aStringOrFileReference\r\t^ self new\r\t\tbThreads: aBpBridge bThreads copy;\r\t\tbtDirectory: aStringOrFileReference ensureDelete: false;\r\t    yourself\r' classified: #'instance creation'"
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -168,14 +168,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-22T18:40:20.102231+02:00"
+						"dateAndTimeString" : "2025-10-27T14:16:31.152708+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "IzfmU/v9DQCei97XBfHvPA=="
 				},
-				"code" : "Gt4BpBridge class compile: '\rdefaultBtDirectory\r    ^ ''bThreads''\r' classified: #'default values'.\r\r\rGt4BpBridge compile: '\rbtDirectory\r    ^ btDirectory' classified: #accessing.\r    \rGt4BpBridge compile: '\rbtDirectory: aFileReferenceOrDirName\r    self btDirectory: aFileReferenceOrDirName ensureDelete: true' classified: #accessing.\r    \rGt4BpBridge compile: '\rbtDirectory: aFileReferenceOrDirName ensureDelete: shouldDelete\r    btDirectory := aFileReferenceOrDirName asFileReference.\r    shouldDelete ifTrue: [ btDirectory ensureDeleteAll ].\r    btDirectory ensureCreateDirectory' classified: #accessing.    \r    \rGt4BpBridge compile: '\rannouncer\r    ^ announcer' classified: #accessing."
+				"code" : "Gt4BpBridge class compile: '\rdefaultBtDirectory\r    ^ ''bThreads''' \rclassified: #'default values'.\r\rGt4BpBridge compile: '\rbtDirectory\r    ^ btDirectory' classified: #accessing.\r    \rGt4BpBridge compile: '\rbtDirectory: aFileReferenceOrDirName\r    self btDirectory: aFileReferenceOrDirName ensureDelete: true' classified: #accessing.\r    \rGt4BpBridge compile: '\rbtDirectory: aFileReferenceOrDirName ensureDelete: shouldDelete\r    btDirectory := aFileReferenceOrDirName asFileReference.\r    shouldDelete ifTrue: [ btDirectory ensureDeleteAll ].\r    btDirectory ensureCreateDirectory' classified: #accessing.    \r    \rGt4BpBridge compile: '\rannouncer\r    ^ announcer' classified: #accessing.\r    \rGt4BpBridge compile: '\rbThreads\r    ^ bThreads' classified: #accessing.\r    \rGt4BpBridge compile: '\rbThreads: aCollection\r    bThreads := aCollection' classified: #accessing.\r\rGt4BpBridge compile: '\rbProgram\r    ^ bProgram' classified: #accessing."
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -202,14 +202,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-20T18:33:44.17798+02:00"
+						"dateAndTimeString" : "2025-10-27T14:05:43.168022+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "GyLYYfv9DQCfTaSABfHvPA=="
 				},
-				"code" : "Gt4BpBridge compile: '\rloadBProgram: bProgramCode named: bProgramFilename\r\t(btDirectory / bProgramFilename) \r\t\tensureCreateFile; \r\t\twriteStreamDo: [ :s | s << bProgramCode ].\r' classified: #loading"
+				"code" : "Gt4BpBridge compile: '\rloadBProgram: bProgramCode named: bProgramFilename\r\tbThreads add: ''// '' , bProgramFilename , String crlf , bProgramCode.\r\tself createBProgramFile: bProgramCode named: bProgramFilename.' \rclassified: #loading.\r\rGt4BpBridge compile: '\rcreateBProgramFile: bProgramCode named: bProgramFilename\r\t(btDirectory / bProgramFilename)\r\t\tensureDelete;\r\t\tensureCreateFile;\r\t\twriteStreamDo: [ :s | s << bProgramCode ]'\rclassified: #private.\r\rGt4BpBridge compile: '\rcreateMergedBProgramFile\r\tbProgram := bThreads inject: bProgram into: [ :combinedBProgram :eachBProgram | \r\t\tcombinedBProgram , eachBProgram ,  String crlf, String crlf ].\r\tself createBProgramFile: bProgram named: self class mergedBProgramFilename.\r\t^ bProgram'\rclassified: #'private - lifecycle'.\r\rGt4BpBridge class compile: '\rmergedBProgramFilename\r\t^ ''MERGED_BPROGRAM.js'''\rclassified: #'default values'."
 			},
 			{
 				"__type" : "textSnippet",
@@ -341,14 +341,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-22T18:37:34.685251+02:00"
+						"dateAndTimeString" : "2025-10-27T14:04:48.784358+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "OSeAhvv9DQCj4lHTBfHvPA=="
 				},
-				"code" : "Gt4BpRunnerBridge compile: '\rinitialize\r    super initialize.\r\tisRunning := false.\r'\r\tclassified: #initialization.\r\rGt4BpRunnerBridge compile: '\risRunning\r    ^ isRunning' classified: #accessing.\r    \rGt4BpRunnerBridge compile: '\ronEvent: aBlock\r    announcer when: Gt4BpEvent do: [ :event | aBlock value: event ]\r' classified: #'events'.\r\rGt4BpRunnerBridge compile: '\rstart\r\tisRunning\r\t\tifFalse: [ \r\t\t\tprocess := self newBridgeProcess.\r\t\t\tisRunning := true.\r\t\t\tself forkStdOutObserver.\r\t\t\tself forkStdErrObserver ]\r' classified: #lifecycle.\r\rGt4BpRunnerBridge compile: '\rstop\r\tisRunning ifTrue: [ \r\t    process kill.\r\t    isRunning := false \r\t]\r' classified: #lifecycle.\r\rGt4BpRunnerBridge compile: '\rnewBridgeProcess\r\t^ GtExternalProcessBuilder new\r\t\tcommand: ''java'';\r\t\targs: {''-jar''.\r\t\t\t\t''pharo-local/iceberg/isegorg/gt4bp/BPjsRunnerBridge-0.1.0-SNAPSHOT.jar''.\r\t\t\t\tbtDirectory pathString};\r\t\tpipeStdout;\r\t\tpipeStdin;\r\t\tpipeStderr;\r\t\tspawn\r' classified: #'private - lifecycle'.\r\rGt4BpRunnerBridge compile: '\rforkStdOutObserver\r\t[ | lines line event |\r\tlines := process stdoutStream lines.\r\t[ isRunning ]\r\t\twhileTrue: [ \r\t\t    line := lines next wait.\r\t\t    [ event := Gt4BpEvent fromJson: line value.\r\t\t\t  announcer announce: event ] on: Exception do: [ ''do nothing'' ] ] ]\r\t\tforkNamed: ''BPjs Bridge [PID:'' , process id asString , ''] StdOut Observer''\r' classified: #'private - lifecycle'.\r\rGt4BpRunnerBridge compile: '\rforkStdErrObserver\r\t[ | lines line |\r\tlines := process stderrStream lines.\r\t[ isRunning ]\r\t\twhileTrue: [ \r\t\t    line := lines next wait.\r\t\t\t[ Transcript crShow: ''BPjs Bridge Error: '' , line value ]\r\t\t\t\ton: Exception\r\t\t\t\tdo: [ ''do nothing'' ] ] ]\r\t\tforkNamed: ''BPjs Bridge [PID:'' , process id asString , ''] StdErr Observer''\r' classified: #'private - lifecycle'."
+				"code" : "Gt4BpRunnerBridge compile: '\rinitialize\r    super initialize.\r\tisRunning := false.\r'\r\tclassified: #initialization.\r\rGt4BpRunnerBridge compile: '\risRunning\r    ^ isRunning' classified: #accessing.\r    \rGt4BpRunnerBridge compile: '\ronEvent: aBlock\r    announcer when: Gt4BpEvent do: [ :event | aBlock value: event ]\r' classified: #'events'.\r\rGt4BpRunnerBridge compile: '\rstart\r\tisRunning\r\t\tifFalse: [\r            self createMergedBProgramFile.\r\t\t\tprocess := self newBridgeProcess.\r\t\t\tisRunning := true.\r\t\t\tself forkStdOutObserver.\r\t\t\tself forkStdErrObserver ]\r' classified: #lifecycle.\r\rGt4BpRunnerBridge compile: '\rstop\r\tisRunning ifTrue: [ \r\t    process kill.\r\t    isRunning := false \r\t]\r' classified: #lifecycle.\r\rGt4BpRunnerBridge compile: '\rnewBridgeProcess\r\t^ GtExternalProcessBuilder new\r\t\tcommand: ''java'';\r\t\targs: {''-jar''.\r\t\t\t\t''pharo-local/iceberg/isegorg/gt4bp/BPjsRunnerBridge-0.1.0-SNAPSHOT.jar''.\r\t\t\t\t(btDirectory / self class mergedBProgramFilename) pathString};\r\t\tpipeStdout;\r\t\tpipeStdin;\r\t\tpipeStderr;\r\t\tspawn\r' classified: #'private - lifecycle'.\r\rGt4BpRunnerBridge compile: '\rforkStdOutObserver\r\t[ | lines line event |\r\tlines := process stdoutStream lines.\r\t[ isRunning ]\r\t\twhileTrue: [ \r\t\t    line := lines next wait.\r\t\t    [ event := Gt4BpEvent fromJson: line value.\r\t\t\t  announcer announce: event ] on: Exception do: [ ''do nothing'' ] ] ]\r\t\tforkNamed: ''BPjs Bridge [PID:'' , process id asString , ''] StdOut Observer''\r' classified: #'private - lifecycle'.\r\rGt4BpRunnerBridge compile: '\rforkStdErrObserver\r\t[ | lines line |\r\tlines := process stderrStream lines.\r\t[ isRunning ]\r\t\twhileTrue: [ \r\t\t    line := lines next wait.\r\t\t\t[ Transcript crShow: ''BPjs Bridge Error: '' , line value ]\r\t\t\t\ton: Exception\r\t\t\t\tdo: [ ''do nothing'' ] ] ]\r\t\tforkNamed: ''BPjs Bridge [PID:'' , process id asString , ''] StdErr Observer''\r' classified: #'private - lifecycle'."
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -480,14 +480,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-22T18:35:11.548318+02:00"
+						"dateAndTimeString" : "2025-10-27T14:07:00.483415+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "ChX3pAn+DQCw2jWjC+5Y+w=="
 				},
-				"code" : "Gt4BpVerifierBridge compile: '\rverifyWithOptions: aDictionary\r\t| process args |\r\targs := {''-jar''.\r\t\t\t''pharo-local/iceberg/isegorg/gt4bp/BPjsRunnerBridge-0.1.0-SNAPSHOT.jar''.\r\t\t\tbtDirectory pathString.\r\t\t\t''--verify''} asOrderedCollection.\r\taDictionary\r\t\tat: Gt4BpVerifierBridge inspectionsOption\r\t\tifPresent: [ :inspections | \r\t\t\t| inspectionsArg |\r\t\t\tinspectionsArg := ''--inspections=''.\r\t\t\tinspections do: [ :aInspection | inspectionsArg := inspectionsArg , aInspection , '','' ].\r\t\t\targs add: inspectionsArg ].\r\taDictionary\r\t\tat: Gt4BpVerifierBridge maxTraceLenghtOption\r\t\tifPresent: [ :maxTraceLength | args add: ''--max-trace-length='' , maxTraceLength asString ].\r\tprocess := GtExternalProcessBuilder new\r\t\t\tcommand: ''java'';\r\t\t\targs: args;\r\t\t\toutput.\r\t^ self parseVerificationResult: process stdout' \rclassified: #verification.\r\rGt4BpVerifierBridge compile: '\rverify\r    ^ self verifyWithOptions: Dictionary empty' \rclassified: #verification.\r\rGt4BpVerifierBridge compile: '\ronVerificationResult: aBlock\r    announcer when: Gt4BpVerificationResult do: [ :event | aBlock value: event ]\r' classified: #events.\r\rGt4BpVerifierBridge compile: '\rparseVerificationResult: aString\r\taString lines\r\t\tdo: [ :eachLine | \r\t\t\t[ | result |\r\t\t\tresult := Gt4BpVerificationResult fromJson: eachLine.\r\t\t\tannouncer announce: result.\r\t\t\t^ result] on: Exception do: [ ''do nothing'' ] ]\r' classified: #private.\r\rGt4BpVerifierBridge class compile: '\rinspectionsOption\r\t^ #inspections' \rclassified: #'verification - options'.\r\rGt4BpVerifierBridge class compile: '\rmaxTraceLenghtOption\r\t^ #maxTraceOption' \rclassified: #'verification - options'."
+				"code" : "Gt4BpVerifierBridge compile: '\rverifyWithOptions: aDictionary\r\t| process args |\r\tself createMergedBProgramFile.\r\targs := {''-jar''.\r\t\t\t''pharo-local/iceberg/isegorg/gt4bp/BPjsRunnerBridge-0.1.0-SNAPSHOT.jar''.\r\t\t\t(btDirectory / self class mergedBProgramFilename) pathString.\r\t\t\t''--verify''} asOrderedCollection.\r\taDictionary\r\t\tat: Gt4BpVerifierBridge inspectionsOption\r\t\tifPresent: [ :inspections | \r\t\t\t| inspectionsArg |\r\t\t\tinspectionsArg := ''--inspections=''.\r\t\t\tinspections do: [ :aInspection | inspectionsArg := inspectionsArg , aInspection , '','' ].\r\t\t\targs add: inspectionsArg ].\r\taDictionary\r\t\tat: Gt4BpVerifierBridge maxTraceLenghtOption\r\t\tifPresent: [ :maxTraceLength | args add: ''--max-trace-length='' , maxTraceLength asString ].\r\tprocess := GtExternalProcessBuilder new\r\t\t\tcommand: ''java'';\r\t\t\targs: args;\r\t\t\toutput.\r\t^ self parseVerificationResult: process stdout' \rclassified: #verification.\r\rGt4BpVerifierBridge compile: '\rverify\r    ^ self verifyWithOptions: Dictionary empty' \rclassified: #verification.\r\rGt4BpVerifierBridge compile: '\ronVerificationResult: aBlock\r    announcer when: Gt4BpVerificationResult do: [ :event | aBlock value: event ]\r' classified: #events.\r\rGt4BpVerifierBridge compile: '\rparseVerificationResult: aString\r\taString lines\r\t\tdo: [ :eachLine | \r\t\t\t[ | result |\r\t\t\tresult := Gt4BpVerificationResult fromJson: eachLine.\r\t\t\tannouncer announce: result.\r\t\t\t^ result] on: Exception do: [ ''do nothing'' ] ]\r' classified: #private.\r\rGt4BpVerifierBridge class compile: '\rinspectionsOption\r\t^ #inspections' \rclassified: #'verification - options'.\r\rGt4BpVerifierBridge class compile: '\rmaxTraceLenghtOption\r\t^ #maxTraceOption' \rclassified: #'verification - options'.\r\rGt4BpBridge class compile: '\rmergedBProgramFilename\r\t^ ''MERGED_VERIFICATION_BPROGRAM.js'''\rclassified: #'default values'."
 			},
 			{
 				"__type" : "textSnippet",

@@ -214,14 +214,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-09-23T14:15:19.216818+02:00"
+						"dateAndTimeString" : "2025-10-27T13:28:10.891217+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "HRDOL9j7DQCOyV6tAE1gkA=="
 				},
-				"code" : "Object\r\tsubclass: #Gt4BpRunnerBridge\r\tinstanceVariableNames: 'btDirectory process isRunning announcer'\r\tclassVariableNames: ''\r\tcategory: 'Gt4BP-Core'"
+				"code" : "Object\r\tsubclass: #Gt4BpRunnerBridge\r\tinstanceVariableNames: 'btDirectory process isRunning announcer bThreads bProgram'\r\tclassVariableNames: ''\r\tcategory: 'Gt4BP-Core'"
 			},
 			{
 				"__type" : "textSnippet",
@@ -327,14 +327,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-10-20T12:43:12.22627+02:00"
+									"dateAndTimeString" : "2025-10-27T13:31:40.012236+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "GifDWtj7DQC78NaQA2HKBQ=="
 							},
-							"code" : "Gt4BpRunnerBridge compile: '\rinitialize\r\r\tisRunning := false.\r\tself btDirectory: self class defaultBtDirectory.\r\tannouncer := Announcer new.\r'\r\tclassified: #initialization"
+							"code" : "Gt4BpRunnerBridge compile: '\rinitialize\r\tisRunning := false.\r\tself btDirectory: self class defaultBtDirectory.\r\tannouncer := Announcer new.\r\tbThreads := OrderedCollection empty.\r\tbProgram := '''''\rclassified: #initialization"
 						}
 					]
 				},
@@ -508,14 +508,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-10-20T12:43:29.881249+02:00"
+									"dateAndTimeString" : "2025-10-27T13:28:46.40403+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "xjEX3Nj7DQCYIgeDAV+bBw=="
 							},
-							"code" : "Gt4BpRunnerBridge class compile: '\rdefaultBtDirectory\r    ^ ''bThreads''\r' classified: #'default values'.\r\r\rGt4BpRunnerBridge compile: '\rbtDirectory\r    ^ btDirectory' classified: #accessing.\r    \rGt4BpRunnerBridge compile: '\rbtDirectory: aFileReferenceOrDirName\r    btDirectory := aFileReferenceOrDirName asFileReference ensureDeleteAll ensureCreateDirectory' classified: #accessing.\r\rGt4BpRunnerBridge compile: '\risRunning\r    ^ isRunning' classified: #accessing.\r    \rGt4BpRunnerBridge compile: '\rannouncer\r    ^ announcer' classified: #accessing."
+							"code" : "Gt4BpRunnerBridge class compile: '\rdefaultBtDirectory\r    ^ ''bThreads''\r' classified: #'default values'.\r\rGt4BpRunnerBridge compile: '\rbtDirectory\r    ^ btDirectory' classified: #accessing.\r    \rGt4BpRunnerBridge compile: '\rbtDirectory: aFileReferenceOrDirName\r    btDirectory := aFileReferenceOrDirName asFileReference ensureDeleteAll ensureCreateDirectory' classified: #accessing.\r\rGt4BpRunnerBridge compile: '\risRunning\r    ^ isRunning' classified: #accessing.\r    \rGt4BpRunnerBridge compile: '\rannouncer\r    ^ announcer' classified: #accessing.\r    \rGt4BpRunnerBridge compile: '\rbProgram\r    ^ bProgram' classified: #accessing."
 						}
 					]
 				},
@@ -1043,14 +1043,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-01T11:42:14.496595+02:00"
+						"dateAndTimeString" : "2025-10-27T13:41:38.953318+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "bv5Q+dj7DQCTyhu0D1N2lw=="
 				},
-				"code" : "Gt4BpRunnerBridge compile: '\rstart\r\tisRunning\r\t\tifFalse: [ \r\t\t\tprocess := self newBridgeProcess.\r\t\t\tisRunning := true.\r\t\t\tself forkStdOutObserver.\r\t\t\tself forkStdErrObserver ]\r' classified: #lifecycle.\r\rGt4BpRunnerBridge compile: '\rstop\r\tisRunning ifTrue: [ \r\t    process kill.\r\t    isRunning := false \r\t]\r' classified: #lifecycle.\r\rGt4BpRunnerBridge compile: '\rnewBridgeProcess\r\t^ GtExternalProcessBuilder new\r\t\tcommand: ''java'';\r\t\targs: {''-jar''.\r\t\t\t\t''pharo-local/iceberg/isegorg/gt4bp/BPjsRunnerBridge-0.1.0-SNAPSHOT.jar''.\r\t\t\t\tbtDirectory pathString};\r\t\tpipeStdout;\r\t\tpipeStdin;\r\t\tpipeStderr;\r\t\tspawn\r' classified: #'private - lifecycle'.\r\rGt4BpRunnerBridge compile: '\rforkStdOutObserver\r\t[ | lines line event |\r\tlines := process stdoutStream lines.\r\t[ isRunning ]\r\t\twhileTrue: [ \r\t\t    line := lines next wait.\r\t\t    [ event := Gt4BpEvent fromJson: line value.\r\t\t\t  announcer announce: event ] on: Exception do: [ ''do nothing'' ] ] ]\r\t\tforkNamed: ''BPjs Bridge [PID:'' , process id asString , ''] StdOut Observer''\r' classified: #'private - lifecycle'.\r\rGt4BpRunnerBridge compile: '\rforkStdErrObserver\r\t[ | lines line |\r\tlines := process stderrStream lines.\r\t[ isRunning ]\r\t\twhileTrue: [ \r\t\t    line := lines next wait.\r\t\t\t[ Transcript crShow: ''BPjs Bridge Error: '' , line value ]\r\t\t\t\ton: Exception\r\t\t\t\tdo: [ ''do nothing'' ] ] ]\r\t\tforkNamed: ''BPjs Bridge [PID:'' , process id asString , ''] StdErr Observer''\r' classified: #'private - lifecycle'."
+				"code" : "Gt4BpRunnerBridge compile: '\rstart\r\tisRunning\r\t\tifFalse: [\r\t\t    self createMergedBProgramFile.\r\t\t\tprocess := self newBridgeProcess.\r\t\t\tisRunning := true.\r\t\t\tself forkStdOutObserver.\r\t\t\tself forkStdErrObserver ]\r' classified: #lifecycle.\r\rGt4BpRunnerBridge compile: '\rstop\r\tisRunning ifTrue: [ \r\t    process kill.\r\t    isRunning := false \r\t]' \rclassified: #lifecycle.\r\rGt4BpRunnerBridge compile: '\rcreateMergedBProgramFile\r\tbProgram := bThreads inject: bProgram into: [ :combinedBProgram :eachBProgram | \r\t\tcombinedBProgram , eachBProgram ,  String crlf, String crlf ].\r\tself createBProgramFile: bProgram named: self class mergedBProgramFilename.\r\t^ bProgram' \rclassified: #'private - lifecycle'.\r\rGt4BpRunnerBridge class compile: 'mergedBProgramFilename\r\t^ ''MERGED_BPROGRAM.js''' \rclassified: #'default values'.\r\rGt4BpRunnerBridge compile: '\rcreateBProgramFile: bProgramCode named: bProgramFilename\r\t(btDirectory / bProgramFilename)\r\t\tensureDelete;\r\t\tensureCreateFile;\r\t\twriteStreamDo: [ :s | s << bProgramCode ]' \rclassified: #'private'.\r\rGt4BpRunnerBridge compile: '\rnewBridgeProcess\r\t^ GtExternalProcessBuilder new\r\t\tcommand: ''java'';\r\t\targs: {''-jar''.\r\t\t\t\t''pharo-local/iceberg/isegorg/gt4bp/BPjsRunnerBridge-0.1.0-SNAPSHOT.jar''.\r\t\t\t\t(btDirectory / self class mergedBProgramFilename) pathString };\r\t\tpipeStdout;\r\t\tpipeStdin;\r\t\tpipeStderr;\r\t\tspawn\r' classified: #'private - lifecycle'.\r\rGt4BpRunnerBridge compile: '\rforkStdOutObserver\r\t[ | lines line event |\r\tlines := process stdoutStream lines.\r\t[ isRunning ]\r\t\twhileTrue: [ \r\t\t    line := lines next wait.\r\t\t    [ event := Gt4BpEvent fromJson: line value.\r\t\t\t  announcer announce: event ] on: Exception do: [ ''do nothing'' ] ] ]\r\t\tforkNamed: ''BPjs Bridge [PID:'' , process id asString , ''] StdOut Observer''\r' classified: #'private - lifecycle'.\r\rGt4BpRunnerBridge compile: '\rforkStdErrObserver\r\t[ | lines line |\r\tlines := process stderrStream lines.\r\t[ isRunning ]\r\t\twhileTrue: [ \r\t\t    line := lines next wait.\r\t\t\t[ Transcript crShow: ''BPjs Bridge Error: '' , line value ]\r\t\t\t\ton: Exception\r\t\t\t\tdo: [ ''do nothing'' ] ] ]\r\t\tforkNamed: ''BPjs Bridge [PID:'' , process id asString , ''] StdErr Observer''\r' classified: #'private - lifecycle'."
 			},
 			{
 				"__type" : "textSnippet",
@@ -1119,14 +1119,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-10-06T12:07:24.430748+02:00"
+									"dateAndTimeString" : "2025-10-27T13:30:56.393775+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "tTvDuer7DQCgsqeGBxhNYg=="
 							},
-							"code" : "Gt4BpRunnerBridge compile: '\rloadBProgram: bProgramCode named: bProgramFilename\r\t(btDirectory / bProgramFilename) \r\t\tensureCreateFile; \r\t\twriteStreamDo: [ :s | s << bProgramCode ].\r' classified: #loading"
+							"code" : "Gt4BpRunnerBridge compile: '\rloadBProgram: bProgramCode named: bProgramFilename\r\tbThreads add: ''// '' , bProgramFilename , String crlf , bProgramCode.\r\tself createBProgramFile: bProgramCode named: bProgramFilename' \rclassified: #loading"
 						}
 					]
 				},

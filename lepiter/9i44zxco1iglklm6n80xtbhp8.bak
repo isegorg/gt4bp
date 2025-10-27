@@ -859,14 +859,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-24T13:13:16.0123+02:00"
+						"dateAndTimeString" : "2025-10-27T14:22:49.85661+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "IWuNWUf+DQCAqzP/A2WHhA=="
 				},
-				"code" : "examples := Gt4BpTicTacToeExamples new.\r(examples humanVsMachinePreventCornerOpossiteCornerFork)\t\t\r\tloadBThread: examples btXShouldNeverWin named: 'bt-XShouldNeverWin.js';\r\tloadBThread: examples btXPlayer named: 'bt-XPlayer.js';\r\tverify"
+				"code" : "examples := Gt4BpTicTacToeExamples new.\r(examples humanVsMachinePreventCornerOpossiteCornerFork)\t\t\r\tloadBThread: examples btXShouldNeverWin named: 'bt-XShouldNeverWin.js';\r\tloadBThread: examples btXPlayer named: \t'bt-XPlayer.js';\r\tverify"
 			},
 			{
 				"__type" : "textSnippet",
@@ -930,7 +930,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-24T13:17:57.738919+02:00"
+						"dateAndTimeString" : "2025-10-24T13:18:29.290115+02:00"
 					}
 				},
 				"uid" : {
@@ -940,7 +940,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Thus we can declare that our b-program to automate the O player moves is *\"free of bugs\"*."
+				"string" : "Thus **we can declare that our b-program to automate the O player moves is \"correct\"**."
 			}
 		]
 	},

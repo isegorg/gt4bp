@@ -248,14 +248,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-23T14:29:59.725208+02:00"
+						"dateAndTimeString" : "2025-10-27T14:10:10.224494+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "2nWRxCP+DQCMnMA7CD9HEw=="
 				},
-				"code" : "Gt4BpTicTacToeGame\r\tcompile: 'verify\r\t| verificationResult |\r\tverificationResult := (Gt4BpVerifierBridge\r\t\t\tfromDirectory: bpRunner btDirectory\r\t\t\tensureDelete: false)\r\t\t\tverifyWithOptions: {Gt4BpVerifierBridge inspectionsOption -> #(''FAILED_ASSERTIONS'')} asDictionary.\r\tverificationResult\r\t\ttransformation: [ :anEvent | \r\t\t\t| allEvents pastEvents |\r\t\t\tallEvents := verificationResult counterExample.\r\t\t\tpastEvents := allEvents copyFrom: 1 to: (allEvents find: anEvent).\r\t\t\tGt4BpTicTacToeGame withEvents: pastEvents ].\r\t^ verificationResult'\r\tclassified: #verification"
+				"code" : "Gt4BpTicTacToeGame\r\tcompile: 'verify\r\t| verificationResult |\r\tverificationResult := (Gt4BpVerifierBridge fromBpBridge: bpRunner)\r\t\t\tverifyWithOptions: {Gt4BpVerifierBridge inspectionsOption -> #(''FAILED_ASSERTIONS'')} asDictionary.\r\tverificationResult\r\t\ttransformation: [ :anEvent | \r\t\t\t| allEvents pastEvents |\r\t\t\tallEvents := verificationResult counterExample.\r\t\t\tpastEvents := allEvents copyFrom: 1 to: (allEvents find: anEvent).\r\t\t\tGt4BpTicTacToeGame withEvents: pastEvents ].\r\t^ verificationResult'\r\tclassified: #verification"
 			},
 			{
 				"__type" : "textSnippet",
