@@ -4,10 +4,20 @@ Class {
 	#category : #'Gt4Bp-Talks'
 }
 
+{ #category : #open }
+Gt4BpIntroducingBPWithSmalltalkSlideshow class >> show [
+	^ super show
+]
+
 { #category : #'as yet unclassified' }
+Gt4BpIntroducingBPWithSmalltalkSlideshow >> picturesDirectoryPath [
+	^ GtResourcesUtilityConstants icebergRepositoriesLocation / 'isegorg' / 'gt4bp' / 'assets' / 'talks' / 'smalltalks2025' / 'images'
+]
+
+{ #category : #slides }
 Gt4BpIntroducingBPWithSmalltalkSlideshow >> slide1_1: aSlide [
 	<gtSlide>
-	<text: '# 1.1. What''s Behavioral Programming?
+	<text: '# 1.1 What''s Behavioral Programming?
 
 Behavioral Programming is a new paradigm focused on building systems by composing behaviors incrementally
 --in a way closer to how we think about scenarios, rather than how we normally structure control flow.'>
@@ -23,7 +33,7 @@ Behavioral Programming is a new paradigm focused on building systems by composin
 '), (self asText: 'Systems are defined by behaviors instead of algorithms.')
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #slides }
 Gt4BpIntroducingBPWithSmalltalkSlideshow >> slide1_2: aSlide [
 	<gtSlide>
 	<text: '# 1.2. Scientific Work and Evolution
@@ -49,11 +59,75 @@ The BPjs tools were developed on 2017.'>
 		element: [ self timelineElement margin: (BlInsets top: 350 bottom: 350 left: 50 right: 50) ]
 ]
 
+{ #category : #slides }
+Gt4BpIntroducingBPWithSmalltalkSlideshow >> slide2: aSlide [
+	<gtSlide>
+	<text: '# 2. Motivations: Why another paradigm?'>
+	^ aSlide paragraph
+		setPriority;
+		subtitleWithFormat: (self asSubtitle: '2. Motivations: Why another paradigm?')
+]
+
+{ #category : #slides }
+Gt4BpIntroducingBPWithSmalltalkSlideshow >> slide2_1: aSlide [
+	<gtSlide>
+	<text: '# 2.1 The Climb Up of the Abstraction Ladder
+	
+We''ve made an incredible progress in programming languages
+--each step giving us more abstraction and expressive power.'>
+	^ aSlide paragraph
+		setPriority;
+		subtitleWithFormat: (self asSubtitle: 'The Abstraction Ladder');
+		paragraphWithFormat: (self asText: '
+There has been an amazing transition up the language abstraction ladder.
+
+From machine languages,
+to assembly,
+to high-level languages,
+and then to a wide variety of paradigms:
+functional, logical, concurrent, constraint-based,
+visual, object-oriented, aspect-oriented, and more.')
+]
+
+{ #category : #slides }
+Gt4BpIntroducingBPWithSmalltalkSlideshow >> slide2_2: aSlide [
+	<gtSlide>
+	<text: '# 2.2 And Yet... 
+	
+Even if you work in one of the most beautiful environments ever created --obviously Smalltalk-- 
+the essence of programming still feels too hard.'>
+	^ aSlide paragraph
+		setPriority;
+		subtitleWithFormat: (self asSubtitle: 'And Yet...');
+		paragraphWithFormat: (self asText: '
+Even if you are lucky enough to be working in the wonderful Smalltalk environment...
+
+programming still feels the same kind of '), (self asText: 'technically tedious work') bold, (self asText:' --just at a higher level of abstraction.')
+]
+
+{ #category : #slides }
+Gt4BpIntroducingBPWithSmalltalkSlideshow >> slide2_3: aSlide [
+	<gtSlide>
+	<text: '# 2.3 The Elephant in the Room of Software
+	
+'>
+	^ Gt4BpTitledTextAndElementLiveSlide new
+		setPriority;
+		elementWeight: 0.5;
+		subtitleWithFormat: (self asSubtitle: 'The Elephant in the Room of Software');
+		newTextWithFormat: (self
+				asText: 'There is something fundamentally wrong with the way we build software.');
+		element: [ GtFilePictureLiveSlide new
+				fileReference: (self picturesDirectoryPath / 'elephant-in-room.png') ]
+]
+
 { #category : #accessing }
 Gt4BpIntroducingBPWithSmalltalkSlideshow >> slidePriorities [
 	<gtExample>
 	<return: #Array>
-	^ #(titleSlideFor: slide1_!: slide1_2:)
+	^ #(#title: 
+	    #slide1_1: #slide1_2:
+	    #slide2: #slide2_1: #slide2_2 #slide2_3:)
 ]
 
 { #category : #'slide - element' }
