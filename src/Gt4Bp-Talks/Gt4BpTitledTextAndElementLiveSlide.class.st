@@ -10,13 +10,22 @@ Class {
 
 { #category : #'as yet unclassified' }
 Gt4BpTitledTextAndElementLiveSlide >> create [
-	| container textAndElementContainer textContainer completeText |
+	| container textAndElementContainer textContainer completeText contentContainer |
 	container := BlElement new
 			constraintsDo: [ :c | 
 				c horizontal matchParent.
 				c vertical matchParent ];
-			layout: BlLinearLayout horizontal.
+			layout: BlFrameLayout new.
 
+	contentContainer := BlElement new
+			constraintsDo: [ :c | 
+				c horizontal matchParent.
+				c vertical matchParent.
+				c frame horizontal weight: 0.6.
+				c frame vertical weight: 0.6.
+				c frame horizontal alignCenter.
+				c frame vertical alignCenter ];
+			layout: BlLinearLayout vertical.
 
 	textAndElementContainer := BlElement new
 			constraintsDo: [ :c | 
@@ -28,7 +37,7 @@ Gt4BpTitledTextAndElementLiveSlide >> create [
 	textContainer := BlElement new
 			constraintsDo: [ :c | 
 				c frame horizontal weight: 1 - elementWeight.
-				c vertical fitContent.
+				c vertical matchParent.
 				c horizontal matchParent ];
 			padding: (BlInsets
 					top: 10
@@ -67,21 +76,17 @@ Gt4BpTitledTextAndElementLiveSlide >> create [
 				constraintsDo: [ :c | 
 					c frame horizontal weight: elementWeight.
 					c frame horizontal alignRight.
-					c vertical fitContent.
-					c horizontal fitContent ]).
+					c vertical matchParent.
+					c horizontal matchParent ]).
 	textAndElementContainer explainer isExplanationHolder: true.
 
-	container
-		addChild: (BlElement new
-				constraintsDo: [ :c | 
-					c horizontal matchParent.
-					c vertical fitContent.
-					c linear vertical alignCenter ];
-				layout: BlLinearLayout vertical;
-				addChild: (BlTextElement new
-						constraintsDo: [ :c | c linear horizontal alignCenter ];
-						text: subtitle);
-				addChild: textAndElementContainer).
+	contentContainer
+		addChild: (BlTextElement new
+				constraintsDo: [ :c | c linear horizontal alignCenter ];
+				text: subtitle);
+		addChild: (textAndElementContainer constraintsDo: [ :c | c linear horizontal alignCenter ]).
+
+	container addChild: contentContainer.
 
 	^ container
 ]

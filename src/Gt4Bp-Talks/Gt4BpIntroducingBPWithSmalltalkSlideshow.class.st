@@ -9,6 +9,14 @@ Gt4BpIntroducingBPWithSmalltalkSlideshow class >> show [
 	^ super show
 ]
 
+{ #category : #slides }
+Gt4BpIntroducingBPWithSmalltalkSlideshow >> argentineBlue [
+	^ Color
+		r: 102 / 255
+		g: 186 / 255
+		b: 233 / 255
+]
+
 { #category : #'as yet unclassified' }
 Gt4BpIntroducingBPWithSmalltalkSlideshow >> picturesDirectoryPath [
 	^ GtResourcesUtilityConstants icebergRepositoriesLocation / 'isegorg' / 'gt4bp' / 'assets' / 'talks' / 'smalltalks2025' / 'images'
@@ -150,18 +158,25 @@ Gt4BpIntroducingBPWithSmalltalkSlideshow >> timelineElement [
 
 { #category : #slides }
 Gt4BpIntroducingBPWithSmalltalkSlideshow >> title: aSlide [
+	"^ aSlide titleWithFooters"
+
 	<gtSlide>
 	<text: 'Welcome to this talk about a different way of thinking about software --one that is closer to how we naturally understand and describe behavior, rather than how we usually code it.
 	
 The subtitle "The Quest for Executable Knowledge" reflects what I personally believe programming is really about: turning our understanding of a system into executable models.
 
 So, let''s begin with the obvious question: What''s Behavioral Programming?'>
-	^ aSlide titleWithFooters
+	^ Gt4BpTitleWithFootersLiveSlide new
 		setPriority;
 		titleBottomPadding: 20;
 		subtitleBottomPadding: 160;
+		logosBottomPadding: 0;
 		titleWithFormat: (self asTitle: 'Introducing Behavioral Programming with Smalltalk');
 		subtitleWithFormat: (self asSubtitle: 'The Quest of Executable Knowledge') italic;
-		newFooterWithFormat: ((self asBigText: 'Smalltalks 2025') bold; foreground: Color purple);
-		newFooterWithFormat: (self asBigText: '@rafael_luque')
+		newFooterWithFormat: ((self asBigText: 'Smalltalks 2025')
+				bold;
+				foreground: self argentineBlue);
+		newFooterWithFormat: (self asBigText: '@rafael_luque');
+		newLogoFilename: 'smalltalks2025-logo.png';
+		newLogoFilename: 'osoco-logo.png'
 ]
