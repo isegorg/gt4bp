@@ -425,20 +425,184 @@ We don''t modify the existing behavior. We just add another behavior that constr
 { #category : #slides }
 Gt4BpIntroducingBPWithSmalltalkSlideshow >> slide3_3: aSlide [
 	<gtSlide>
-	<text: '# 3.3 Key Takeaway
+	<text: '# 3.3 Key Takeaways
 
 This tiny example already captures the spirit of Behavioral Programming...
 '>
 	^ aSlide paragraph
 		setPriority;
-		subtitleWithFormat: (self asSubtitle: 'Key Takeaway');
+		subtitleWithFormat: (self asSubtitle: 'Key Takeaways');
 		paragraphWithFormat: (self asText: '
 		
-    * In BP, behavior is modular and incremental.
+    * In BP, behavior is '), (self asText:'modular and incremental') bold, (self asText: '.
     
-    * Compositionality: You can change system''s behavior by adding or removing b-threads, instead of rewriting code.
+    * '), (self asText: 'Compositionality') bold, (self asText: 'You can change system''s behavior by adding or removing b-threads, instead of rewriting code.
     
-    * System behavior is emergent not centralized: each piece contributes to the global story')
+    * System '), (self asText: 'behavior is emergent, not centralized') bold, (self asText: ': each piece contributes to the global story')
+]
+
+{ #category : #slides }
+Gt4BpIntroducingBPWithSmalltalkSlideshow >> slide4: aSlide [
+	<gtSlide>
+	<text: '# 4. Conceptual Overview of Behavioral Programming
+	
+Each b-thread is a small, independent scenario 
+--a strand of behavior that says: "under these conditions, I want this to happen".
+
+Many b-threads run together concurrently and meet at synchronization points, where they coordinate through shared events.
+'>
+	^ aSlide paragraph
+		setPriority;
+		subtitleWithFormat: (self asSubtitle: '4. Conceptual Overview of Behavioral Programming');
+		paragraphWithFormat: (self asText: '
+A '), (self asText: 'b-thread') bold, (self asText: ' (behavioral thread)') italic, (self asText: ' is an independent line of behavior:'),
+(self asText: '
+
+    * Describes '), (self asText: 'what should') bold, (self asText: ' and '), (self asText: 'what shouldn''t') bold, (self asText: ' happen under certain conditions.'), (self asText: '
+    * Runs '), (self asText: 'concurrently') bold, (self asText: ' with other b-threads.'), (self asText: '
+    * Participates in a '), (self asText: 'global synchronization cycle') bold, (self asText: ' coordinated through shared events.'),
+(self asText: '
+
+A '), (self asText: 'Behavioral Program') bold, (self asText: ' or '), (self asText: 'BProgram') bold, (self asText: ' is software consisting of independent b-threads that generate a flow of events.')
+]
+
+{ #category : #slides }
+Gt4BpIntroducingBPWithSmalltalkSlideshow >> slide4_1: aSlide [
+	<gtSlide>
+	<text: '# 4.1 How It Works Behind the Scenes?
+	
+When a b-thread reaches a point that requires synchronization, it waits until all other b-threads reach their own
+synchronization points.
+
+At these points, each b-thread specifies three sets of events:
+
+• Requested events – proposed to be triggered; the b-thread asks to be notified when any occurs.
+• Waited-for events – not requested, but the b-thread wants to be notified when any is triggered.
+• Blocked events – events that this b-thread currently forbids from being triggered.
+
+Once all these declarations are collected, the engine then selects one event that is requested and not blocked, and triggers it.
+
+Every b-thread that was waiting for or requesting that event moves forward — others stay paused until the next synchronization point.
+'>
+	^ aSlide titledTextAndElement
+		setPriority;
+		subtitleWithFormat: (self asSubtitle: 'How It Works Behind the Scenes?');
+		newTextWithFormat: '';
+		elementWeight: 1;
+		element: [ GtFilePictureLiveSlide new
+				fileReference: self picturesDirectoryPath / 'synchronization-protocol.png' ]
+]
+
+{ #category : #slides }
+Gt4BpIntroducingBPWithSmalltalkSlideshow >> slide5: aSlide [
+	<gtSlide>
+	<text: '# 5. Gt4Bp: When BP meets Smalltalk
+	
+Gt4Bp is a very early prototype — a basic library that already allows us to execute and even verify Behavioral Programs directly from GToolkit.
+
+Although it was initially developed inside GToolkit, it doesn’t rely heavily on GToolkit-specific features.
+So our next step is to evolve it into a generic Behavioral Programming library for all Smalltalk dialects, which we’re calling Bp4St.
+'>
+	^ aSlide paragraph
+		setPriority;
+		subtitleWithFormat: (self asSubtitle: '5. Gt4Bp: When BP meets Smalltalk');
+		paragraphWithFormat: (self asText: '
+		
+Gt4Bp') bold, (self asText: ' is a prototype library that brings Behavioral Programming into GToolkit.
+
+    * '), (self asText: 'Execute and verify') bold, (self asText: ' BPrograms directly from GToolkit.
+    * Developed in GToolkit, but with minimal GT-specific dependencies.
+    * Future evolution: a generic library for '), (self asText: 'any Smalltalk (Bp4St).') bold
+]
+
+{ #category : #slides }
+Gt4BpIntroducingBPWithSmalltalkSlideshow >> slide5_1: aSlide [
+	<gtSlide>
+	<text: '# 5.2 Gt4Bp Architecture
+
+'>
+	^ aSlide paragraph
+		setPriority;
+		subtitleWithFormat: (self asSubtitle: 'Gt4Bp''s Architecture');
+		paragraphWithFormat: (self asText: '
+		
+Gt4Bp currently uses '), (self asText: 'BPjs') bold, (self asText: ' — a Behavioral Programming engine written in Java — as its execution and verification core.
+
+To make Smalltalk interoperate smoothly with this engine, we developed a lightweight connector called the '), (self asText: 'BPjs Bridge.') bold, (self asText: '
+
+The bridge acts as an intermediary process between Smalltalk and BPjs, exchanging '), (self asText: 'events in JSON') bold, (self asText: ' format through stdin/stdout.')
+]
+
+{ #category : #slides }
+Gt4BpIntroducingBPWithSmalltalkSlideshow >> slide5_2: aSlide [
+	<gtSlide>
+	<text: '# 5.2 Gt4Bp Architecture Overview
+		
+'>
+	^ aSlide titledTextAndElement
+		setPriority;
+		subtitleWithFormat: (self asSubtitle: 'Gt4Bp''s Architecture Overview');
+		newTextWithFormat: '';
+		elementWeight: 1;
+		element: []
+]
+
+{ #category : #slides }
+Gt4BpIntroducingBPWithSmalltalkSlideshow >> slide5_3: aSlide [
+	<gtSlide>
+	<text: '# 5.3 Gt4Bp Features
+
+Event ynchronization and formal verification, are handled by the BPjs Bridge, which delegates them to the Java BPjs engine.
+
+From Smalltalk, however, everything looks unified: you start or stop a program, send events, observe events, vrify and even inspect counterexamples directly in GToolkit.
+'>
+	^ aSlide paragraph
+		setPriority;
+		subtitleWithFormat: (self asSubtitle: 'Gt4Bp Features');
+		paragraphWithFormat: (self asText: '
+		
+Even though Gt4Bp is still a prototype, it already supports:
+
+    * Add b-threads to a BProgram (currently written in Javascript).
+    * Run and stop Bprograms.
+    * Send external events from Smalltalk to the BP Engine.
+    * Receive and visualize emitted events in GToolkit.
+    * Verify BPrograms ("safety" properties).
+    * Receive verification counterexample traces.')
+]
+
+{ #category : #slides }
+Gt4BpIntroducingBPWithSmalltalkSlideshow >> slide6: aSlide [
+	<gtSlide>
+	<text: '# 6. A Live Exploration
+
+'>
+	^ aSlide paragraph
+		setPriority;
+		subtitleWithFormat: (self asSubtitle: '6. A Live Exploration');
+		paragraphWithFormat: (self asText: '
+		
+Let''s switch to the '), (self asText: 'live notebook') bold, (self asText: ' (Lepiter) accompanying the Gt4Bp library that describes how the library has been designed and implemented incrementally using the '), (self asText: 'Moldable Literate Programming') bold, (self asText: ' approach.
+
+There you can find the classical TicTacToe example developed step by step as an '), (self asText: 'hybrid application.') bold, (self asText: '
+
+The GUI will live in Smalltalk, and the game’s logic and decision-making will be expressed as b-threads running through Gt4Bp.')
+]
+
+{ #category : #slides }
+Gt4BpIntroducingBPWithSmalltalkSlideshow >> slide6_1: aSlide [
+	<gtSlide>
+	<text: '# 6.1 TicTacToe Hybrid Application
+
+'>
+	^ aSlide labelAndElement
+		setPriority;
+		newFadedText: 'TicTacToe Hybrid Application';
+		element: [ | lepiterDb ticTacToePage |
+			lepiterDb := LeDatabasesRegistry default currentLoadedDefaultLogicalDatabase
+					databaseNamed: 'isegorg/gt4bp/lepiter'.
+			ticTacToePage := lepiterDb pageNamed: 'Implementing incrementally the Tic Tac Toe game using BP'.
+			(GtPager createWrappedOn: (LePagePhlowTool page: ticTacToePage)) maximized ]
 ]
 
 { #category : #accessing }
@@ -448,7 +612,10 @@ Gt4BpIntroducingBPWithSmalltalkSlideshow >> slidePriorities [
 	^ #(#slide0: 
 	    #slide1_1: #slide1_2:
 	    #slide2: #slide2_1: #slide2_2: #slide2_3: #slide2_4: #slide2_5: #slide2_6_1: #slide2_6_2: #slide2_7_1: #slide2_7_2: #slide2_7_3: #slide2_7_4: #slide2_8:
-	    #slide3: #slide3_1: #slide3_2: #slide3_3:)
+	    #slide3: #slide3_1: #slide3_2: #slide3_3:
+	    #slide4: #slide4_1:
+	    #slide5: #slide5_1: #slide5_2: #slide5_3:
+	    #slide6: #slide6_1:)
 ]
 
 { #category : #'slide - element' }
