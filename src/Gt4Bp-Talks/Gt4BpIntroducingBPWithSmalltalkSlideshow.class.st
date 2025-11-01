@@ -605,6 +605,92 @@ Gt4BpIntroducingBPWithSmalltalkSlideshow >> slide6_1: aSlide [
 			(GtPager createWrappedOn: (LePagePhlowTool page: ticTacToePage)) maximized ]
 ]
 
+{ #category : #slides }
+Gt4BpIntroducingBPWithSmalltalkSlideshow >> slide7: aSlide [
+	<gtSlide>
+	<text: '# 7. The ADVISE Project
+
+'>
+	^ aSlide paragraph
+		setPriority;
+		subtitleWithFormat: (self asSubtitle: '7. The ADVISE Project');
+		paragraphWithFormat: (self asText: '
+		
+ADVISE:') bold, (self asText: ' Advanced Vision on Intelligent Software Engineering.') italic, (self asText: '
+
+A joint research project between Rey Juan Carlos University (URJC) and OSOCO.'), (self asText: '
+
+Goal:') bold, (self asText: '
+The project explores how AI agents can participate meaningfully in software development — not replacing engineers, but assisting them to ensure that the code produced truly reflects human intentions and satisfies requirements.'), (self asText: '
+
+Two complementary approaches:') bold, (self asText: '
+
+OSOCO:') bold, (self asText: ' Scenario-Based Modeling (SBM)') italic, (self asText: ' -- inspired by LSCs, Play-In/Play-Out and BP.'), (self asText: '
+
+URJC:') bold, (self asText: ' Specify-Test-Check-Loop (STCL)') italic, (self asText: ' -- inspired by TDD and practices in FOSS projects.')
+]
+
+{ #category : #slides }
+Gt4BpIntroducingBPWithSmalltalkSlideshow >> slide7_1: aSlide [
+	<gtSlide>
+	<text: '# 7.1 Two Approaches
+
+'>
+	^ aSlide paragraph
+		setPriority;
+		subtitleWithFormat: (self asSubtitle: 'Two Complementary Approaches');
+		paragraphWithFormat: (self asText: '
+
+OSOCO:') bold, (self asText: '
+Scenario-Based Modeling (SBM)') italic, (self asText: ' -- inspired by LSCs, Play-In/Play-Out and BP.'), (self asText: '
+
+URJC:') bold, (self asText: '
+Specify-Test-Check-Loop (STCL)') italic, (self asText: ' -- inspired by TDD and practices in FOSS projects.')
+]
+
+{ #category : #slides }
+Gt4BpIntroducingBPWithSmalltalkSlideshow >> slide7_2: aSlide [
+	<gtSlide>
+	<text: '# 7.2 A Vision of Wise Computing
+
+'>
+	^ aSlide paragraph
+		setPriority;
+		subtitleWithFormat: (self asSubtitle: 'A Vision of Wise Computing');
+		paragraphWithFormat: (self asText: '
+
+The frameworks are meant to '), (self asText: 'augment human expertise, not eliminate it.') bold, (self asText: '
+
+Inspired by David Harel’s vision of '), (self asText: 'Wise Computing') bold, (self asText: ':
+
+'), (self asText: 'The computer as an active, collaborative member of the development team.') italic, (self asText: '
+
+    * Asks questions.
+    * Offers suggestions and observations.
+    * Performs verification proactively.')
+]
+
+{ #category : #slides }
+Gt4BpIntroducingBPWithSmalltalkSlideshow >> slide7_3: aSlide [
+	<gtSlide>
+	<text: '# 7.3 The Role of OSOCO: SMToolkit
+'>
+	^ aSlide paragraph
+		setPriority;
+		subtitleWithFormat: (self asSubtitle: 'SMToolkit');
+		paragraphWithFormat: (self asText: '
+
+The role of OSOCO within ADVISE is to lead the development on '), (self asText: 'SMToolkit') bold, (self asText: ' (Scenario Modeling Toolkit).') italic, (self asText: '
+
+SMToolkit aims to support '), (self asText: 'Scenario-Based Modeling') italic, (self asText: ' (SBM) through:
+
+    * A '), (self asText: 'Live Sequence Chart (LSC) editor') bold, (self asText: '.
+    * '), (self asText: 'LSC snippets') bold, (self asText: ' embeddable in Lepiter notebooks.
+    * LLM assistants to help to '), (self asText: 'create LSCs from natural-language descriptions') bold, (self asText: '.
+    * A mechanism to '), (self asText: 'execute LSCs as Behavioral Programs') bold, (self asText: '.
+    * Support for building (micro)services usig LSCs on notebooks as their '), (self asText: 'executable domain models.') bold
+]
+
 { #category : #accessing }
 Gt4BpIntroducingBPWithSmalltalkSlideshow >> slidePriorities [
 	<gtExample>
@@ -615,7 +701,10 @@ Gt4BpIntroducingBPWithSmalltalkSlideshow >> slidePriorities [
 	    #slide3: #slide3_1: #slide3_2: #slide3_3:
 	    #slide4: #slide4_1:
 	    #slide5: #slide5_1: #slide5_2: #slide5_3:
-	    #slide6: #slide6_1:)
+	    #slide6: #slide6_1:
+	    #slide7: #slide7_1: #slide7_2: #slide7_3:
+	    #slide8:
+	    #slide9:)
 ]
 
 { #category : #'slide - element' }
