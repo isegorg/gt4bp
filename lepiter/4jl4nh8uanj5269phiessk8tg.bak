@@ -433,7 +433,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-10-20T11:20:20.612603+02:00"
+									"dateAndTimeString" : "2025-10-20T11:22:15.72613+02:00"
 								}
 							},
 							"editEmail" : {
@@ -444,7 +444,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-10-20T11:20:39.225469+02:00"
+									"dateAndTimeString" : "2025-10-20T11:22:25.176567+02:00"
 								}
 							},
 							"uid" : {
@@ -454,7 +454,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[[Trivial logic for player O]]"
+							"string" : "[[Human-vs-Machine]]"
 						}
 					]
 				},

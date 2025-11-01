@@ -510,12 +510,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2025-10-03T12:37:09.038772+02:00"
+			"dateAndTimeString" : "2025-11-01T12:15:24.951175+01:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Implementing the Tic Tac Toe game using BP"
+		"title" : "Implementing incrementally the Tic Tac Toe game using BP"
 	},
 	"uid" : {
 		"__type" : "uuid",

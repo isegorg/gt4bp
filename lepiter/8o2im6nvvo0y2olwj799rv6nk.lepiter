@@ -1,0 +1,648 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-01T12:15:53.781495+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-01T12:21:56.235361+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "ELmoV+j+DQCDBYf/BVhskg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "First of all, we create an instance of {{gtClass:name=Gt4BpRunnerBridge}} to interact with the BP Runner:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-01T12:16:33.143391+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-01T12:22:13.802952+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "hlYBWuj+DQCDDgjeBVhskg=="
+				},
+				"code" : "bpRunner := Gt4BpRunnerBridge \r\tfromDirectory: (FileLocator temp / 'bt-examples' / 'helloWorld') asFileReference."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-01T12:17:59.206031+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-01T12:19:14.167783+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "uowiX+j+DQCDGJqQBVhskg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "The first try could be to define 2 independent b-threads requiring the events for \"Hello\" and \"World\", in the following way:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-01T12:18:04.369128+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-01T12:20:09.466838+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "IFVxX+j+DQCDH6RuBVhskg=="
+				},
+				"code" : "btHello := '\rbp.registerBThread(\"btHello\", function() {\n  bp.sync({request:bp.Event(\"hello\")});\n});'.\r\rbtWorld := '\rbp.registerBThread(\"btWorld\", function(){\n  bp.sync({request:bp.Event(\"World\")});\n});'."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-01T12:20:25.979033+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-01T12:47:22.12656+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "xCDiZ+j+DQCG++oEBVhskg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Now we can setup the previous instance of the BP Runner by **loading the two previous b-threads** and by  registering a subscriber to the bridge's announcer in order to show in the Transcript the events produced by our b-program when it runs, in the following way :"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-01T12:21:15.887321+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-01T12:25:13.967499+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "Aavbauj+DQCJHgZGBVhskg=="
+				},
+				"code" : "bpRunner\r\tloadBProgram: btHello named: 'btHello.js';\r\tloadBProgram: btWorld named: 'btWorld.js';\r\tonEvent: [ :event | Transcript crShow: 'BP Event -> ' , event asString ]"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-11-01T12:48:16.446415+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-11-01T12:48:27.093055+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "7G9zy+j+DQCP25N0BVhskg=="
+							},
+							"code" : "Transcript open"
+						}
+					]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-01T12:22:50.485864+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-01T12:48:10.331816+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "kH1IcOj+DQCKl9MwBVhskg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "We can proceed open the {{gtClass:name=GtTranscript}}  tool:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-01T12:23:22.658441+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-01T12:35:40.915986+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "pwpqcuj+DQCK/vKDBVhskg=="
+				},
+				"code" : "bpRunner start"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-01T12:57:45.21758+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-01T12:57:57.188041+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "VzJa7ej+DQCQG4B6BVhskg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Remember to stop the BP Runner:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-01T12:23:51.001186+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-01T12:30:50.406777+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "hYQadOj+DQCLmx8SBVhskg=="
+				},
+				"code" : "bpRunner stop"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-01T12:58:02.280388+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-01T13:05:48.425137+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "+I1e7uj+DQCQuIlLBVhskg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Theres no synchronization between both b-threads, so each run may produce a different order:  sometimes \"Hello World\", sometimes \"World Hello\".\r\r\rAnd that's perfectly fine — because each behavior acts independently. What we have so far is **pure concurrency without coordination**."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-01T13:05:57.421665+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-01T13:06:00.044631+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "bBx5Cun+DQCSfZwqBVhskg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "#Exemplify"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-01T13:06:05.040294+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-01T13:06:45.067723+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "2eIkC+n+DQCS2S4fBVhskg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "We can write a reproducible example capturing the previous snippets of code, in the following way:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-01T13:06:51.527977+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-01T13:08:03.880738+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "RTvqDen+DQCWWgMUBVhskg=="
+				},
+				"code" : "Object\r\tsubclass: #Gt4BpExamples\r\tinstanceVariableNames: ''\r\tclassVariableNames: ''\r\tcategory: 'Gt4Bp-Examples'"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-01T13:08:14.294711+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-01T13:19:53.048+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "1SbZEun+DQCXBc7XBVhskg=="
+				},
+				"code" : "Gt4BpExamples compile: '\rbtHello\r\t<gtExample>\r\t^ \r''bp.registerBThread(\"btHello\", function() {\n  bp.sync({request:bp.Event(\"Hello\")});\n});''\r' classified: #'example - support'.\r\rGt4BpExamples compile: '\rbtWorld\r\t<gtExample>\r\t^ \r''bp.registerBThread(\"btWorld\", function() {\n  bp.sync({request:bp.Event(\"World\")});\n});''\r' classified: #'example - support'.\r\rGt4BpExamples compile: '\rhelloWorldNonDeterministic\r\t<gtExample>\r\t| runner |\r\trunner := (Gt4BpRunnerBridge \r\t\tfromDirectory: (FileLocator temp / ''bt-examples'' / ''helloWorld'') asFileReference)\r\t\tonEvent: [ :event | Transcript crShow: ''BP Event -> '' , event asString ].\r\trunner \r\t\tloadBProgram: self btHello named: ''btHello.js'';\r\t\tloadBProgram: self btWorld named: ''btWorld.js''.\r\t^ runner\r' classified: #example"
+			},
+			{
+				"__type" : "exampleSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-01T13:12:38.507564+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-01T13:12:38.507564+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "V7iYIun+DQCdfmhxBVhskg=="
+				},
+				"exampleSelector" : "helloWorldNonDeterministic",
+				"previewHeight" : 200,
+				"previewShowSelector" : "gtViewsFor:",
+				"exampleBehaviorName" : "Gt4BpExamples",
+				"codeExpanded" : true,
+				"previewExpanded" : false,
+				"noCode" : false
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2025-11-01T12:15:53.751406+01:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2025-11-01T12:59:12.176154+01:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "Hello World BP (non deterministic)"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "7042a857-e8fe-0d00-8304-cf2505586c92"
+	}
+}

@@ -66,7 +66,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-20T18:13:20.171778+02:00"
+						"dateAndTimeString" : "2025-11-01T12:14:59.982058+01:00"
 					}
 				},
 				"uid" : {
@@ -82,45 +82,7 @@
 				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
-					"items" : [
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-11-01T08:41:42.819264+01:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-11-01T08:41:49.241207+01:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "jsaFWeX+DQC8Oy1+CtCUkg=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "[["
-						}
-					]
+					"items" : [ ]
 				},
 				"createEmail" : {
 					"__type" : "email",
@@ -167,6 +129,43 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-01T08:41:42.819264+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-01T08:41:59.506196+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "jsaFWeX+DQC8Oy1+CtCUkg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "[[Introducing Behavioral Programming with Smalltalk]]"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
 						"dateAndTimeString" : "2025-10-02T10:28:01.994265+02:00"
 					}
 				},
@@ -189,6 +188,43 @@
 					"__type" : "textStyle"
 				},
 				"string" : "## Examples"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-01T12:15:30.791833+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-01T12:59:12.184568+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "3+1JVuj+DQCCKAVGBVhskg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "[[Hello World BP (non deterministic)]]"
 			},
 			{
 				"__type" : "textSnippet",
@@ -847,7 +883,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-03T12:37:09.045745+02:00"
+						"dateAndTimeString" : "2025-11-01T12:15:24.960436+01:00"
 					}
 				},
 				"uid" : {
@@ -857,7 +893,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[[Implementing the Tic Tac Toe game using BP]]"
+				"string" : "[[Implementing incrementally the Tic Tac Toe game using BP]]"
 			}
 		]
 	},

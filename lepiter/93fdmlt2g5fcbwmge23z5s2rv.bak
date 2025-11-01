@@ -1043,14 +1043,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-27T13:40:09.867179+01:00"
+						"dateAndTimeString" : "2025-10-27T13:41:38.953318+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "bv5Q+dj7DQCTyhu0D1N2lw=="
 				},
-				"code" : "Gt4BpRunnerBridge compile: '\rstart\r\tisRunning\r\t\tifFalse: [\r\t\t    self createMergedBProgramFile.\r\t\t\tprocess := self newBridgeProcess.\r\t\t\tisRunning := true.\r\t\t\tself forkStdOutObserver.\r\t\t\tself forkStdErrObserver ]\r' classified: #lifecycle.\r\rGt4BpRunnerBridge compile: '\rstop\r\tisRunning ifTrue: [ \r\t    process kill.\r\t    isRunning := false \r\t]' \rclassified: #lifecycle.\r\rGt4BpRunnerBridge compile: '\rcreateMergedBProgramFile\r\tbProgram := bThreads inject: bProgram into: [ :combinedBProgram :eachBProgram | \r\t\tcombinedBProgram , String crlf, String crlf, eachBProgram ].\r\tself createBProgramFile: bProgram named: self class mergedBProgramFilename.\r\t^ bProgram' \rclassified: #'private - lifecycle'.\r\rGt4BpRunnerBridge class compile: 'mergedBProgramFilename\r\t^ ''MERGED_BPROGRAM.js''' \rclassified: #'default values'.\r\rGt4BpRunnerBridge compile: '\rcreateBProgramFile: bProgramCode named: bProgramFilename\r\t(btDirectory / bProgramFilename)\r\t\tensureDelete;\r\t\tensureCreateFile;\r\t\twriteStreamDo: [ :s | s << bProgramCode ]' \rclassified: #'private'.\r\rGt4BpRunnerBridge compile: '\rnewBridgeProcess\r\t^ GtExternalProcessBuilder new\r\t\tcommand: ''java'';\r\t\targs: {''-jar''.\r\t\t\t\t''pharo-local/iceberg/isegorg/gt4bp/BPjsRunnerBridge-0.1.0-SNAPSHOT.jar''.\r\t\t\t\t(btDirectory / self class mergedBProgramFilename) pathString };\r\t\tpipeStdout;\r\t\tpipeStdin;\r\t\tpipeStderr;\r\t\tspawn\r' classified: #'private - lifecycle'.\r\rGt4BpRunnerBridge compile: '\rforkStdOutObserver\r\t[ | lines line event |\r\tlines := process stdoutStream lines.\r\t[ isRunning ]\r\t\twhileTrue: [ \r\t\t    line := lines next wait.\r\t\t    [ event := Gt4BpEvent fromJson: line value.\r\t\t\t  announcer announce: event ] on: Exception do: [ ''do nothing'' ] ] ]\r\t\tforkNamed: ''BPjs Bridge [PID:'' , process id asString , ''] StdOut Observer''\r' classified: #'private - lifecycle'.\r\rGt4BpRunnerBridge compile: '\rforkStdErrObserver\r\t[ | lines line |\r\tlines := process stderrStream lines.\r\t[ isRunning ]\r\t\twhileTrue: [ \r\t\t    line := lines next wait.\r\t\t\t[ Transcript crShow: ''BPjs Bridge Error: '' , line value ]\r\t\t\t\ton: Exception\r\t\t\t\tdo: [ ''do nothing'' ] ] ]\r\t\tforkNamed: ''BPjs Bridge [PID:'' , process id asString , ''] StdErr Observer''\r' classified: #'private - lifecycle'."
+				"code" : "Gt4BpRunnerBridge compile: '\rstart\r\tisRunning\r\t\tifFalse: [\r\t\t    self createMergedBProgramFile.\r\t\t\tprocess := self newBridgeProcess.\r\t\t\tisRunning := true.\r\t\t\tself forkStdOutObserver.\r\t\t\tself forkStdErrObserver ]\r' classified: #lifecycle.\r\rGt4BpRunnerBridge compile: '\rstop\r\tisRunning ifTrue: [ \r\t    process kill.\r\t    isRunning := false \r\t]' \rclassified: #lifecycle.\r\rGt4BpRunnerBridge compile: '\rcreateMergedBProgramFile\r\tbProgram := bThreads inject: bProgram into: [ :combinedBProgram :eachBProgram | \r\t\tcombinedBProgram , eachBProgram ,  String crlf, String crlf ].\r\tself createBProgramFile: bProgram named: self class mergedBProgramFilename.\r\t^ bProgram' \rclassified: #'private - lifecycle'.\r\rGt4BpRunnerBridge class compile: 'mergedBProgramFilename\r\t^ ''MERGED_BPROGRAM.js''' \rclassified: #'default values'.\r\rGt4BpRunnerBridge compile: '\rcreateBProgramFile: bProgramCode named: bProgramFilename\r\t(btDirectory / bProgramFilename)\r\t\tensureDelete;\r\t\tensureCreateFile;\r\t\twriteStreamDo: [ :s | s << bProgramCode ]' \rclassified: #'private'.\r\rGt4BpRunnerBridge compile: '\rnewBridgeProcess\r\t^ GtExternalProcessBuilder new\r\t\tcommand: ''java'';\r\t\targs: {''-jar''.\r\t\t\t\t''pharo-local/iceberg/isegorg/gt4bp/BPjsRunnerBridge-0.1.0-SNAPSHOT.jar''.\r\t\t\t\t(btDirectory / self class mergedBProgramFilename) pathString };\r\t\tpipeStdout;\r\t\tpipeStdin;\r\t\tpipeStderr;\r\t\tspawn\r' classified: #'private - lifecycle'.\r\rGt4BpRunnerBridge compile: '\rforkStdOutObserver\r\t[ | lines line event |\r\tlines := process stdoutStream lines.\r\t[ isRunning ]\r\t\twhileTrue: [ \r\t\t    line := lines next wait.\r\t\t    [ event := Gt4BpEvent fromJson: line value.\r\t\t\t  announcer announce: event ] on: Exception do: [ ''do nothing'' ] ] ]\r\t\tforkNamed: ''BPjs Bridge [PID:'' , process id asString , ''] StdOut Observer''\r' classified: #'private - lifecycle'.\r\rGt4BpRunnerBridge compile: '\rforkStdErrObserver\r\t[ | lines line |\r\tlines := process stderrStream lines.\r\t[ isRunning ]\r\t\twhileTrue: [ \r\t\t    line := lines next wait.\r\t\t\t[ Transcript crShow: ''BPjs Bridge Error: '' , line value ]\r\t\t\t\ton: Exception\r\t\t\t\tdo: [ ''do nothing'' ] ] ]\r\t\tforkNamed: ''BPjs Bridge [PID:'' , process id asString , ''] StdErr Observer''\r' classified: #'private - lifecycle'."
 			},
 			{
 				"__type" : "textSnippet",
@@ -1507,7 +1507,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-09-24T12:09:30.993193+02:00"
+												"dateAndTimeString" : "2025-11-01T12:22:41.058741+01:00"
 											}
 										},
 										"editEmail" : {
@@ -1518,7 +1518,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-09-24T12:11:41.544773+02:00"
+												"dateAndTimeString" : "2025-11-01T12:22:41.064707+01:00"
 											}
 										},
 										"uid" : {
@@ -1528,7 +1528,7 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "We can proceed to start the previously configured bridge and inspect the {{gtClass:name=GtTranscript}} :"
+										"string" : "c"
 									},
 									{
 										"__type" : "pharoSnippet",

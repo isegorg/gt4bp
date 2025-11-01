@@ -367,13 +367,88 @@ The essence of BP is to bring programming closer to how we actually think --one 
 '), (self asText: 'Result: ') bold, (self asText: 'A system that emerges from the interaction of behavioral fragments.')
 ]
 
+{ #category : #slides }
+Gt4BpIntroducingBPWithSmalltalkSlideshow >> slide3: aSlide [
+	<gtSlide>
+	<text: '# 3. Hello World ala BP style
+
+All right --enough theory and philosphy for now.
+
+Let''s see Behavioral Programming in action right inside Smalltalk using the Gt4Bp library.
+'>
+	^ aSlide paragraph
+		setPriority;
+		subtitleWithFormat: (self asSubtitle: '3. Hello World ala BP style');
+		paragraphWithFormat: (self asText: '
+		
+Let''s start with two b-threads, each representing an event.
+
+They don''t coordinate, so the order is non deterministic.')
+]
+
+{ #category : #slides }
+Gt4BpIntroducingBPWithSmalltalkSlideshow >> slide3_1: aSlide [
+	<gtSlide>
+	<text: '# 3.1 Hello World (non deterministic variant)
+
+Here we have 2 b-threads --one requesting the "Hello" event, the other "World".
+
+There''s no synchronization between them, so each run may produce a different order: 
+sometime "Hello World", sometimes "World Hello".
+
+And that''s perfectly fine — because each behavior acts independently.
+What we have so far is pure concurrency without coordination.
+'>
+	^ aSlide lepiterPage
+		setPriority;
+		pageNamed: 'Hello World BP (non deterministic)' from: 'isegorg/gt4bp/lepiter';
+		yourself
+]
+
+{ #category : #slides }
+Gt4BpIntroducingBPWithSmalltalkSlideshow >> slide3_2: aSlide [
+	<gtSlide>
+	<text: '# 3.2 Hello World: Enforcing Order
+
+To enforce the intended order we add a third b-thread.
+
+We don''t modify the existing behavior. We just add another behavior that constraints the interaction.		
+'>
+	^ aSlide labelAndElement
+		setPriority;
+		newFadedText: 'Hello World: Enforcing Order';
+		element: [ GtPager
+				createWrappedOn: (GtPharoMethodCoder forMethod: Gt4BpExamples >> #helloWorldDeterministic)
+						asExpandedOnlyElement vFitContentLimited ]
+]
+
+{ #category : #slides }
+Gt4BpIntroducingBPWithSmalltalkSlideshow >> slide3_3: aSlide [
+	<gtSlide>
+	<text: '# 3.3 Key Takeaway
+
+This tiny example already captures the spirit of Behavioral Programming...
+'>
+	^ aSlide paragraph
+		setPriority;
+		subtitleWithFormat: (self asSubtitle: 'Key Takeaway');
+		paragraphWithFormat: (self asText: '
+		
+    * In BP, behavior is modular and incremental.
+    
+    * Compositionality: You can change system''s behavior by adding or removing b-threads, instead of rewriting code.
+    
+    * System behavior is emergent not centralized: each piece contributes to the global story')
+]
+
 { #category : #accessing }
 Gt4BpIntroducingBPWithSmalltalkSlideshow >> slidePriorities [
 	<gtExample>
 	<return: #Array>
 	^ #(#slide0: 
 	    #slide1_1: #slide1_2:
-	    #slide2: #slide2_1: #slide2_2: #slide2_3: #slide2_4: #slide2_5: #slide2_6_1: #slide2_6_2: #slide2_7_1: #slide2_7_2: #slide2_7_3: #slide2_7_4: #slide2_8:)
+	    #slide2: #slide2_1: #slide2_2: #slide2_3: #slide2_4: #slide2_5: #slide2_6_1: #slide2_6_2: #slide2_7_1: #slide2_7_2: #slide2_7_3: #slide2_7_4: #slide2_8:
+	    #slide3: #slide3_1: #slide3_2: #slide3_3:)
 ]
 
 { #category : #'slide - element' }
