@@ -40,7 +40,7 @@ So, let''s begin with the obvious question: What''s Behavioral Programming?'>
 		newFooterWithFormat: ((self asBigText: 'Smalltalks 2025')
 				bold;
 				foreground: self argentineBlue);
-		newFooterWithFormat: (self asBigText: '@rafael_luque');
+		newFooterWithFormat: (self asBigText: 'Rafael Luque · OSOCO');
 		newLogoFilename: 'smalltalks2025-logo.png';
 		newLogoFilename: 'osoco-logo.png'
 ]
@@ -689,6 +689,62 @@ SMToolkit aims to support '), (self asText: 'Scenario-Based Modeling') italic, (
     * LLM assistants to help to '), (self asText: 'create LSCs from natural-language descriptions') bold, (self asText: '.
     * A mechanism to '), (self asText: 'execute LSCs as Behavioral Programs') bold, (self asText: '.
     * Support for building (micro)services usig LSCs on notebooks as their '), (self asText: 'executable domain models.') bold
+]
+
+{ #category : #slides }
+Gt4BpIntroducingBPWithSmalltalkSlideshow >> slide8: aSlide [
+	<gtSlide>
+	<text: '# 8. Why Behavioral Programming Matters
+	
+If I had to summarize Behavioral Programming in one idea,
+it’s about focusing on what should happen rather than how to make it happen.
+
+It lets us describe behaviors incrementally and compositionally,
+verify them formally, and connect human reasoning directly to execution.
+
+It’s more than a technique — it’s a step towards turning our understanding into executable knowledge.
+'>
+	^ aSlide paragraph
+		setPriority;
+		subtitleWithFormat: (self asSubtitle: '8. Why Behavioral Programming Matters');
+		paragraphWithFormat: (self asText: '
+
+Behavioral Programming') bold, (self asText: '
+brings a new way of thinking about software.
+
+
+    * Focus on '), (self asText: 'behavior, not structure.') bold, (self asText: '
+    * Add new logic '), (self asText: 'incrementally') bold, (self asText: ', without breaking existing code.
+    * Specify '), (self asText: 'partial, cooperating') bold, (self asText: ' views of system behavior.
+    * Enable '), (self asText: 'verifiable execution') bold, (self asText: '.
+
+'), (self asText: 'A step towards turning our understanding into executable knowledge.') bold
+]
+
+{ #category : #slides }
+Gt4BpIntroducingBPWithSmalltalkSlideshow >> slide9: aSlide [
+	<gtSlide>
+	<text: '# 9. Q&A
+	
+Thank you so much for your attention.
+I’d love to hear your questions or thoughts
+'>
+	^ aSlide paragraph
+		setPriority;
+		subtitleWithFormat: (self asSubtitle: '9. Q&A');
+		paragraphWithFormat: (self asText: '
+
+Thank you for your attention.
+'), (self asText: 'Questions or thoughts?') bold, (self asText: '
+
+
+—
+Rafael Luque · OSOCO
+
+'), (self asText: 'Introducing Behavioral Programming with Smalltalk
+The Quest for Executable Knowledge') italic, (self asText: '
+
+https://osoco.es')			
 ]
 
 { #category : #accessing }
