@@ -24,5 +24,8 @@ BaselineOfGt4BP >> baseline: spec [
 	<baseline>
 	^ spec
 		for: #common
-		do: [ 'do nothing' ]
+		do: [ spec package: 'Gt4Bp-Talks'.
+		
+			spec group: 'Core' with: #('Talks').
+			spec group: 'Talks' with: #('Gt4Bp-Talks') ]
 ]
