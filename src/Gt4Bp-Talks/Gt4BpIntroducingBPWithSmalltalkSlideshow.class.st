@@ -4,11 +4,6 @@ Class {
 	#category : #'Gt4Bp-Talks'
 }
 
-{ #category : #open }
-Gt4BpIntroducingBPWithSmalltalkSlideshow class >> show [
-	^ super show
-]
-
 { #category : #slides }
 Gt4BpIntroducingBPWithSmalltalkSlideshow >> argentineBlue [
 	^ Color
