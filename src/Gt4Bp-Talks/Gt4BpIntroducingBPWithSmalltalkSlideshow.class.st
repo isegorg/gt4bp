@@ -119,7 +119,7 @@ Gt4BpIntroducingBPWithSmalltalkSlideshow >> slide2_3: aSlide [
 	<text: '# 2.3 The Elephant in the Room of Software
 	
 '>
-	^ Gt4BpTitledTextAndElementLiveSlide new
+	^ aSlide titledTextAndElement
 		setPriority;
 		elementWeight: 0.5;
 		subtitleWithFormat: (self asSubtitle: 'The Elephant in the Room of Software');
@@ -166,7 +166,7 @@ Gt4BpIntroducingBPWithSmalltalkSlideshow >> title: aSlide [
 The subtitle "The Quest for Executable Knowledge" reflects what I personally believe programming is really about: turning our understanding of a system into executable models.
 
 So, let''s begin with the obvious question: What''s Behavioral Programming?'>
-	^ Gt4BpTitleWithFootersLiveSlide new
+	^ aSlide titleWithLogosAndFooters
 		setPriority;
 		titleBottomPadding: 20;
 		subtitleBottomPadding: 160;
