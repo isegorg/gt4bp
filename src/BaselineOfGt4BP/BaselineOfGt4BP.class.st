@@ -25,7 +25,9 @@ BaselineOfGt4BP >> baseline: spec [
 	^ spec
 		for: #common
 		do: [ spec package: 'Gt4Bp-Talks'.
-		
-			spec group: 'Core' with: #('Talks').
-			spec group: 'Talks' with: #('Gt4Bp-Talks') ]
+			spec package: 'Gt4Bp-GToolkit'.
+
+			spec group: 'Core' with: #('Talks' 'GT').
+			spec group: 'Talks' with: #('Gt4Bp-Talks').
+			spec group: 'GT' with: #('Gt4Bp-GToolkit') ]
 ]
