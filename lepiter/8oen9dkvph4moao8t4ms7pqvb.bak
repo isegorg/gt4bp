@@ -40,6 +40,40 @@
 					"__type" : "textStyle"
 				},
 				"string" : "Let's take a look to the presentation at Smalltalks 2025, Buenos Aires:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-01T08:43:29.155721+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-02T13:11:32.368105+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "pyoFYOX+DQC/Da7wCtCUkg=="
+				},
+				"code" : "GtPresenterSlideShow openInSpace: Gt4BpIntroducingBPWithSmalltalkSlideshow"
 			}
 		]
 	},
