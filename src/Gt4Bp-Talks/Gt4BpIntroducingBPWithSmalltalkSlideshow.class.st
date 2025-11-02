@@ -436,7 +436,7 @@ This tiny example already captures the spirit of Behavioral Programming...
 		
     * In BP, behavior is '), (self asText:'modular and incremental') bold, (self asText: '.
     
-    * '), (self asText: 'Compositionality') bold, (self asText: 'You can change system''s behavior by adding or removing b-threads, instead of rewriting code.
+    * '), (self asText: 'Compositionality') bold, (self asText: ': You can change system''s behavior by adding or removing b-threads, instead of rewriting code.
     
     * System '), (self asText: 'behavior is emergent, not centralized') bold, (self asText: ': each piece contributes to the global story')
 ]
@@ -544,7 +544,8 @@ Gt4BpIntroducingBPWithSmalltalkSlideshow >> slide5_2: aSlide [
 		subtitleWithFormat: (self asSubtitle: 'Gt4Bp''s Architecture Overview');
 		newTextWithFormat: '';
 		elementWeight: 1;
-		element: []
+		element: [ GtFilePictureLiveSlide new
+				fileReference: self picturesDirectoryPath / 'gt4bp-architecture.png' ]
 ]
 
 { #category : #slides }
@@ -621,24 +622,18 @@ ADVISE:') bold, (self asText: ' Advanced Vision on Intelligent Software Engineer
 A joint research project between Rey Juan Carlos University (URJC) and OSOCO.'), (self asText: '
 
 Goal:') bold, (self asText: '
-The project explores how AI agents can participate meaningfully in software development — not replacing engineers, but assisting them to ensure that the code produced truly reflects human intentions and satisfies requirements.'), (self asText: '
-
-Two complementary approaches:') bold, (self asText: '
-
-OSOCO:') bold, (self asText: ' Scenario-Based Modeling (SBM)') italic, (self asText: ' -- inspired by LSCs, Play-In/Play-Out and BP.'), (self asText: '
-
-URJC:') bold, (self asText: ' Specify-Test-Check-Loop (STCL)') italic, (self asText: ' -- inspired by TDD and practices in FOSS projects.')
+The project explores how AI agents can participate meaningfully in software development — not replacing engineers, but assisting them to ensure that the code produced truly reflects human intentions and satisfies requirements.')
 ]
 
 { #category : #slides }
 Gt4BpIntroducingBPWithSmalltalkSlideshow >> slide7_1: aSlide [
 	<gtSlide>
-	<text: '# 7.1 Two Approaches
+	<text: '# 7.1 ADVISE: Two Approaches
 
 '>
 	^ aSlide paragraph
 		setPriority;
-		subtitleWithFormat: (self asSubtitle: 'Two Complementary Approaches');
+		subtitleWithFormat: (self asSubtitle: 'ADVISE: Two Complementary Approaches');
 		paragraphWithFormat: (self asText: '
 
 OSOCO:') bold, (self asText: '
@@ -651,12 +646,12 @@ Specify-Test-Check-Loop (STCL)') italic, (self asText: ' -- inspired by TDD and 
 { #category : #slides }
 Gt4BpIntroducingBPWithSmalltalkSlideshow >> slide7_2: aSlide [
 	<gtSlide>
-	<text: '# 7.2 A Vision of Wise Computing
+	<text: '# 7.2 ADVISE: A Vision of Wise Computing
 
 '>
 	^ aSlide paragraph
 		setPriority;
-		subtitleWithFormat: (self asSubtitle: 'A Vision of Wise Computing');
+		subtitleWithFormat: (self asSubtitle: 'ADVISE: A Vision of Wise Computing');
 		paragraphWithFormat: (self asText: '
 
 The frameworks are meant to '), (self asText: 'augment human expertise, not eliminate it.') bold, (self asText: '
@@ -673,11 +668,11 @@ Inspired by David Harel’s vision of '), (self asText: 'Wise Computing') bold, 
 { #category : #slides }
 Gt4BpIntroducingBPWithSmalltalkSlideshow >> slide7_3: aSlide [
 	<gtSlide>
-	<text: '# 7.3 The Role of OSOCO: SMToolkit
+	<text: '# 7.3 ADVISE: The Role of OSOCO: SMToolkit
 '>
 	^ aSlide paragraph
 		setPriority;
-		subtitleWithFormat: (self asSubtitle: 'SMToolkit');
+		subtitleWithFormat: (self asSubtitle: 'ADVISE: SMToolkit');
 		paragraphWithFormat: (self asText: '
 
 The role of OSOCO within ADVISE is to lead the development on '), (self asText: 'SMToolkit') bold, (self asText: ' (Scenario Modeling Toolkit).') italic, (self asText: '
