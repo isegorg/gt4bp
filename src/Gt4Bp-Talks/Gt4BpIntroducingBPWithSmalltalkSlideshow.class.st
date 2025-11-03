@@ -35,9 +35,10 @@ So, let''s begin with the obvious question: What''s Behavioral Programming?'>
 		titleBottomPadding: 20;
 		subtitleBottomPadding: 160;
 		logosBottomPadding: 0;
+		footerBottomPadding: 40;
 		titleWithFormat: (self asTitle: 'Introducing Behavioral Programming with Smalltalk');
 		subtitleWithFormat: (self asSubtitle: 'The Quest of Executable Knowledge') italic;
-		newFooterWithFormat: ((self asBigText: 'Smalltalks 2025')
+		newFooterWithFormat: ((self asSubtitle: 'Smalltalks 2025')
 				bold;
 				foreground: self argentineBlue);
 		newFooterWithFormat: (self asBigText: 'Rafael Luque · OSOCO');
