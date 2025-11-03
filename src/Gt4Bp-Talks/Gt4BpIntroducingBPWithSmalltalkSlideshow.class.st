@@ -399,9 +399,14 @@ sometime "Hello World", sometimes "World Hello".
 And that''s perfectly fine — because each behavior acts independently.
 What we have so far is pure concurrency without coordination.
 '>
-	^ aSlide lepiterPage
+	^ aSlide labelAndElement
 		setPriority;
-		pageNamed: 'Hello World BP (non deterministic)' from: 'isegorg/gt4bp/lepiter';
+		newTextWithFormat: (self asSubtitle: 'Hello World (non deterministic variant)');
+		element: [ | lepiterDb ticTacToePage |
+			lepiterDb := LeDatabasesRegistry default currentLoadedDefaultLogicalDatabase
+					databaseNamed: 'isegorg/gt4bp/lepiter'.
+			ticTacToePage := lepiterDb pageNamed: 'Hello World BP (non deterministic)'.
+			(GtPager createWrappedOn: (LePagePhlowTool page: ticTacToePage)) maximized ];
 		yourself
 ]
 
@@ -416,7 +421,7 @@ We don''t modify the existing behavior. We just add another behavior that constr
 '>
 	^ aSlide labelAndElement
 		setPriority;
-		newFadedText: 'Hello World: Enforcing Order';
+		newTextWithFormat: (self asSubtitle: 'Hello World: Enforcing Order');
 		element: [ GtPager
 				createWrappedOn: (GtPharoMethodCoder forMethod: Gt4BpExamples >> #helloWorldDeterministic)
 						asExpandedOnlyElement vFitContentLimited ]
@@ -598,7 +603,7 @@ Gt4BpIntroducingBPWithSmalltalkSlideshow >> slide6_1: aSlide [
 '>
 	^ aSlide labelAndElement
 		setPriority;
-		newFadedText: 'TicTacToe Hybrid Application';
+		newTextWithFormat: (self asSubtitle: 'TicTacToe Hybrid Application');
 		element: [ | lepiterDb ticTacToePage |
 			lepiterDb := LeDatabasesRegistry default currentLoadedDefaultLogicalDatabase
 					databaseNamed: 'isegorg/gt4bp/lepiter'.

@@ -35,7 +35,7 @@ Gt4BpHomeSection >> gtSmalltalks2025TalkCard [
 	<return: #GtJobHomeCard>
 	
 	^ GtHomeCard job
-		title: 'Smalltalks 2025';
+		title: 'Smalltalks 2025 Talk';
 		description: 'Open the Smalltalks 2025 Talk slideshow';
 		priority: 20;
 		block: [ GtPresenterSlideShow openInSpace: Gt4BpIntroducingBPWithSmalltalkSlideshow ];
