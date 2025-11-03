@@ -745,7 +745,7 @@ Rafael Luque · OSOCO
 '), (self asText: 'Introducing Behavioral Programming with Smalltalk
 The Quest for Executable Knowledge') italic, (self asText: '
 
-https://osoco.es')			
+'), ((self asText: 'https://osoco.es') asLinkTo: 'https://osoco.es')
 ]
 
 { #category : #accessing }
