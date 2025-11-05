@@ -13,6 +13,18 @@ Gt4BpIntroducingBPWithSmalltalkSlideshow >> argentineBlue [
 ]
 
 { #category : #'as yet unclassified' }
+Gt4BpIntroducingBPWithSmalltalkSlideshow >> asSmallText: aString [
+	^ (aString asRopedText)
+		glamorousRegularFont;
+		fontSize: self smallTextSize
+]
+
+{ #category : #'as yet unclassified' }
+Gt4BpIntroducingBPWithSmalltalkSlideshow >> codeAndTextSize [
+	^ 40
+]
+
+{ #category : #'as yet unclassified' }
 Gt4BpIntroducingBPWithSmalltalkSlideshow >> picturesDirectoryPath [
 	<gtExample>
 	^ GtResourcesUtilityConstants icebergRepositoriesLocation / 'isegorg' / 'gt4bp' / 'assets' / 'talks' / 'smalltalks2025' / 'images'
@@ -267,10 +279,11 @@ Gt4BpIntroducingBPWithSmalltalkSlideshow >> slide2_7_1: aSlide [
 	
 But, why the tunnel is so hard to complete.
 
-Several authors have written about the constraints of programming. 
+Several authors have written about the constraints of programming and how to liberate it.
+
 For example, John Backus in hist Turing Award lecture in 1977 titled "Can Programming Be Liberated from the von Neumann Style?".
 
-In 2008 Harel published a pun intended essay titled "Can Programming Be Liberated, Period?"
+In 2008 Harel published a pun intended essay titled "Can Programming Be Liberated, Period?". Not specifically from the von Neumann style, but simply liberating it in a more general way.
 '>
 	^ aSlide titledTextAndElement
 		setPriority;
@@ -371,15 +384,17 @@ The essence of BP is to bring programming closer to how we actually think --one 
 { #category : #slides }
 Gt4BpIntroducingBPWithSmalltalkSlideshow >> slide3: aSlide [
 	<gtSlide>
-	<text: '# 3. Hello World ala BP style
+	<text: '# 3. Hello World à la BP
 
-All right --enough theory and philosphy for now.
+All right --enough theory and philosophy for now.
 
 Let''s see Behavioral Programming in action right inside Smalltalk using the Gt4Bp library.
+
+This is Hello World à la Behavioral Programming
 '>
 	^ aSlide paragraph
 		setPriority;
-		subtitleWithFormat: (self asSubtitle: '3. Hello World ala BP style');
+		subtitleWithFormat: (self asSubtitle: '3. Hello World à la BP');
 		paragraphWithFormat: (self asText: '
 		
 Let''s start with two b-threads, each representing an event.
@@ -423,9 +438,12 @@ We don''t modify the existing behavior. We just add another behavior that constr
 	^ aSlide labelAndElement
 		setPriority;
 		newTextWithFormat: (self asSubtitle: 'Hello World: Enforcing Order');
-		element: [ GtPager
-				createWrappedOn: (GtPharoMethodCoder forMethod: Gt4BpExamples >> #helloWorldDeterministic)
-						asExpandedOnlyElement vFitContentLimited ]
+		element: [ | lepiterDb ticTacToePage |
+			lepiterDb := LeDatabasesRegistry default currentLoadedDefaultLogicalDatabase
+					databaseNamed: 'isegorg/gt4bp/lepiter'.
+			ticTacToePage := lepiterDb pageNamed: 'Hello World BP (deterministic)'.
+			(GtPager createWrappedOn: (LePagePhlowTool page: ticTacToePage)) maximized  ];
+			yourself
 ]
 
 { #category : #slides }
@@ -758,10 +776,20 @@ Gt4BpIntroducingBPWithSmalltalkSlideshow >> slidePriorities [
 	    #slide3: #slide3_1: #slide3_2: #slide3_3:
 	    #slide4: #slide4_1:
 	    #slide5: #slide5_1: #slide5_2: #slide5_3:
-	    #slide6: #slide6_1:
+	    "#slide6: #slide6_1:"
 	    #slide7: #slide7_1: #slide7_2: #slide7_3:
 	    #slide8:
 	    #slide9:)
+]
+
+{ #category : #'as yet unclassified' }
+Gt4BpIntroducingBPWithSmalltalkSlideshow >> smallTextSize [
+	^ 25
+]
+
+{ #category : #'as yet unclassified' }
+Gt4BpIntroducingBPWithSmalltalkSlideshow >> subtitleSize [
+	^ 50
 ]
 
 { #category : #'slide - element' }
@@ -775,9 +803,16 @@ Gt4BpIntroducingBPWithSmalltalkSlideshow >> timelineElement [
 		timelineData: #key;
 		projectionData: #value;
 		timelineFrom: 1998 asYear to: 2018 asYear;
+		projectionLabelFormat: [ :labelText | self asSmallText: labelText ];
+		timelineLabelFormat: [ :timelineLabel | self asSmallText: (timelineLabel start year asString) ];
 		with: {1999 asYear -> 'Live Sequence Charts (Damm & Harel)'.
 				2003 asYear -> 'Come, Let''s Play (Harel & Marelli)'.
 				2010 asYear -> 'Behavioral Programming (Harel, Marron, Weiss)'.
 				2017 asYear -> 'BPjs Tool (Weiss, Bar-Sinai)'}.
 	^ plotter asElement
+]
+
+{ #category : #'as yet unclassified' }
+Gt4BpIntroducingBPWithSmalltalkSlideshow >> titleSize [
+	^ 55
 ]

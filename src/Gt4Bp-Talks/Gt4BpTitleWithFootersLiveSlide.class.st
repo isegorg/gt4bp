@@ -21,8 +21,8 @@ Gt4BpTitleWithFootersLiveSlide >> create [
 			constraintsDo: [ :c | 
 				c horizontal matchParent.
 				c vertical matchParent.
-				c frame horizontal weight: 0.6.
-				c frame vertical weight: 0.6.
+				c frame horizontal weight: 0.7.
+				c frame vertical weight: 0.7.
 				c frame horizontal alignCenter.
 				c frame vertical alignCenter ];
 			"border: (BlBorderBuilder new paint: Color red; width: 2; build);"
@@ -40,7 +40,7 @@ Gt4BpTitleWithFootersLiveSlide >> create [
 		addChild: (BlTextElement new
 				constraintsDo: [ :c | c linear horizontal alignCenter ];
 				padding: (BlInsets
-						top: 40;
+						top: 120;
 						bottom: self titleBottomPadding);
 				text: title).
 	subtitle isEmpty

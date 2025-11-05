@@ -17,8 +17,8 @@ Gt4BpParagraphLiveSlide >> create [
 			constraintsDo: [ :c | 
 				c horizontal matchParent.
 				c vertical matchParent.
-				c frame horizontal weight: 0.6.
-				c frame vertical weight: 0.6.
+				c frame horizontal weight: 0.7.
+				c frame vertical weight: 0.7.
 				c frame horizontal alignCenter.
 				c frame vertical alignCenter ];
 			layout: BlLinearLayout vertical.
