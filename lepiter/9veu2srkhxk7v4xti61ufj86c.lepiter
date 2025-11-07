@@ -66,14 +66,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-22T16:09:41.271323+02:00"
+						"dateAndTimeString" : "2025-11-07T14:11:33.379506+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "tVcNlyH+DQCcHuEGBGbCpg=="
 				},
-				"code" : "bThreadsAddThirdO := Gt4BpTicTacToeExamples new linePermutations collect: [ :aLine | \r\t'bp.registerBThread(\"AddThirdX(', aLine asString ,')\", function() {' , \r\tString crlf ,\r\t'    bp.sync({ waitFor: bp.EventSet(\"O', aLine first asString ,'\", function(e) {' , String crlf ,\r\t'        return e.name == \"moveAccepted\" && ', String crlf ,\r\t'            e.data.player == \"O\" && ' , String crlf ,\r\t'            e.data.row == ', aLine first x asString , ' && ' , String crlf ,\r\t'            e.data.col == ', aLine first y asString , '; ', String crlf ,\r\t'         }) }); ' , String crlf ,\r\t'    bp.sync({ waitFor: bp.EventSet(\"O', aLine second asString ,'\", function(e) {' , String crlf ,\r\t'        return e.name == \"moveAccepted\" && ', String crlf ,\r\t'            e.data.player == \"O\" && ' , String crlf ,\r\t'            e.data.row == ', aLine second x asString , ' && ' , String crlf ,\r\t'            e.data.col == ', aLine second y asString , '; ', String crlf ,\r\t'         }) }); ' , String crlf ,\r\t'    bp.sync({ request: bp.Event(\"move\", ' ,\r\t'{ \"player\": \"O\", ',\r\t'\"row\": ', aLine third x asString , ', ',\r\t'\"col\": ', aLine third y asString , \r\t'}) }, 70);' , String crlf ,\r'}); ', String crlf , String crlf ].\r\rbtAddThirdO := String streamContents: [ :stream |\t\t\r\tbThreadsAddThirdO do: [ :bThread | \r\t\tstream nextPutAll: bThread ]]"
+				"code" : "bThreadsAddThirdO := Gt4BpTicTacToeExamples new linePermutations collect: [ :aLine | \r\t'bp.registerBThread(\"AddThirdX(', aLine asString ,')\", function() {' , \r\tString crlf ,\r\t'    bp.sync({ waitFor: bp.EventSet(\"O', aLine first asString ,'\", function(e) {' , String crlf ,\r\t'        return e.name == \"moveAccepted\" && ', String crlf ,\r\t'            e.data.player == \"O\" && ' , String crlf ,\r\t'            e.data.row == ', aLine first x asString , ' && ' , String crlf ,\r\t'            e.data.col == ', aLine first y asString , '; ', String crlf ,\r\t'         }) }); ' , String crlf ,\r\t'    bp.sync({ waitFor: bp.EventSet(\"O', aLine second asString ,'\", function(e) {' , String crlf ,\r\t'        return e.name == \"moveAccepted\" && ', String crlf ,\r\t'            e.data.player == \"O\" && ' , String crlf ,\r\t'            e.data.row == ', aLine second x asString , ' && ' , String crlf ,\r\t'            e.data.col == ', aLine second y asString , '; ', String crlf ,\r\t'         }) }); ' , String crlf ,\r\t'    bp.sync({ request: bp.Event(\"move\", ' ,\r\t'{ \"player\": \"O\", ',\r\t'\"row\": ', aLine third x asString , ', ',\r\t'\"col\": ', aLine third y asString , \r\t'}) }, 90);' , String crlf ,\r'}); ', String crlf , String crlf ].\r\rbtAddThirdO := String streamContents: [ :stream |\t\t\r\tbThreadsAddThirdO do: [ :bThread | \r\t\tstream nextPutAll: bThread ]]"
 			},
 			{
 				"__type" : "textSnippet",

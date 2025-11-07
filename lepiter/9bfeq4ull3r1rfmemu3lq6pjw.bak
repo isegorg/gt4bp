@@ -247,14 +247,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-10-24T09:33:44.562758+02:00"
+									"dateAndTimeString" : "2025-11-07T14:40:37.488782+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "69xRvh39DQCKNOxbDgJinQ=="
 							},
-							"code" : "bThreadsOWin := linePermutations collect: [ :aLine | \r\t'bp.registerBThread(\"OWin(', aLine asString ,')\", function() {' , \r\tString crlf ,\r\t(aLine flatCollect: [ :aPosition |\r\t    '    bp.sync({ waitFor: bp.EventSet(\"O', aPosition asString ,'\", function(e) {' , String crlf ,\r\t    '        return e.name == \"moveAccepted\" && ', String crlf ,\r\t    '            e.data.player == \"O\" && ' , String crlf ,\r\t    '            e.data.row == ', aPosition x asString , ' && ' , String crlf ,\r\t    '            e.data.col == ', aPosition y asString , '; ', String crlf ,\r\t    '         }) }); ' , String crlf\r\t]) ,\r\t'    bp.sync({ request: bp.Event(\"gameOver\", { winner: \"O\" }) }, 200); ', String crlf ,\r'}); ', String crlf , String crlf].\r\rbtOWin := String streamContents: [ :stream |\r\tbThreadsOWin do: [ :bThread | stream nextPutAll: bThread ] ]"
+							"code" : "bThreadsOWin := linePermutations collect: [ :aLine | \r\t'bp.registerBThread(\"OWin(', aLine asString ,')\", function() {' , \r\tString crlf ,\r\t(aLine flatCollect: [ :aPosition |\r\t    '    bp.sync({ waitFor: bp.EventSet(\"O', aPosition asString ,'\", function(e) {' , String crlf ,\r\t    '        return e.name == \"moveAccepted\" && ', String crlf ,\r\t    '            e.data.player == \"O\" && ' , String crlf ,\r\t    '            e.data.row == ', aPosition x asString , ' && ' , String crlf ,\r\t    '            e.data.col == ', aPosition y asString , '; ', String crlf ,\r\t    '         }) }); ' , String crlf\r\t]) ,\r\t'    bp.sync({ request: bp.Event(\"gameOver\", { winner: \"O\" }) }, 300); ', String crlf ,\r'}); ', String crlf , String crlf].\r\rbtOWin := String streamContents: [ :stream |\r\tbThreadsOWin do: [ :bThread | stream nextPutAll: bThread ] ]"
 						},
 						{
 							"__type" : "textSnippet",

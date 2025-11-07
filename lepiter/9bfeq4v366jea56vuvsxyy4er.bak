@@ -34,14 +34,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-10-24T09:35:20.060114+02:00"
+									"dateAndTimeString" : "2025-11-07T13:46:58.680511+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "6lLY0x39DQCMjv04DgJinQ=="
 							},
-							"code" : "btDraw := 'bp.registerBThread(\"btDraw\", function() {\r    var moveAcceptedES = bp.EventSet(\"moveAcceptedES\", function(e) {\r        return e.name == \"moveAccepted\";\r    });\r    for (var i = 1; i <= 9; i++) { \r        bp.sync({ waitFor: moveAcceptedES }); \r    }\r    bp.sync({ request: bp.Event(\"gameOver\") }, 200);\r});'\t\t\t"
+							"code" : "btDraw := 'bp.registerBThread(\"btDraw\", function() {\r    var moveAcceptedES = bp.EventSet(\"moveAcceptedES\", function(e) {\r        return e.name == \"moveAccepted\";\r    });\r    for (var i = 1; i <= 9; i++) { \r        bp.sync({ waitFor: moveAcceptedES }); \r    }\r    bp.sync({ request: bp.Event(\"gameOver\") });\r});'\t\t\t"
 						},
 						{
 							"__type" : "pharoSnippet",

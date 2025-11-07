@@ -564,14 +564,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-11-01T13:13:28.015596+01:00"
+						"dateAndTimeString" : "2025-11-01T13:19:53.048+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "1SbZEun+DQCXBc7XBVhskg=="
 				},
-				"code" : "Gt4BpExamples compile: '\rbtHello\r\t<gtExample>\r\t^ ''\rbp.registerBThread(\"btHello\", function() {\n  bp.sync({request:bp.Event(\"Hello\")});\n});''\r' classified: #'example - support'.\r\rGt4BpExamples compile: '\rbtWorld\r\t<gtExample>\r\t^ ''\rbp.registerBThread(\"btWorld\", function() {\n  bp.sync({request:bp.Event(\"World\")});\n});''\r' classified: #'example - support'.\r\rGt4BpExamples compile: '\rhelloWorldNonDeterministic\r\t<gtExample>\r\t| runner |\r\trunner := (Gt4BpRunnerBridge \r\t\tfromDirectory: (FileLocator temp / ''bt-examples'' / ''helloWorld'') asFileReference)\r\t\tonEvent: [ :event | Transcript crShow: ''BP Event -> '' , event asString ].\r\trunner \r\t\tloadBProgram: self btHello named: ''btHello.js'';\r\t\tloadBProgram: self btWorld named: ''btWorld.js''.\r\t^ runner\r' classified: #example"
+				"code" : "Gt4BpExamples compile: '\rbtHello\r\t<gtExample>\r\t^ \r''bp.registerBThread(\"btHello\", function() {\n  bp.sync({request:bp.Event(\"Hello\")});\n});''\r' classified: #'example - support'.\r\rGt4BpExamples compile: '\rbtWorld\r\t<gtExample>\r\t^ \r''bp.registerBThread(\"btWorld\", function() {\n  bp.sync({request:bp.Event(\"World\")});\n});''\r' classified: #'example - support'.\r\rGt4BpExamples compile: '\rhelloWorldNonDeterministic\r\t<gtExample>\r\t| runner |\r\trunner := (Gt4BpRunnerBridge \r\t\tfromDirectory: (FileLocator temp / ''bt-examples'' / ''helloWorld'') asFileReference)\r\t\tonEvent: [ :event | Transcript crShow: ''BP Event -> '' , event asString ].\r\trunner \r\t\tloadBProgram: self btHello named: ''btHello.js'';\r\t\tloadBProgram: self btWorld named: ''btWorld.js''.\r\t^ runner\r' classified: #example"
 			},
 			{
 				"__type" : "exampleSnippet",

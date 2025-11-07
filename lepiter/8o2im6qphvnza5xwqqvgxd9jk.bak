@@ -145,6 +145,46 @@
 					"uidString" : "tmoJQun+DQCn2+bmBVhskg=="
 				},
 				"code" : "Gt4BpExamples compile: '\rhelloWorldDeterministic\r\t<gtExample>\r\t| runner |\r\trunner := self helloWorldNonDeterministic.\r\trunner \r\t\tloadBProgram: self btEnforceOrder named: ''btEnforceOrder.js''.\r\t^ runner\r' classified: #example"
+			},
+			{
+				"__type" : "exampleSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-01T13:22:28.694926+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-01T13:22:28.694926+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "rkPGRen+DQCpAfXNBVhskg=="
+				},
+				"exampleSelector" : "helloWorldDeterministic",
+				"previewHeight" : 200,
+				"previewShowSelector" : "gtViewsFor:",
+				"exampleBehaviorName" : "Gt4BpExamples",
+				"codeExpanded" : true,
+				"previewExpanded" : false,
+				"noCode" : false
 			}
 		]
 	},

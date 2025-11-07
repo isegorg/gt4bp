@@ -288,7 +288,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-11T18:59:46.395967+02:00"
+						"dateAndTimeString" : "2025-11-07T14:43:23.600844+01:00"
 					}
 				},
 				"uid" : {
@@ -298,7 +298,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "For instance, we can redefine the b-threads to assign a priority of 10 to the winner even and a priority of 9 to the draw event:"
+				"string" : "For instance, we can redefine the b-threads to assign a priority of 200 to the draw event:"
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -325,14 +325,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-14T13:03:29.422891+02:00"
+						"dateAndTimeString" : "2025-11-07T14:43:36.201352+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "MSAzs0b9DQCd1/TfAqWGBQ=="
 				},
-				"code" : "Gt4BpTicTacToeExamples compile: '\rbtWinForPlayer: aString\r\t<gtExample>\r    | bThreadsWin |\rbThreadsWin := self linePermutations collect: [ :aLine | \r\t''bp.registerBThread(\"'' , aString , ''Win('', aLine asString ,'')\", function() {'' , \r\tString crlf ,\r\t(aLine flatCollect: [ :aPosition |\r\t    ''    bp.sync({ waitFor: bp.EventSet(\"'', aString , aPosition asString ,''\", function(e) {'' , String crlf ,\r\t    ''        return e.name == \"moveAccepted\" && '', String crlf ,\r\t    ''            e.data.player == \"'', aString , ''\" && '' , String crlf ,\r\t    ''            e.data.row == '', aPosition x asString , '' && '' , String crlf ,\r\t    ''            e.data.col == '', aPosition y asString , ''; '', String crlf ,\r\t    ''         }) }); '' , String crlf\r\t]) ,\r\t''    bp.sync({ request: bp.Event(\"gameOver\", { winner: \"'', aString , ''\" }) }, 10); '', String crlf ,\r''}); '', String crlf , String crlf ].\r\r^ String streamContents: [ :stream |\r\tbThreadsWin do: [ :bThread | stream nextPutAll: bThread ] ]' \r\tclassified: #'example - support'.\r\t\rGt4BpTicTacToeExamples compile: '\rbtDraw\r    <gtExample>\r    ^ ''bp.registerBThread(\"btDraw\", function() {\r    var moveAcceptedES = bp.EventSet(\"moveAcceptedES\", function(e) {\r        return e.name == \"moveAccepted\";\r    });\r    for (var i = 1; i <= 9; i++) { \r        bp.sync({ waitFor: moveAcceptedES }); \r    }\r    bp.sync({ request: bp.Event(\"gameOver\") }, 9\t\t);\r});''' classified: #'example - support'."
+				"code" : "Gt4BpTicTacToeExamples compile: '\rbtDraw\r    <gtExample>\r    ^ ''bp.registerBThread(\"btDraw\", function() {\r    var moveAcceptedES = bp.EventSet(\"moveAcceptedES\", function(e) {\r        return e.name == \"moveAccepted\";\r    });\r    for (var i = 1; i <= 9; i++) { \r        bp.sync({ waitFor: moveAcceptedES }); \r    }\r    bp.sync({ request: bp.Event(\"gameOver\") }, 200);\r});''' classified: #'example - support'."
 			},
 			{
 				"__type" : "textSnippet",
