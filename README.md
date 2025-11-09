@@ -43,7 +43,7 @@ The process of generating the source code from the explanations is called **tang
 
 You can read all the chapters in this Lepiter notebook and proceed to evaluate all the included snippets one by one. This way, you can understand and build the software system step-by-step.
 
-You can also use a simple extension of the **Lepiter** tool (*Lepiter-Literate*) that allows you to tangle a single Lepiter page or the entire database knowledge (notebook).
+You can also use a simple extension of the **Lepiter** tool ([Lepiter-Literate](https://github.com/blueplanelabs/lepiter-literate)) that allows you to tangle a single Lepiter page or the entire database knowledge (notebook).
 
 You can load that extension by evaluating the following code fragment:
 
