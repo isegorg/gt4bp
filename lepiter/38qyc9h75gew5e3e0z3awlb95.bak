@@ -66,7 +66,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-11-01T12:14:59.982058+01:00"
+						"dateAndTimeString" : "2025-12-16T13:27:06.792568+01:00"
 					}
 				},
 				"uid" : {
@@ -76,7 +76,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[[Using Moldable Literate Programming]]\n\n[[Spawning BPjs Runner Bridge as an external process]]\n\n[[Enqueueing events to the B-Program]]\n\n[[Design of the BPjs Runner Bridge integration for GToolkit]]\n\n[[Design of the BPjs Verifier Bridge for GToolkit]]"
+				"string" : "[[Using Moldable Literate Programming]]\n\n[[Spawning BPjs Runner Bridge as an external process]]\n\n[[Enqueueing events to the B-Program]]\n\n[[Design of the BPjs Runner Bridge integration for GToolkit]]\n\n[[Design of the BPjs Verifier Bridge for GToolkit]]\n\n[[Design of the BPjs Runner Bridge Cli for GToolkit"
 			},
 			{
 				"__type" : "textSnippet",
@@ -225,6 +225,43 @@
 					"__type" : "textStyle"
 				},
 				"string" : "[[Hello World BP (non deterministic)]]"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-01T13:18:05.825434+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-01T13:18:20.430594+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "uTEbNun+DQCfNvy2BVhskg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "[[Hello World BP (deterministic)]]"
 			},
 			{
 				"__type" : "textSnippet",
