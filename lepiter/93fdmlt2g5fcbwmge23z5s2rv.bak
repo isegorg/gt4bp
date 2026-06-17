@@ -1507,7 +1507,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-11-01T12:22:41.058741+01:00"
+												"dateAndTimeString" : "2025-09-24T12:09:30.993193+02:00"
 											}
 										},
 										"editEmail" : {
@@ -1518,7 +1518,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-11-01T12:22:41.064707+01:00"
+												"dateAndTimeString" : "2025-09-24T12:11:41.544773+02:00"
 											}
 										},
 										"uid" : {
@@ -1528,7 +1528,7 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "c"
+										"string" : "We can proceed to start the previously configured bridge and inspect the {{gtClass:name=GtTranscript}} :"
 									},
 									{
 										"__type" : "pharoSnippet",
